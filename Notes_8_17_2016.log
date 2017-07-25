@@ -1,0 +1,630 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.26)  25 JUL 2017 14:50
+entering extended mode
+**Notes_8_17_2016.tex
+(Notes_8_17_2016.tex
+LaTeX2e <2015/01/01> patch level 2
+Babel <3.9m> and hyphenation patterns for 69 languages loaded.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\article.cls"
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size12.clo"
+File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks14
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+Package: amstext 2000/06/29 v2.01
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks15
+\ex@=\dimen103
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen104
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count87
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count88
+\leftroot@=\count89
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count90
+\DOTSCASE@=\count91
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen105
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count92
+\c@MaxMatrixCols=\count93
+\dotsspace@=\muskip10
+\c@parentequation=\count94
+\dspbrk@lvl=\count95
+\tag@help=\toks16
+\row@=\count96
+\column@=\count97
+\maxfields@=\count98
+\andhelp@=\toks17
+\eqnshift@=\dimen106
+\alignsep@=\dimen107
+\tagshift@=\dimen108
+\tagwidth@=\dimen109
+\totwidth@=\dimen110
+\lineht@=\dimen111
+\@envbody=\toks18
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks19
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+\c@theorem=\count99
+
+No file Notes_8_17_2016.aux.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Try loading font information for U+msa on input line 52.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 52.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [1
+
+{C:/Users/Michael/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] [3] [
+4] [5]
+[6] [7]
+Overfull \hbox (5.53963pt too wide) detected at line 395
+\OML/cmm/m/it/12 Y[] \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 L[] \OT1/cmr/m/n/12 + [
+] [][] \OML/cmm/m/it/12 E \OT1/cmr/m/n/12 + [] [][] \OML/cmm/m/it/12 E[];
+ []
+
+[8] [9]
+
+LaTeX Warning: Reference `market clearing' on page 10 undefined on input line 5
+00.
+
+[10] [11]
+
+LaTeX Warning: Reference `pi_y_hat' on page 12 undefined on input line 606.
+
+
+LaTeX Warning: Reference `pi_c_hat' on page 12 undefined on input line 606.
+
+
+LaTeX Warning: Reference `Y_hat2' on page 12 undefined on input line 606.
+
+
+LaTeX Warning: Reference `market clearing hat' on page 12 undefined on input li
+ne 606.
+
+[12] [13]
+
+LaTeX Warning: Reference `energy price change' on page 14 undefined on input li
+ne 696.
+
+[14]
+
+LaTeX Warning: Reference `pi_c_hat' on page 15 undefined on input line 729.
+
+
+LaTeX Warning: Reference `Y_hat2' on page 15 undefined on input line 746.
+
+
+LaTeX Warning: Reference `pi_y_hat' on page 15 undefined on input line 746.
+
+
+Overfull \hbox (27.24698pt too wide) detected at line 760
+[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 t[]; t[]; []\OT1/cmr/m/n/12 ) = [] [] \OML/
+cmm/m/it/12 :
+ []
+
+
+LaTeX Warning: Reference `price index with tax' on page 15 undefined on input l
+ine 774.
+
+[15]
+
+LaTeX Warning: Reference `Yhat tax' on page 16 undefined on input line 780.
+
+
+LaTeX Warning: Reference `price index with tax' on page 16 undefined on input l
+ine 782.
+
+
+Overfull \hbox (22.20454pt too wide) detected at line 804
+[] \OT1/cmr/m/n/12 = []\OML/cmm/m/it/12 ;
+ []
+
+
+LaTeX Warning: Reference `energy price change' on page 16 undefined on input li
+ne 823.
+
+
+LaTeX Warning: Reference `What simple' on page 16 undefined on input line 823.
+
+[16]
+
+LaTeX Warning: Reference `demand side' on page 17 undefined on input line 837.
+
+[17]
+
+LaTeX Warning: Reference `aggregate price index' on page 18 undefined on input 
+line 889.
+
+[18] [19]
+Overfull \hbox (9.69415pt too wide) in alignment at lines 977--984
+ [][][] []
+ []
+
+
+LaTeX Warning: Reference `pm(j)' on page 20 undefined on input line 988.
+
+
+Overfull \hbox (24.34917pt too wide) in alignment at lines 1018--1026
+ [][][] []
+ []
+
+[20]
+
+LaTeX Warning: Reference `manufacturing price index definition' on page 21 unde
+fined on input line 1029.
+
+
+LaTeX Warning: Reference `pbar' on page 21 undefined on input line 1045.
+
+
+LaTeX Warning: Reference `jbar' on page 21 undefined on input line 1045.
+
+
+LaTeX Warning: Reference `jbar' on page 21 undefined on input line 1056.
+
+[21] [22]
+
+LaTeX Warning: Reference `p_c no prod or cons taxes' on page 23 undefined on in
+put line 1164.
+
+
+LaTeX Warning: Reference `Y no tax' on page 23 undefined on input line 1165.
+
+
+LaTeX Warning: Reference `Y star no tax' on page 23 undefined on input line 116
+5.
+
+[23] [24] [25] [26] [27]
+
+LaTeX Warning: Reference `jbar no tax' on page 28 undefined on input line 1387.
+
+
+
+LaTeX Warning: Reference `c spending share' on page 28 undefined on input line 
+1407.
+
+[28]
+
+LaTeX Warning: Reference `pc uniform production tax' on page 29 undefined on in
+put line 1460.
+
+[29]
+
+LaTeX Warning: Reference `pc uniform production tax' on page 30 undefined on in
+put line 1527.
+
+[30] [31]
+
+LaTeX Warning: Reference `relative productivity' on page 32 undefined on input 
+line 1607.
+
+[32]
+
+LaTeX Warning: Reference `c spending share' on page 33 undefined on input line 
+1655.
+
+
+LaTeX Warning: Reference `jbar home production tax' on page 33 undefined on inp
+ut line 1664.
+
+[33] [34]
+
+LaTeX Warning: Reference `p_c home production tax' on page 35 undefined on inpu
+t line 1767.
+
+
+LaTeX Warning: Reference `p_c star home production tax' on page 35 undefined on
+ input line 1768.
+
+
+LaTeX Warning: Reference `jbar home production tax' on page 35 undefined on inp
+ut line 1769.
+
+
+LaTeX Warning: Reference `Y home production tax' on page 35 undefined on input 
+line 1769.
+
+
+LaTeX Warning: Reference `Y star' on page 35 undefined on input line 1770.
+
+[35]
+
+LaTeX Warning: Reference `p_c home consumption tax1' on page 36 undefined on in
+put line 1787.
+
+
+LaTeX Warning: Reference `p_c star home consumption tax' on page 36 undefined o
+n input line 1788.
+
+
+LaTeX Warning: Reference `Y home consumption tax' on page 36 undefined on input
+ line 1789.
+
+
+LaTeX Warning: Reference `Y star' on page 36 undefined on input line 1789.
+
+[36] [37]
+Overfull \hbox (24.55586pt too wide) detected at line 1932
+\OML/cmm/m/it/12 p[]M[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 p[]C[] \OT1/cmr/m/n/
+12 = [] [] \OMS/cmsy/m/n/12   [] [] \OML/cmm/m/it/12 D[]\OT1/cmr/m/n/12 (\OML/
+cmm/m/it/12 p[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 Y[]
+ []
+
+[38] [39] [40]
+
+LaTeX Warning: Reference `relative productivity' on page 41 undefined on input 
+line 2056.
+
+[41]
+
+LaTeX Warning: Reference `jbar partial bta' on page 42 undefined on input line 
+2085.
+
+[42]
+
+LaTeX Warning: Reference `c spending share' on page 43 undefined on input line 
+2137.
+
+[43]
+Overfull \hbox (45.59857pt too wide) in alignment at lines 2195--2204
+ [][][] []
+ []
+
+
+LaTeX Warning: Reference `jbar partial bta' on page 44 undefined on input line 
+2205.
+
+[44]
+Overfull \hbox (24.13774pt too wide) in alignment at lines 2242--2250
+ [][][] []
+ []
+
+
+LaTeX Warning: Reference `p_c partial bta' on page 45 undefined on input line 2
+251.
+
+
+LaTeX Warning: Reference `p_c star partial bta' on page 45 undefined on input l
+ine 2252.
+
+
+LaTeX Warning: Reference `jbar partial bta' on page 45 undefined on input line 
+2252.
+
+
+LaTeX Warning: Reference `Y home partial bta' on page 45 undefined on input lin
+e 2253.
+
+
+LaTeX Warning: Reference `Y star partial bta' on page 45 undefined on input lin
+e 2254.
+
+[45]
+
+LaTeX Warning: Reference `jbar partial bta' on page 46 undefined on input line 
+2294.
+
+
+LaTeX Warning: Reference `c spending share' on page 46 undefined on input line 
+2312.
+
+[46]
+
+LaTeX Warning: Reference `p_c partial bta' on page 47 undefined on input line 2
+356.
+
+
+LaTeX Warning: Reference `phat c given G' on page 47 undefined on input line 23
+86.
+
+
+LaTeX Warning: Reference `c share prime' on page 47 undefined on input line 238
+6.
+
+
+LaTeX Warning: Reference `phat c star given G' on page 47 undefined on input li
+ne 2393.
+
+
+LaTeX Warning: Reference `c share star prime' on page 47 undefined on input lin
+e 2393.
+
+[47]
+
+LaTeX Warning: Reference `Y home partial bta' on page 48 undefined on input lin
+e 2405.
+
+
+LaTeX Warning: Reference `jbar prime' on page 48 undefined on input line 2431.
+
+
+LaTeX Warning: Reference `c share prime function' on page 48 undefined on input
+ line 2432.
+
+
+LaTeX Warning: Reference `c share star prime function' on page 48 undefined on 
+input line 2434.
+
+
+LaTeX Warning: Reference `phat c given G' on page 48 undefined on input line 24
+40.
+
+
+LaTeX Warning: Reference `world consumption spending' on page 48 undefined on i
+nput line 2444.
+
+
+LaTeX Warning: Reference `world intermediate spending' on page 48 undefined on 
+input line 2445.
+
+[48]
+
+LaTeX Warning: Reference `jbar prime' on page 49 undefined on input line 2476.
+
+
+LaTeX Warning: Reference `c share prime function' on page 49 undefined on input
+ line 2477.
+
+
+LaTeX Warning: Reference `c share star prime function' on page 49 undefined on 
+input line 2479.
+
+
+LaTeX Warning: Reference `Y hat partial btas' on page 49 undefined on input lin
+e 2480.
+
+
+LaTeX Warning: Reference `Y star hat partial btas' on page 49 undefined on inpu
+t line 2481.
+
+
+LaTeX Warning: Reference `phat c star given G' on page 49 undefined on input li
+ne 2481.
+
+
+LaTeX Warning: Reference `aggregate price index II' on page 49 undefined on inp
+ut line 2489.
+
+
+LaTeX Warning: Reference `Y hat partial btas' on page 49 undefined on input lin
+e 2494.
+
+
+LaTeX Warning: Reference `aggregate price index II' on page 49 undefined on inp
+ut line 2495.
+
+
+LaTeX Warning: Reference `phat c given G' on page 49 undefined on input line 25
+03.
+
+
+LaTeX Warning: Reference `phat c star given G' on page 49 undefined on input li
+ne 2517.
+
+
+LaTeX Warning: Reference `demand change partial btas' on page 49 undefined on i
+nput line 2529.
+
+[49]
+
+LaTeX Warning: Reference `demand change partial btas' on page 50 undefined on i
+nput line 2535.
+
+
+LaTeX Warning: Reference `c share prime' on page 50 undefined on input line 254
+2.
+
+
+LaTeX Warning: Reference `c share star prime' on page 50 undefined on input lin
+e 2543.
+
+
+LaTeX Warning: Reference `Y hat partial btas' on page 50 undefined on input lin
+e 2551.
+
+
+LaTeX Warning: Reference `demand change partial btas' on page 50 undefined on i
+nput line 2561.
+
+
+LaTeX Warning: Reference `demand change partial btas' on page 50 undefined on i
+nput line 2583.
+
+[50]
+
+LaTeX Warning: Reference `jbar prime' on page 51 undefined on input line 2593.
+
+
+LaTeX Warning: Reference `jbar prime' on page 51 undefined on input line 2645.
+
+[51] [52]
+
+LaTeX Warning: Reference `jbar prime' on page 53 undefined on input line 2720.
+
+[53]
+Overfull \hbox (54.5824pt too wide) detected at line 2787
+\OML/cmm/m/it/12 l[] \OT1/cmr/m/n/12 = []\OML/cmm/m/it/12 :
+ []
+
+
+Overfull \hbox (63.99922pt too wide) detected at line 2801
+\OML/cmm/m/it/12 l[] \OT1/cmr/m/n/12 = []
+ []
+
+
+LaTeX Warning: Reference `MhatH' on page 54 undefined on input line 2802.
+
+
+LaTeX Warning: Reference `Chatestar' on page 54 undefined on input line 2802.
+
+[54]
+Overfull \hbox (34.63351pt too wide) detected at line 2826
+\OML/cmm/m/it/12 l[] \OT1/cmr/m/n/12 = []
+ []
+
+
+Overfull \hbox (30.06694pt too wide) detected at line 2836
+\OML/cmm/m/it/12 l[] \OT1/cmr/m/n/12 = []
+ []
+
+
+LaTeX Warning: Reference `MhatH' on page 55 undefined on input line 2837.
+
+
+LaTeX Warning: Reference `Chatestar' on page 55 undefined on input line 2837.
+
+
+Overfull \hbox (80.59651pt too wide) in alignment at lines 2851--2864
+ [][][] []
+ []
+
+
+Overfull \hbox (30.06694pt too wide) detected at line 2872
+[] \OT1/cmr/m/n/12 = []
+ []
+
+[55]
+
+LaTeX Warning: Reference `MhatH' on page 56 undefined on input line 2916.
+
+[56]
+
+LaTeX Warning: Reference `MhatF' on page 57 undefined on input line 2922.
+
+
+LaTeX Warning: Reference `MhatHstar' on page 57 undefined on input line 2928.
+
+
+LaTeX Warning: Reference `MhatFstar' on page 57 undefined on input line 2934.
+
+
+Overfull \hbox (2.68578pt too wide) detected at line 2946
+[] \OT1/cmr/m/n/12 = [] [][] = [] [][]
+ []
+
+[57]
+
+LaTeX Warning: Reference `ltilde vs. l' on page 58 undefined on input line 2989
+.
+
+[58]
+Overfull \hbox (3.20702pt too wide) detected at line 3043
+[] \OT1/cmr/m/n/12 = [] [] \OML/cmm/m/it/12 :
+ []
+
+
+LaTeX Warning: Reference `MhatH' on page 59 undefined on input line 3057.
+
+
+LaTeX Warning: Reference `MhatF' on page 59 undefined on input line 3064.
+
+
+LaTeX Warning: Reference `MhatHstar' on page 59 undefined on input line 3072.
+
+
+LaTeX Warning: Reference `MhatFstar' on page 59 undefined on input line 3078.
+
+[59]
+Overfull \hbox (27.86453pt too wide) in alignment at lines 3098--3107
+ [][][] []
+ []
+
+[60] (Notes_8_17_2016.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 1063 strings out of 493673
+ 12546 string characters out of 3141524
+ 74319 words of memory out of 3000000
+ 4452 multiletter control sequences out of 15000+200000
+ 14003 words of font info for 54 fonts, out of 3000000 for 9000
+ 1025 hyphenation exceptions out of 8191
+ 27i,11n,24p,275b,201s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C
+:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/
+Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Pr
+ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Prog
+ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program
+ Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Fi
+les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files
+ (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x
+86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files (x86)/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files (x86)/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files (x86)/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmti12.pfb>
+Output written on Notes_8_17_2016.pdf (60 pages, 400474 bytes).
+PDF statistics:
+ 271 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
