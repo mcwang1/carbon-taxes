@@ -1,0 +1,3110 @@
+%2multibyte Version: 5.50.0.2960 CodePage: 65001
+%\input{tcilatex}
+%\input{tcilatex}
+
+
+\documentclass[notitlepage,12pt]{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsfonts}
+\usepackage{amsmath}
+
+\setcounter{MaxMatrixCols}{10}
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=5.00.0.2552}
+%TCIDATA{Codepage=65001}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{Created=Tuesday, November 13, 2012 12:43:14}
+%TCIDATA{LastRevised=Friday, August 19, 2016 00:30:15}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Standard LaTeX Article">}
+%TCIDATA{Language=American English}
+%TCIDATA{CSTFile=40 LaTeX article.cst}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\input{tcilatex}
+
+\begin{document}
+
+\title{Notes on Competitiveness and Carbon Taxes}
+\author{Kortum and Weisbach \\
+%EndAName
+Yale and University of Chicago}
+\maketitle
+
+\begin{abstract}
+Blah blah blah
+\end{abstract}
+
+\section{Introduction}
+
+Our goal is to develop analytic models to study carbon carbon taxes in an
+international setting. We begin in section 2 by extending results from our
+earlier work, Elliott et. al. (2010). This model allows us to evaluate a
+consumption and extraction tax. We then turn to a more sophisticated model
+in section 3, which includes a manufacturing sector. In this model we can
+study a production tax together with a consumption and extraction tax. Our
+main question is what combination of taxes is unilaterally optimal for a
+country, given a goal for reducing global carbon emissions.
+
+\section{Simple Model}
+
+There are two countries, home (henceforth $\mathcal{H}$) and foreign
+(henceforth $\mathcal{F}$), endowed with fossil fuel deposits ($E$ and $%
+E^{\ast }$) and labor ($L$ and $L^{\ast }$, measured in efficiency units).
+Note that variables related to $\mathcal{F}$ are denoted with a $^{\ast }$.
+Fuel deposits are extracted using labor to produce energy (the $e$-good) and
+carbon emissions. Each country can also produce another good (the $l$-good)
+using only labor. Consumers have preferences over the $e$-good and the $l$%
+-good. Both are costlessly traded. Nonetheless, after-tax prices of the $e$%
+-good may differ across countries due to carbon taxes. The law of one price
+holds for the $l$-good.
+
+\subsection{Basic Setup}
+
+We parameterize the model with a Cobb-Douglas production functions for
+extraction of the $e$-good and constant elasticity of substitution
+preferences over the two goods. We allow the parameters to differ by country.
+
+\subsubsection{Production}
+
+Labor's share in the extraction of energy is $\beta $:%
+\begin{equation}
+Q_{e}=\left( L_{e}/\beta \right) ^{\beta }E^{1-\beta }.  \label{e production}
+\end{equation}%
+(We derive this production function from more primitive assumptions about
+extraction in the Appendix.) Production of the $l$-good in a given country
+is given by:%
+\begin{equation*}
+Q_{l}=L_{l}.
+\end{equation*}%
+Since we measure labor in efficiency units, this formulation can capture
+differences in $l$-sector productivity across countries.
+
+Consider the problem of a representative $e$-good extraction firm in $%
+\mathcal{H}$ that owns energy deposits $E$. Facing a price for output of $%
+p_{e}$ and a cost of labor $w$, it solves:%
+\begin{equation*}
+\max_{l_{e}}\left\{ p_{e}q_{e}-wl_{e}\right\} ,
+\end{equation*}%
+subject to the production function:%
+\begin{equation*}
+q_{e}=\left( l_{e}/\beta \right) ^{\beta }E^{1-\beta }.
+\end{equation*}%
+The solution is to hire labor:%
+\begin{equation*}
+L_{e}=\beta \left( \frac{p_{e}}{w}\right) ^{1/(1-\beta )}E
+\end{equation*}%
+and to extract a quantity:%
+\begin{equation*}
+Q_{e}=\left( \frac{p_{e}}{w}\right) ^{\beta /(1-\beta )}E.
+\end{equation*}%
+The elasticity of energy supply is $\varepsilon _{S}=\beta /(1-\beta )$.
+
+The problem is the same in $\mathcal{F}$, replacing $\beta $ with $\beta
+^{\ast }$, $w$ with $w^{\ast }$, $E$ with $E^{\ast }$, and taking into
+account any differences in the price faced by producers there. The solution
+in $\mathcal{F}$ is $L_{e}^{\ast }$ and $Q_{e}^{\ast }$.
+
+\subsubsection{Consumption}
+
+Preferences are parameterized as:%
+\begin{equation}
+U(C_{e},C_{l})=\left( \alpha ^{1/\sigma }C_{e}^{(\sigma -1)/\sigma }+\left(
+1-\alpha \right) ^{1/\sigma }C_{l}^{(\sigma -1)/\sigma }\right) ^{\sigma
+/(\sigma -1)}.  \label{preferences}
+\end{equation}%
+The parameter $\sigma $ is the elasticity of substitution in consumption
+between the $e$-good and the $l$-good while $\alpha $ governs the share of
+spending on the $e$-good. In the special case of $\sigma =1$ preferences
+simplify to the Cobb-Douglas case considered in Elliott et. al. (2010):%
+\begin{equation*}
+U=\left( C_{e}\right) ^{\alpha }\left( C_{l}\right) ^{1-\alpha }.
+\end{equation*}%
+For $\sigma =0$ we get Leontief preferences:%
+\begin{equation*}
+U=\min \left\{ \frac{C_{e}}{\alpha },\frac{C_{l}}{1-\alpha }\right\} .
+\end{equation*}%
+By analogy to the parameter $\beta \in \lbrack 0,1]$ on the supply side, we
+can define $\rho =\sigma /(\sigma +1)$ on the demand side, a parameter which
+also stays in the unit interval.
+
+Consumer income $Y$ comes from labor $wL$, from rents on energy deposits $rE$%
+, and from any tax revenue $T$, which is rebated lump-sum. Consider the
+problem of a representative consumer in $\mathcal{H}$. Taking income $Y$ and
+prices $p_{e}$ and $p_{l}$ as given, the consumer solves:%
+\begin{equation*}
+\max_{c_{e},c_{l}}\left\{ U(c_{e},c_{l})\right\} ,
+\end{equation*}%
+subject to the budget constraint:%
+\begin{equation*}
+Y=p_{e}c_{e}+p_{l}c_{l}.
+\end{equation*}%
+The solution is:%
+\begin{equation*}
+C_{e}=\frac{\alpha }{p_{e}}\left( \frac{p_{e}}{p}\right) ^{-(\sigma -1)}Y,
+\end{equation*}%
+and%
+\begin{equation*}
+C_{l}=\frac{1-\alpha }{p_{l}}\left( \frac{p_{l}}{p}\right) ^{-(\sigma -1)}Y,
+\end{equation*}%
+with the price index given by:%
+\begin{equation}
+p=\left( \alpha p_{e}^{-(\sigma -1)}+(1-\alpha )p_{l}^{-(\sigma -1)}\right)
+^{-1/(\sigma -1)}.  \label{aggregate price index}
+\end{equation}
+
+The problem is the same in $\mathcal{F}$, replacing $\sigma $ with $\sigma
+^{\ast }$, $\alpha $ with $\alpha ^{\ast }$, $Y$ with $Y^{\ast }$, and
+taking into account any differences in the price $p_{e}$ faced by consumers
+there. The solutions in $\mathcal{F}$ are $C_{e}^{\ast }$ and $C_{l}^{\ast }$%
+, along with $p^{\ast }$.
+
+\subsubsection{Identities and Constraints}
+
+Labor is perfectly mobile between producing the $e$-good $L_{e}$ and the $l$%
+-good, $L_{l}$:%
+\begin{equation*}
+L=L_{e}+L_{l}.
+\end{equation*}%
+Labor and deposits are immobile across countries. The resource constraints
+are:%
+\begin{equation*}
+Q_{e}^{W}=Q_{e}+Q_{e}^{\ast }=C_{e}+C_{e}^{\ast },
+\end{equation*}%
+and%
+\begin{equation*}
+Q_{l}^{W}=Q_{l}+Q_{l}^{\ast }=C_{l}+C_{l}^{\ast }.
+\end{equation*}%
+Emissions arise from extracting and consuming energy so global carbon
+emissions are equal to $Q_{e}^{W}$.
+
+\subsubsection{Equilibrium}
+
+We consider a competitive equilibrium, consisting of wages and prices such
+that consumers maximize utility, producers maximize profit, and markets
+clear. It is convenient to take $\mathcal{F}$'s wage $w^{\ast }=1$ as the
+numeraire. Furthermore, we will restrict parameters so that the equilibrium
+is one in which both countries produce some of the $l$-good. In that
+situation wages are the same in both countries so that $p_{l}=w=w^{\ast }=1$%
+. (We can later derive the conditions under which both countries do, in
+fact, produce the $l$-good.)
+
+\subsection{Carbon Taxes}
+
+We introduce both extraction taxes and consumption taxes on the $e$-good. We
+let $t_{e}$ denote the level of an ad-valorem extraction tax in $\mathcal{H}$
+(and $t_{e}^{\ast }$ in $\mathcal{F}$).\footnote{%
+In Elliott et. al. (2010), we referred to this extraction tax as a
+production tax.} We let $t_{c}$ denote the level of an ad-valorem
+consumption tax in $\mathcal{H}$ (and $t_{c}^{\ast }$ in $\mathcal{F}$).
+
+\subsubsection{Taxes on Extraction}
+
+With an extraction tax $t_{e}$, the producer of the $e$-good in $\mathcal{H}$
+faces a net price of $p_{e}/(1+t_{e})$, so that:%
+\begin{equation*}
+Q_{e}=\left( \frac{p_{e}}{1+t_{e}}\right) ^{\beta /(1-\beta )}E.
+\end{equation*}%
+(Note that we have imposed the condition that $w=1$.)
+
+After-tax revenue in the sector is:%
+\begin{equation*}
+R_{e}=\frac{p_{e}}{1+t_{e}}Q_{e}=\left( \frac{p_{e}}{1+t_{e}}\right)
+^{1/(1-\beta )}E,
+\end{equation*}%
+which is shared between wages payed to labor:%
+\begin{equation*}
+wL_{e}=L_{e}=\beta R_{e}
+\end{equation*}%
+and rents payed to owners of energy deposits:%
+\begin{equation*}
+rE=\left( 1-\beta \right) R_{e}.
+\end{equation*}%
+Total pre-tax revenue is:%
+\begin{equation*}
+p_{e}Q_{e}=\left( 1+t_{e}\right) R_{e}=\left( 1+t_{e}\right) \left( \frac{%
+p_{e}}{1+t_{e}}\right) ^{1/(1-\beta )}E,
+\end{equation*}%
+split between after-tax revenue $R_{e}$ and extraction tax revenue:%
+\begin{equation*}
+T_{e}=\tau R_{e}=t_{e}\left( \frac{p_{e}}{1+t_{e}}\right) ^{1/(1-\beta )}E.
+\end{equation*}
+
+\subsubsection{Taxes on Consumption}
+
+With a consumption tax $t_{c}$, consumers face an after-tax price for the $e$%
+-good of $(1+t_{c})p_{e}$, hence after-tax spending is:%
+\begin{equation*}
+(1+t_{c})p_{e}C_{e}=\alpha \left( \frac{(1+t_{c})p_{e}}{p}\right) ^{-(\sigma
+-1)}Y,
+\end{equation*}%
+with the price of a consumption bundle given by:%
+\begin{equation}
+p=\left( \alpha \left( (1+t_{c})p_{e}\right) ^{-(\sigma -1)}+(1-\alpha
+)\right) ^{-1/(\sigma -1)}.  \label{price index with tax}
+\end{equation}%
+(Note that we have imposed the condition that $p_{l}=1$.)
+
+Total spending on the $e$-good can be expressed as:%
+\begin{equation}
+(1+t_{c})p_{e}C_{e}=\frac{\alpha \left( (1+t_{c})p_{e}\right) ^{-(\sigma -1)}%
+}{\alpha \left( (1+t_{c})p_{e}\right) ^{-(\sigma -1)}+1-\alpha }Y,
+\label{e consumption}
+\end{equation}%
+split between pre-tax consumption spending $p_{e}C_{e}$ and tax revenue:%
+\begin{equation*}
+T_{c}=t_{c}p_{e}C_{e}=\frac{t_{c}}{1+t_{c}}\frac{\alpha \left(
+(1+t_{c})p_{e}\right) ^{-(\sigma -1)}}{\alpha \left( (1+t_{c})p_{e}\right)
+^{-(\sigma -1)}+1-\alpha }Y.
+\end{equation*}
+
+\subsubsection{Income}
+
+So far we have simply taken a country's GDP $Y$ (and $Y^{\ast }$ in $%
+\mathcal{F}$) as given. Adding together labor income, rents on the $E$
+factor, and tax revenue from the two carbon taxes, income in $\mathcal{H}$
+is:%
+\begin{equation*}
+Y=wL+rE+T_{e}+T_{c}=L+\left( 1-\beta +t_{e}\right) R_{e}+t_{c}p_{e}C_{e}.
+\end{equation*}
+
+Certain shares of GDP prove useful in simplifying and calibrating the model.
+We denote after-tax spending on energy consumption as a share of GDP by:%
+\begin{equation*}
+\pi _{c}=\frac{\left( 1+t_{c}\right) p_{e}C_{e}}{Y}.
+\end{equation*}%
+Similarly, we denote pre-tax revenue of the energy extraction sector as a
+share of GDP is:%
+\begin{equation*}
+\pi _{e}=\frac{p_{e}Q_{e}}{Y}.
+\end{equation*}%
+Returns to the $L$ factor as a share of GDP are:%
+\begin{equation*}
+\pi _{L}=\frac{wL}{Y}=\frac{L}{Y}.
+\end{equation*}
+
+These shares are connected in several ways. First, to satisfy our assumption
+that both countries produce the $l$-good we need $L_{e}<L$, hence:%
+\begin{equation*}
+\frac{\beta }{1+t_{e}}\pi _{e}<\pi _{L}.
+\end{equation*}%
+Second, for the income identity we need:%
+\begin{equation*}
+1-\pi _{L}-\frac{1-\beta }{1+t_{e}}\pi _{e}=\frac{t_{e}}{1+t_{e}}\pi _{e}+%
+\frac{t_{c}}{1+t_{c}}\pi _{c},
+\end{equation*}%
+hence:%
+\begin{equation*}
+1-\pi _{L}=\frac{1-\beta +t_{e}}{1+t_{e}}\pi _{e}+\frac{t_{c}}{1+t_{c}}\pi
+_{c}
+\end{equation*}%
+The analogs of these two expressions must also hold in $\mathcal{F}$.
+
+\subsubsection{Equilibrium with Taxes}
+
+We can calculate the competitive equilibrium with taxes by finding the world
+energy price $p_{e}$ that clears the energy market. By Walras law the $l$%
+-good market will also clear. Equivalently, we can find the price that
+equate pre-tax consumption spending with pre-tax revenue of the energy
+sector:%
+\begin{equation}
+p_{e}\left( Q_{e}+Q_{e}^{\ast }\right) =p_{e}\left( C_{e}+C_{e}^{\ast
+}\right) .  \label{market clearing}
+\end{equation}%
+Using our share expressions, market clearing becomes:%
+\begin{equation*}
+\pi _{e}Y+\pi _{e}^{\ast }Y^{\ast }=\frac{\pi _{c}Y}{1+t_{c}}+\frac{\pi
+_{c}^{\ast }Y^{\ast }}{1+t_{c}^{\ast }}.
+\end{equation*}%
+Thus, at the equilibrium price we have an additional restriction on these
+shares:%
+\begin{equation*}
+\pi _{c}^{\ast }=\left( \frac{1+t_{c}^{\ast }}{Y^{\ast }}\right) \left( \pi
+_{e}Y+\pi _{e}^{\ast }Y^{\ast }-\frac{\pi _{c}Y}{1+t_{c}}\right) .
+\end{equation*}
+
+In general a solution needs to be computed numerically. But before setting
+aside the analytics, we can show some results about taxation and can solve
+the model in special cases.
+
+\subsubsection{Tax Equivalence Results}
+
+We consider two results.
+
+\paragraph{Uniform Taxes with Identical Preferences}
+
+First we show that if demand parameters are identical across countries the
+effect on global emissions of a uniform carbon tax is the same whether it is
+applied to extraction or consumption. There is an income effect, however,
+which is why we need to impose identical demand parameters. If the tax is
+applied to consumption it leaves the country that is a net importer of the $%
+e $-good with higher income, while if applied to extraction it leaves that
+country with lower income.
+
+To demonstrate this result, start with a uniform consumption tax $t_{c}$ on
+the $e$-good and no extraction tax. Imposing $\alpha =\alpha ^{\ast }$ and $%
+\sigma =\sigma ^{\ast }$, the global equilibrium conditions can be written
+as:%
+\begin{equation*}
+\frac{\alpha }{1+t_{c}}\frac{\left( (1+t_{c})p_{e}\right) ^{-(\sigma -1)}}{%
+\alpha \left( (1+t_{c})p_{e}\right) ^{-(\sigma -1)}+(1-\alpha )}%
+Y^{W}=p_{e}^{1/(1-\beta )}E+p_{e}^{1/(1-\beta ^{\ast })}E^{\ast },
+\end{equation*}%
+where world income can be expressed as:%
+\begin{eqnarray*}
+Y^{W} &=&L^{W}+\left( 1-\beta \right) p_{e}^{1/(1-\beta )}E+\left( 1-\beta
+^{\ast }\right) p_{e}^{1/(1-\beta ^{\ast })}E^{\ast }+tp_{e}C_{e}^{W} \\
+&=&L^{W}+\left( 1-\beta +t_{c}\right) p_{e}^{1/(1-\beta )}E+\left( 1-\beta
+^{\ast }+t_{c}\right) p_{e}^{1/(1-\beta ^{\ast })}E^{\ast }
+\end{eqnarray*}
+
+Let's conjecture that the equilibrium price with an extraction tax is $\bar{p%
+}_{e}=(1+t_{c})p_{e}$. Substituting this new price into the conditions
+above, we get:%
+\begin{equation*}
+\frac{\alpha }{1+t_{c}}\frac{\bar{p}_{e}^{-(\sigma -1)}}{\alpha \bar{p}%
+_{e}^{-(\sigma -1)}+(1-\alpha )}Y^{W}=\left( \frac{\bar{p}_{e}}{1+t_{c}}%
+\right) ^{1/(1-\beta )}E+\left( \frac{\bar{p}_{e}}{1+t_{c}}\right)
+^{1/(1-\beta ^{\ast })}E^{\ast },
+\end{equation*}%
+with%
+\begin{equation*}
+Y^{W}=L^{W}+\left( 1-\beta +t_{c}\right) \left( \frac{\bar{p}_{e}}{1+t_{c}}%
+\right) ^{1/(1-\beta )}E+\left( 1-\beta ^{\ast }+t_{c}\right) \left( \frac{%
+\bar{p}_{e}}{1+t_{c}}\right) ^{1/(1-\beta ^{\ast })}E^{\ast },
+\end{equation*}%
+exactly the global equilibrium conditions for a uniform extraction tax $%
+t_{e}=t_{c}$ on extraction of the $e$-good and no consumption tax.
+
+While the equilibrium price is higher with the extraction tax, global energy
+supply is the same in either case:%
+\begin{eqnarray*}
+Q_{e}^{W} &=&p_{e}^{\beta /(1-\beta )}E+\left( 1-\beta ^{\ast }\right)
+p_{e}^{\beta ^{\ast }/(1-\beta ^{\ast })}E^{\ast } \\
+&=&\left( \frac{\bar{p}_{e}}{1+t_{c}}\right) ^{\beta /(1-\beta )}E+\left( 
+\frac{\bar{p}_{e}}{1+t_{c}}\right) ^{\beta ^{\ast }/(1-\beta ^{\ast
+})}E^{\ast }.
+\end{eqnarray*}%
+The two policies achieve the same goal in reducing global emissions, but
+they do not lead to the same global distribution of income. In the case of a
+uniform consumption tax, income in $\mathcal{H}$ is:%
+\begin{eqnarray*}
+Y &=&L+\left( 1-\beta \right) p_{e}^{1/(1-\beta )}E+tp_{e}C_{e} \\
+&=&L+\left( 1-\beta +t_{c}\right) p_{e}^{1/(1-\beta )}E+t_{c}\left(
+p_{e}C_{e}-p_{e}Q_{e}\right) .
+\end{eqnarray*}%
+In the case of a uniform extraction tax, it is:%
+\begin{equation*}
+Y=L+\left( 1-\beta +t_{c}\right) \left( \frac{\bar{p}_{e}}{1+t_{c}}\right)
+^{1/(1-\beta )}E.
+\end{equation*}%
+Thus, if $\mathcal{H}$ is a net importer of the $e$-good, it will have
+higher income under a uniform consumption tax. Since a consumer's after-tax
+price of energy is the same in either case, welfare is higher in $\mathcal{H}
+$ under a consumption tax if it is a net importer of the $e$-good.
+
+\paragraph{Home Taxes and Border Adjustments}
+
+Now consider the same comparison, but with a tax only in $\mathcal{H}$. We
+can drop the restriction of identical preferences, since all the action is
+now in $\mathcal{H}$. First, consider a tax $t_{c}$ on consumption of the $e$%
+-good. At an equilibrium price $p_{e}$, the quantity of energy extracted in $%
+\mathcal{H}$ is:%
+\begin{equation*}
+Q_{e}=p_{e}^{\beta /(1-\beta )}E
+\end{equation*}%
+and consumption spending is:%
+\begin{equation*}
+p_{e}C_{e}=\frac{1}{1+t_{c}}\frac{\left( (1+t_{c})p_{e}\right) ^{-(\sigma
+-1)}}{\left( (1+t_{c})p_{e}\right) ^{-(\sigma -1)}+(1-\alpha )/\alpha }Y,
+\end{equation*}%
+where%
+\begin{equation*}
+Y=L+\left( 1-\beta \right) p_{e}^{1/(1-\beta )}E+\frac{t_{c}}{1+t_{c}}\frac{%
+\left( (1+t_{c})p_{e}\right) ^{-(\sigma -1)}}{\left( (1+t_{c})p_{e}\right)
+^{-(\sigma -1)}+(1-\alpha )/\alpha }Y.
+\end{equation*}%
+Extraction in $\mathcal{F}$ is:%
+\begin{equation*}
+Q_{e}^{\ast }=p_{e}^{\beta ^{\ast }/(1-\beta ^{\ast })}E^{\ast }
+\end{equation*}%
+and consumption spending in $\mathcal{F}$ is:%
+\begin{equation*}
+p_{e}C_{e}^{\ast }=\frac{p_{e}^{-(\sigma ^{\ast }-1)}}{p_{e}^{-(\sigma
+^{\ast }-1)}+(1-\alpha ^{\ast })/\alpha ^{\ast }}Y^{\ast },
+\end{equation*}%
+where%
+\begin{equation*}
+Y^{\ast }=L^{\ast }+\left( 1-\beta ^{\ast }\right) p_{e}^{1/(1-\beta ^{\ast
+})}.
+\end{equation*}%
+Let's try to reinterpret these conditions as an extraction tax $t_{e}=t_{c}$
+with border tax adjustments (and no consumption tax). Letting $\bar{p}%
+_{e}=(1+t_{c})p_{e}$ be the equilibrium price in $\mathcal{H}$ under the
+extraction tax interpretation, we have:%
+\begin{equation*}
+Q_{e}=\left( \frac{\bar{p}_{e}}{1+t_{c}}\right) ^{\beta /(1-\beta )}E
+\end{equation*}%
+and%
+\begin{equation*}
+\bar{p}_{e}C_{e}=\alpha \frac{\bar{p}_{e}^{-(\sigma -1)}}{\alpha \bar{p}%
+_{e}^{-(\sigma -1)}+(1-\alpha )}Y,
+\end{equation*}%
+where%
+\begin{eqnarray*}
+Y &=&L+\left( 1-\beta \right) \left( \frac{\bar{p}_{e}}{1+t_{c}}\right)
+^{1/(1-\beta )}E+\frac{t_{c}}{1+t_{c}}\alpha \frac{\bar{p}_{e}^{-(\sigma -1)}%
+}{\alpha \bar{p}_{e}^{-(\sigma -1)}+(1-\alpha )}Y \\
+&=&L+\left( 1-\beta +t_{c}\right) \left( \frac{\bar{p}_{e}}{1+t_{c}}\right)
+^{1/(1-\beta )}E+\frac{t_{c}}{1+t_{c}}\left( \bar{p}_{e}C_{e}-\bar{p}%
+_{e}Q_{e}\right) \\
+&=&L+\left( 1-\beta +t_{c}\right) \left( \frac{\bar{p}_{e}}{1+t_{c}}\right)
+^{1/(1-\beta )}E+t_{c}\left( p_{e}C_{e}-p_{e}Q_{e}\right) .
+\end{eqnarray*}%
+The last term of the last expression shows the revenue (or cost) of the
+border tax adjustment, at rate $t$. Thus, the border tax adjustment is
+either a tariff on $\mathcal{H}$'s net imports of the $e$-good or a tax
+rebate on $\mathcal{H}$'s net exports of the $e$-good. The border taxes are
+collected on net imports or paid on net exports of the $e$-good valued at
+the original equilibrium price $p_{e}$. The price of the $e$-good in $%
+\mathcal{F}$ is $p_{e}=\bar{p}_{e}/(1+t)$, which is lower than the price in $%
+\mathcal{H}$ due to the border tax adjustment. It is the price $\mathcal{F}$
+would face if $\mathcal{H}$ had imposed a consumption tax.
+
+\subsubsection{Special Cases}
+
+To get analytical tractability, we consider the case of common parameters
+and unit elastic demand, as in Elliott et. al. (2010). Suppose $\beta =\beta
+^{\ast }$, $\sigma =\sigma ^{\ast }=1$, $\alpha =\alpha ^{\ast }$, $%
+t_{e}=t_{e}^{\ast }\geq 0$, and $t_{c}=t_{c}^{\ast }=0$. The right-hand side
+of (\ref{market clearing}) becomes:%
+\begin{equation*}
+p_{e}Q_{e}^{W}=\left( 1+t_{e}\right) ^{-\beta /(1-\beta )}p_{e}^{1/(1-\beta
+)}E^{W}.
+\end{equation*}%
+The left-hand side is:%
+\begin{equation*}
+p_{e}C_{e}^{W}=\frac{\alpha }{1+t_{c}-\alpha t_{c}}\left( L^{W}+\left(
+1-\beta +t_{e}\right) \left( \frac{p_{e}}{1+t_{e}}\right) ^{1/(1-\beta
+)}E^{W}\right) .
+\end{equation*}%
+Equating the two, we obtain the equilibrium price:%
+\begin{equation*}
+\frac{p_{e}}{1+t_{e}}=\left( \frac{\alpha }{\left( 1+t_{e}\right) \left(
+1+t_{c}\right) \left( 1-\alpha \right) +\alpha \beta }\frac{L^{W}}{E^{W}}%
+\right) ^{1-\beta }.
+\end{equation*}%
+Thus, world energy supply is:%
+\begin{equation*}
+Q_{e}^{W}=\left( \frac{\alpha }{\left( 1+t_{e}\right) \left( 1+t_{c}\right)
+\left( 1-\alpha \right) +\alpha \beta }\right) ^{\beta }\left( L^{W}\right)
+^{\beta }\left( E^{W}\right) ^{1-\beta }.
+\end{equation*}%
+In the case of $t_{c}=0$, we match the result in Elliott et. al. (2010). We
+can also verify in this setting that a consumption tax can acheive the same
+outcome as a extraction tax at the same ad valorem rate. In general the two
+taxes augment each other to lower world energy supply.
+
+\subsection{Solving the Model}
+
+To solve the model in a realistic setting, we calibrate it to aggregate
+income $Y$ (and $Y^{\ast }$ in $\mathcal{F}$) together with the shares (in
+GDP) of energy extraction and consumption, $\pi _{e}$ and $\pi _{c}$ (and $%
+\pi _{e}^{\ast }$ and $\pi _{c}^{\ast }$ in $\mathcal{F}$). By calibrating
+to these values, we will not need to know $\alpha $, $L$, or $E$ (nor their
+analogs in $\mathcal{F}$).
+
+We then consider how the equilibrium values of endogenous variables change
+with respect to a change in carbon taxes. All such changes are denoted with
+a \textquotedblleft hat\textquotedblright , indicating the proportional
+change from the baseline (e.g. for a variable whose baseline value is $x$,
+if its value becomes $x^{\prime }$ when carbon taxes are changed, then we
+denote $\hat{x}=x^{\prime }/x$).
+
+\subsubsection{Equilibrium Energy Price Change}
+
+First consider total pre-tax revenue in $\mathcal{H}$'s energy sector after
+a change in taxes:%
+\begin{eqnarray*}
+\pi _{e}^{\prime }Y^{\prime } &=&p_{e}^{\prime }Q_{e}^{\prime }=\left(
+1+t_{e}^{\prime }\right) ^{-\beta /(1-\beta )}p_{e}^{\prime 1/(1-\beta )}E \\
+&=&\pi _{e}Y\left( \frac{1+t_{e}^{\prime }}{1+t_{e}}\right) ^{-\beta
+/(1-\beta )}\hat{p}_{e}^{1/(1-\beta )}.
+\end{eqnarray*}%
+It follows that the change in pre-tax energy revenue is:%
+\begin{equation}
+\hat{\pi}_{e}\hat{Y}=\left( \frac{1+t_{e}^{\prime }}{1+t_{e}}\right)
+^{-\beta /(1-\beta )}\hat{p}_{e}^{1/(1-\beta )}.  \label{pi_y_hat}
+\end{equation}%
+(The same equation works for $\mathcal{F}$, with *'s in the appropriate
+places.)
+
+The change in the share of after-tax consumption spending on the $e$-good is:%
+\begin{equation}
+\hat{\pi}_{c}=\frac{\left( \frac{1+t_{c}^{\prime }}{1+t_{c}}\right)
+^{-(\sigma -1)}\hat{p}_{e}^{-(\sigma -1)}}{\pi _{c}\left( \frac{%
+1+t_{c}^{\prime }}{1+t_{c}}\right) ^{-(\sigma -1)}\hat{p}_{e}^{-(\sigma
+-1)}+1-\pi _{c}}.  \label{pi_c_hat}
+\end{equation}%
+(Again, there is an analogous equation for $\mathcal{F}$.)
+
+After a change in taxes, income is:%
+\begin{eqnarray*}
+Y^{\prime } &=&L+\left( 1-\beta \right) R_{e}^{\prime }+t_{e}^{\prime
+}R_{e}^{\prime }+t_{c}^{\prime }p_{e}^{\prime }C_{e}^{\prime } \\
+&=&L+\frac{1-\beta }{1+t_{e}^{\prime }}\pi _{e}^{\prime }Y^{\prime }+\frac{%
+t_{e}^{\prime }}{1+t_{e}^{\prime }}\pi _{e}^{\prime }Y^{\prime }+\frac{%
+t_{c}^{\prime }}{1+t_{c}^{\prime }}\pi _{c}^{\prime }Y^{\prime }.
+\end{eqnarray*}%
+Thus:%
+\begin{equation}
+\hat{Y}=\pi _{L}+\frac{1-\beta +t_{e}^{\prime }}{1+t_{e}^{\prime }}\pi _{e}%
+\hat{\pi}_{e}\hat{Y}+\frac{t_{c}^{\prime }}{1+t_{c}^{\prime }}\pi _{c}\hat{%
+\pi}_{c}\hat{Y},  \label{Y_hat2}
+\end{equation}%
+(Again, there is an analogous equation for the change in income in $\mathcal{%
+F}$.)
+
+Finally, the goods market clearing condition is:%
+\begin{equation*}
+p_{e}^{\prime }Q_{e}^{\prime }+p_{e}^{\prime }Q_{e}^{\ast \prime
+}=p_{e}^{\prime }C_{e}^{\prime }+p_{e}^{\prime }C_{e}^{\ast \prime },
+\end{equation*}%
+or%
+\begin{equation}
+\pi _{e}Y\hat{\pi}_{e}\hat{Y}+\pi _{e}^{\ast }Y^{\ast }\hat{\pi}_{e}^{\ast }%
+\hat{Y}^{\ast }=\frac{\pi _{c}Y\hat{\pi}_{c}\hat{Y}}{1+t_{c}^{\prime }}+%
+\frac{\pi _{c}^{\ast }Y^{\ast }\hat{\pi}_{c}^{\ast }\hat{Y}^{\ast }}{%
+1+t_{c}^{\ast \prime }}  \label{market clearing hat}
+\end{equation}%
+(This equation applies for the world, so there is no analog in $\mathcal{F}$%
+.)
+
+Given initial and final levels of carbon taxes in $\mathcal{H}$ ($t_{c}$, $%
+t_{c}^{\prime }$, $t_{e}$, $t_{e}^{\prime }$) and $\mathcal{F}$, we can
+solve the system (including the analogs in $\mathcal{F}$) consisting of (\ref%
+{pi_y_hat}), (\ref{pi_c_hat}), (\ref{Y_hat2}), and (\ref{market clearing hat}%
+) for $\hat{\pi}_{e}$, $\hat{\pi}_{e}^{\ast }$, $\hat{\pi}_{c}$, $\hat{\pi}%
+_{c}^{\ast }$, $\hat{Y}$, $\hat{Y}^{\ast }$, and the change in the
+equilibrium world price of energy $\hat{p}_{e}$. We need only the baseline
+data on $Y$, $\pi _{c}$, $\pi _{L}$, and $\pi _{e}$ (along with $Y^{\ast }$, 
+$\pi _{c}^{\ast }$, $\pi _{L}^{\ast }$, and $\pi _{e}^{\ast }$ in $\mathcal{F%
+}$) together with parameters $\beta $ and $\sigma $ ($\beta ^{\ast }$ and $%
+\sigma ^{\ast }$ in $\mathcal{F}$).
+
+\subsubsection{Carbon Leakage}
+
+Having determined the equilibrium change in the world energy price, we can
+calculate the change in world energy production. For cases in which only $%
+\mathcal{H}$ imposes a tax, we can compute several forms of carbon leakage.
+For an increase in $\mathcal{H}$'s extraction tax, extraction leakage is the
+increase in $\mathcal{F}$'s extraction of energy as a share of $\mathcal{H}$%
+'s reduction in extraction of energy:%
+\begin{equation*}
+l_{Q}=\frac{\left( Q_{e}^{\ast \prime }-Q_{e}^{\ast }\right) }{\left(
+Q_{e}-Q_{e}^{\prime }\right) }=\left( \frac{\hat{Q}_{e}^{\ast }-1}{1-\hat{Q}%
+_{e}}\right) \frac{\pi _{e}^{\ast }Y^{\ast }}{\pi _{e}Y},
+\end{equation*}%
+where%
+\begin{equation*}
+\hat{Q}_{e}=\frac{\hat{\pi}_{e}\hat{Y}}{\hat{p}_{e}},
+\end{equation*}%
+and 
+\begin{equation*}
+\hat{Q}_{e}^{\ast }=\frac{\hat{\pi}_{e}^{\ast }\hat{Y}^{\ast }}{\hat{p}_{e}}.
+\end{equation*}%
+For an increase in $\mathcal{H}$'s consumption tax, consumption leakage is
+the increase in $\mathcal{F}$'s energy consumption as a share of $\mathcal{H}
+$'s reduction in energy consumption:%
+\begin{equation*}
+l_{C}=\frac{\left( C_{e}^{\ast \prime }-C_{e}^{\ast }\right) }{\left(
+C_{e}-C_{e}^{\prime }\right) }=\left( \frac{\hat{C}_{e}^{\ast }-1}{1-\hat{C}%
+_{e}}\right) \frac{\pi _{c}^{\ast }Y^{\ast }/(1+t_{c}^{\ast })}{\pi
+_{c}Y/(1+t_{c})},
+\end{equation*}%
+where%
+\begin{equation*}
+\hat{C}_{e}=\frac{\hat{\pi}_{c}\hat{Y}}{\hat{p}_{e}\frac{1+t_{c}^{\prime }}{%
+1+t_{c}}},
+\end{equation*}%
+and 
+\begin{equation*}
+\hat{C}_{e}^{\ast }=\frac{\hat{\pi}_{c}^{\ast }\hat{Y}^{\ast }}{\hat{p}_{e}%
+\frac{1+t_{c}^{\ast \prime }}{1+t_{c}^{\ast }}}.
+\end{equation*}
+
+\subsection{Tax Policy to Achieve a Global Emission Goal}
+
+We want to compare tax policies in $\mathcal{H}$ that achieve a set goal of
+emission reduction for the world. To keep this exercise as simple as
+possible, we will assume that $\sigma =\sigma ^{\ast }$, $\beta =\beta
+^{\ast }$, and $t_{e}=t_{c}=0$ (i.e. we'll start from a world without taxes).
+
+\subsubsection{Supply Side}
+
+Let $\hat{Q}_{e}^{W}=G<1$ be the goal set for reducing world emissions.
+Looking at energy extraction, for any $t_{e}^{\prime }\geq 0$, the change in
+energy price that would achieve that goal satisfies:%
+\begin{eqnarray*}
+G &=&\frac{Q_{e}\hat{Q}_{e}+Q_{e}^{\ast }\hat{Q}_{e}^{\ast }}{Q_{e}^{W}} \\
+&=&\frac{Q_{e}\left( 1+t_{e}^{\prime }\right) ^{-\beta /(1-\beta )}\hat{p}%
+_{e}^{\beta /(1-\beta )}+Q_{e}^{\ast }\hat{p}_{e}^{\beta /(1-\beta )}}{%
+Q_{e}^{W}} \\
+&=&\omega _{e}\left( 1+t_{e}^{\prime }\right) ^{-\beta /(1-\beta )}\hat{p}%
+_{e}^{\beta /(1-\beta )}+\left( 1-\omega _{e}\right) \hat{p}_{e}^{\beta
+/(1-\beta )},
+\end{eqnarray*}%
+where%
+\begin{equation*}
+\omega _{e}=\frac{\pi _{e}Y}{\pi _{e}Y+\pi _{e}^{\ast }Y^{\ast }}=\frac{%
+p_{e}Q_{e}}{p_{e}Q_{e}^{W}}
+\end{equation*}%
+is $\mathcal{H}$'s share of world energy extraction. Given $G$ (which will
+be held fixed in this problem), we can express the required change in the
+energy price, as dictated by the supply side $\hat{p}_{e}^{S}$, as a
+function of the extraction tax:%
+\begin{equation}
+\hat{p}_{e}^{S}(t_{e}^{\prime })=\left( \frac{G}{\omega _{e}\left(
+1+t_{e}^{\prime }\right) ^{-\beta /(1-\beta )}+\left( 1-\omega _{e}\right) }%
+\right) ^{\left( 1-\beta \right) /\beta }.  \label{energy price change}
+\end{equation}
+
+Note that the required change in energy prices moves in the same direction
+as $G$. Given the tax rate on extraction, a more ambitious goal for reducing
+emissions (a smaller $G$) requires that producers face a steeper decline in
+the energy price. Our focus is on how the extraction tax alters incentives
+for producing energy. We see from (\ref{energy price change}) that, given $G$%
+, a higher extraction tax in $\mathcal{H}$ means energy prices fall by less,
+or even rise. As the tax rate rises from $0$ to $\infty $, the energy price
+change increases from $\hat{p}_{e}^{S}(0)=G^{(1-\beta )/\beta }$ to $\hat{p}%
+_{e}^{S}(\infty )=\left( 1-\omega _{e}\right) ^{-(1-\beta )/\beta }\hat{p}%
+_{e}^{S}(0)$. The extent of this rise is governed by the fraction of world
+energy extraction $\omega _{e}$ initially taking place in $\mathcal{H}$, as
+that determines the size of the tax base.
+
+\subsubsection{Demand Side}
+
+Turning to the consumption side, we want to calculate the change in the
+energy price that, along with a tax on energy consumption $t_{c}^{\prime }$
+(in $\mathcal{H}$), reduces world consumption by the factor $G$. The decline
+in global consumption can be expressed as:%
+\begin{equation*}
+G=\hat{C}_{e}^{W}=\frac{C_{e}\hat{C}_{e}+C_{e}^{\ast }\hat{C}_{e}^{\ast }}{%
+C_{e}^{W}}=\omega _{c}\hat{C}_{e}+\left( 1-\omega _{c}\right) \hat{C}%
+_{e}^{\ast },
+\end{equation*}%
+where%
+\begin{equation*}
+\omega _{c}=\frac{\pi _{c}Y}{\pi _{c}Y+\pi _{c}^{\ast }Y^{\ast }}=\frac{%
+p_{e}C_{e}}{p_{e}C_{e}^{W}}.
+\end{equation*}%
+We can write:%
+\begin{equation}
+\hat{C}_{e}^{W}(t_{c}^{\prime },t_{e}^{\prime },\hat{p}_{e})=\omega _{c}%
+\frac{\hat{\pi}_{c}(t_{c}^{\prime },\hat{p}_{e})}{\left( 1+t_{c}^{\prime
+}\right) \hat{p}_{e}}\hat{Y}(t_{c}^{\prime },t_{e}^{\prime },\hat{p}%
+_{e})+\left( 1-\omega _{c}\right) \frac{\hat{\pi}_{c}^{\ast }(\hat{p}_{e})}{%
+\hat{p}_{e}}\hat{Y}^{\ast }(\hat{p}_{e}),  \label{demand side}
+\end{equation}%
+where $\hat{\pi}_{c}$ is given by (\ref{pi_c_hat}) with $t_{c}=0$:%
+\begin{equation*}
+\hat{\pi}_{c}(t_{c}^{\prime },\hat{p}_{e})=\frac{\left( 1+t_{c}^{\prime
+}\right) ^{-(\sigma -1)}\hat{p}_{e}^{-(\sigma -1)}}{\pi _{c}\left(
+1+t_{c}^{\prime }\right) ^{-(\sigma -1)}\hat{p}_{e}^{-(\sigma -1)}+1-\pi _{c}%
+}
+\end{equation*}%
+and%
+\begin{equation*}
+\hat{\pi}_{c}^{\ast }(\hat{p}_{e})=\frac{\hat{p}_{e}^{-(\sigma -1)}}{\pi
+_{c}^{\ast }\hat{p}_{e}^{-(\sigma -1)}+1-\pi _{c}^{\ast }}.
+\end{equation*}%
+We now turn to the terms for the change in income.
+
+Adjusting to lower global emissions generates income changes in both
+countries. Changes in the energy price affect revenue in the energy sector.
+Furthermore, in $\mathcal{H}$ there is income generated by tax revenue. From
+(\ref{Y_hat2}) and (\ref{pi_y_hat}), the change in $\mathcal{H}$'s income is:%
+\begin{equation*}
+\hat{Y}=\pi _{L}+\frac{1-\beta +t_{e}^{\prime }}{1+t_{e}^{\prime }}\pi
+_{e}\left( 1+t_{e}^{\prime }\right) ^{-\beta /(1-\beta )}\hat{p}%
+_{e}^{1/(1-\beta )}+\frac{t_{c}^{\prime }}{1+t_{c}^{\prime }}\pi _{c}\hat{\pi%
+}_{c}\hat{Y},
+\end{equation*}%
+or%
+\begin{equation}
+\hat{Y}(t_{c}^{\prime },t_{e}^{\prime },\hat{p}_{e})=\frac{1+t_{c}^{\prime }%
+}{1+t_{c}^{\prime }-t_{c}^{\prime }\pi _{c}\hat{\pi}_{c}(t_{c}^{\prime },%
+\hat{p}_{e})}\left( \pi _{L}+\frac{1-\beta +t_{e}^{\prime }}{1+t_{e}^{\prime
+}}\pi _{e}\left( 1+t_{e}^{\prime }\right) ^{-\beta /(1-\beta )}\hat{p}%
+_{e}^{1/(1-\beta )}\right) .  \label{Yhat tax}
+\end{equation}%
+Since carbon taxes do not generate any revenue abroad, the change in $%
+\mathcal{F}$'s income is simply:%
+\begin{equation}
+\hat{Y}^{\ast }(\hat{p}_{e})=\pi _{L}^{\ast }+\left( 1-\beta \right) \pi
+_{e}^{\ast }\hat{p}_{e}^{1/(1-\beta )}.  \label{Ystarhat tax}
+\end{equation}
+
+\subsubsection{Welfare}
+
+Welfare in $\mathcal{H}$ is given by:%
+\begin{equation*}
+W=\frac{Y}{p},
+\end{equation*}%
+where we use equation (\ref{price index with tax}) for the aggregate price
+level, $p$. The change in welfare, when taxes are introduced, is:%
+\begin{equation*}
+\hat{W}=\frac{W^{\prime }}{W}=\frac{\hat{Y}}{\hat{p}}.
+\end{equation*}
+
+We already have an expression (\ref{Yhat tax}) for $\hat{Y}$, so we just
+need an expression for the change in the aggregate price level to evaluate
+welfare. From (\ref{price index with tax}), the change in the price level
+will be:%
+\begin{equation*}
+\hat{p}=\left( \frac{\alpha \left( (1+t_{c}^{\prime })p_{e}^{\prime }\right)
+^{-(\sigma -1)}+(1-\alpha )}{\alpha p_{e}^{-(\sigma -1)}+1-\alpha }\right)
+^{-1/(\sigma -1)},
+\end{equation*}%
+which simplifies to: 
+\begin{equation*}
+\hat{p}=\left( \pi _{c}\left( \left( 1+t_{c}^{\prime }\right) \hat{p}%
+_{e}\right) ^{-(\sigma -1)}+(1-\pi _{c})\right) ^{-1/(\sigma -1)}.
+\end{equation*}%
+Thus, the change in welfare is:%
+\begin{equation*}
+\hat{W}=\frac{\left( \frac{\pi _{c}\left( 1+t_{c}^{\prime }\right)
+^{-(\sigma -1)}\left( \hat{p}_{e}\right) ^{-(\sigma -1)}+1-\pi _{c}}{\pi
+_{c}\left( 1+t_{c}^{\prime }\right) ^{-\sigma }\left( \hat{p}_{e}\right)
+^{-(\sigma -1)}+1-\pi _{c}}\right) \left( \pi _{L}+\left( 1+t_{e}^{\prime
+}-\beta \right) \pi _{e}\left( 1+t_{e}^{\prime }\right) ^{-1/(1-\beta )}\hat{%
+p}_{e}^{1/(1-\beta )}\right) }{\left( \pi _{c}\left( \left( 1+t_{c}^{\prime
+}\right) \hat{p}_{e}\right) ^{-(\sigma -1)}+(1-\pi _{c})\right) ^{-1/(\sigma
+-1)}},
+\end{equation*}%
+or:%
+\begin{eqnarray}
+\hat{W}(t_{c}^{\prime },t_{e}^{\prime },\hat{p}_{e}) &=&\frac{\left( \pi
+_{c}\left( 1+t_{c}^{\prime }\right) ^{-(\sigma -1)}\hat{p}_{e}^{-(\sigma
+-1)}+(1-\pi _{c})\right) ^{\sigma /(\sigma -1)}}{\pi _{c}\left(
+1+t_{c}^{\prime }\right) ^{-\sigma }\hat{p}_{e}^{-(\sigma -1)}+1-\pi _{c}}%
+\times  \notag \\
+&&\left( \pi _{L}+\left( 1+t_{e}^{\prime }-\beta \right) \pi _{e}\left(
+1+t_{e}^{\prime }\right) ^{-1/(1-\beta )}\hat{p}_{e}^{1/(1-\beta )}\right) .
+\label{What simple}
+\end{eqnarray}%
+Given $\hat{p}_{e}$, it is easy to show that $\hat{W}$ is decreasing in both 
+$t_{c}^{\prime }$ and $t_{e}^{\prime }$.
+
+\subsubsection{Optimization}
+
+Since the goal $G$ for reduction in global emissions is fixed, we can
+substitute $\hat{p}_{e}=$ $\hat{p}_{e}^{S}(t_{e}^{\prime })$ from (\ref%
+{energy price change}) into (\ref{What simple}) to obtain an expression for
+the change in wefare that depends only on tax rates:%
+\begin{equation*}
+\hat{W}\left( t_{c}^{\prime },t_{e}^{\prime },\hat{p}_{e}^{S}(t_{e}^{\prime
+})\right) =f(t_{c}^{\prime },t_{e}^{\prime }).
+\end{equation*}%
+We want to choose tax rates that maximize this expression, subject to the
+constraint that world demand for energy also falls by the factor $G$. We can
+write this constraint as:%
+\begin{equation*}
+G=\hat{C}_{e}^{W}(t_{c}^{\prime },t_{e}^{\prime },\hat{p}_{e}^{S}(t_{e}^{%
+\prime }))=g(t_{c}^{\prime },t_{e}^{\prime }),
+\end{equation*}%
+where $\hat{C}_{e}^{W}(t_{c}^{\prime },t_{e}^{\prime },\hat{p}_{e})$ is
+given in (\ref{demand side}). The optimization problem reduces to maximizing
+the lagrangian:%
+\begin{equation*}
+\mathcal{L=}f(t_{c}^{\prime },t_{e}^{\prime })-\lambda \left[
+G-g(t_{c}^{\prime },t_{e}^{\prime })\right] ,
+\end{equation*}%
+where $\lambda $ is the lagrangian multiplier.
+
+\section{Model with a Manufacturing Sector}
+
+Up to this point we have modeled the extraction and consumption of
+carbon-based energy, but not its use in industry and its embodiment in
+tradable manufactured goods. With our Simple Model we could discuss
+extraction and consumption taxes, but not production taxes. To address this
+shortcoming, we now add a manufacturing sector to Simple Model, with two-way
+trade in differentiated manufactures.
+
+To keep the analysis as compact as possible, we assume the two countries $%
+\mathcal{H}$ and $\mathcal{F}$ differ only in their endowment of labor $L$
+vs. $L^{\ast }$, fossil fuel deposits $E$ vs. $E^{\ast }$, preference
+parameters $\alpha $ vs. $\alpha ^{\ast }$, and labor share in energy
+extraction $\beta $ vs. $\beta ^{\ast }$. The reason for maintaining
+heterogeneity in $\beta $ is to capture differences between a country like
+Saudi Arabia with energy that is cheap to extract (small $\beta $) and a
+country like Canada with energy that is costly to extract (large $\beta $).
+
+\subsection{Basic Setup}
+
+Manufactures come in a continuum of varieties, $j\in \lbrack 0,1]$. These
+varieties enter preferences through a symmetric aggregator, with constant
+elasticity of substitution $\rho $, to form the manufactured good, the $m$%
+-good. The $m$-good, in turn, enters preferences in Cobb-Douglas combination
+with the $e$-good (to form the composit $c$-good), with share $\eta $ on the 
+$m$-good. (Simple Model reemerges when $\eta =0$.) Preferences can thus be
+represented by the following utility funtction:%
+\begin{equation}
+U(C_{e},C_{l},C_{m})=\left( \alpha ^{1/\sigma }C_{c}^{(\sigma -1)/\sigma
+}+\left( 1-\alpha \right) ^{1/\sigma }C_{l}^{(\sigma -1)/\sigma }\right)
+^{\sigma /(\sigma -1)},  \label{Utility}
+\end{equation}%
+where consumption of the $c$-good is:%
+\begin{equation*}
+C_{c}=\left( \frac{C_{m}}{\eta }\right) ^{\eta }\left( \frac{C_{e}}{1-\eta }%
+\right) ^{1-\eta }
+\end{equation*}%
+and consumption of the $m$-good is:%
+\begin{equation*}
+C_{m}=\left( \int_{0}^{1}C_{m}(j)^{\left( \rho -1\right) /\rho }dj\right)
+^{\rho /\left( \rho -1\right) }.
+\end{equation*}%
+Other aspects of the model, such as the extraction of energy and the
+production of the $l$-good, are identical to Simple Model. For example, the
+aggregate price index can be taken from (\ref{aggregate price index}) with $%
+p_{c}$ in place of $p_{e}$:%
+\begin{equation}
+p=\left( \alpha p_{c}^{-(\sigma -1)}+(1-\alpha )p_{l}^{-(\sigma -1)}\right)
+^{-1/(\sigma -1)}.  \label{aggregate price index II}
+\end{equation}%
+The new features are in the modeling of production and trade in manufactures.
+
+\subsubsection{Trade in Manufactures}
+
+Our formulation of production and trade in manufactures is a version of the
+Ricardian model introduced by Dornbusch, Fisher, and Samuelson (1977).
+Individual varieties of the $m$-good are costlessly traded. The production
+function for manufacturing variety $j$ in $\mathcal{H}$ is:%
+\begin{equation*}
+Q_{m}(j)=A(j)\left( \frac{L_{m}(j)}{\gamma }\right) ^{\gamma }\left( \frac{%
+M_{e}(j)}{1-\gamma }\right) ^{1-\gamma },
+\end{equation*}%
+where $A(j)$ is $\mathcal{H}$'s productivity in variety $j$, $M_{e}$ is
+energy input, and $\gamma $ is labor's share. We imagine that many
+price-taking producers have access to the technology to produce each variety 
+$j$. In $\mathcal{F}$ the production function has the same form, with
+productivity $A^{\ast }(j)$.
+
+Labor is perfectly mobile, within each country, across all sectors and
+varieties. The labor constraint in $\mathcal{H}$ is:%
+\begin{equation*}
+L_{e}+L_{l}+\int_{0}^{1}L_{m}(j)dj=L.
+\end{equation*}%
+A similar condition holds in $\mathcal{F}$.
+
+We parameterize productivity for each variety as:%
+\begin{equation*}
+A(j)=\frac{A}{j^{1/\theta }}
+\end{equation*}%
+in $\mathcal{H}$ and:%
+\begin{equation*}
+A^{\ast }(j)=\frac{A^{\ast }}{\left( 1-j\right) ^{1/\theta }}
+\end{equation*}%
+in $\mathcal{F}$. Here, the parameters $A$ and $A^{\ast }$ capture absolute
+advantage in $\mathcal{H}$ and $\mathcal{F}$. Looking at the relative
+productivity of the two countries in producing variety $j$:%
+\begin{equation}
+R(j)=\frac{A(j)}{A^{\ast }(j)}=\frac{A}{A^{\ast }}\left( \frac{j}{1-j}%
+\right) ^{-1/\theta }.  \label{relative productivity}
+\end{equation}%
+For $j<j^{\prime }$, $\mathcal{H}$ has a comparative advantage in variety $j$
+and $\mathcal{F}$ in $j^{\prime }$. The parameter $\theta $ captures
+(inversely) the strength of comparative advantage. As $\theta \rightarrow
+\infty $ relative productivity does not vary across varieties. As will
+become apparent below, we need to restrict $\theta >\rho -1$.
+
+\paragraph{Specialization in Manufactures}
+
+Since there are no trade costs, specialization in production of manufactures
+is detached from country-level demand. We can therefore determine which
+country produces which variety without solving the entire model.
+
+Due to trade in energy, prices $p_{e}$ are the same in each country. A
+bundle of inputs costs $w^{\gamma }p_{e}^{1-\gamma }$ in $\mathcal{H}$ and $%
+w^{\ast \gamma }p_{e}^{1-\gamma }$ in $\mathcal{F}$. Hence $\mathcal{H}$
+will produce varieties $j$ for which $R(j)\geq \left( w/w^{\ast }\right)
+^{\gamma }$ and $\mathcal{F}$ will produce the rest. In other words, $%
+\mathcal{H}$ produces all varieties in the interval $[0,\bar{j}]$ and $%
+\mathcal{F}$ in the interval $(\bar{j},1]$ where:%
+\begin{equation}
+\bar{j}=\frac{A^{\theta }w^{-\gamma \theta }}{A^{\theta }w^{-\gamma \theta
+}+A^{\ast \theta }w^{\ast -\gamma \theta }}.  \label{jbar}
+\end{equation}%
+(Whether $\mathcal{H}$ or $\mathcal{F}$ produces variety $\bar{j}$ doesn't
+matter since it is only one point on a continuum.)
+
+Given specialization, we can solve for the competitive price of each
+manufactured variety. For $j\leq \bar{j}$, the variety is produced in $%
+\mathcal{H}$, so that:%
+\begin{equation}
+p_{m}(j)=\frac{w^{\gamma }p_{e}^{1-\gamma }}{A(j)},  \label{pm(j)}
+\end{equation}%
+while for $j>\bar{j}$, the variety is produced in $\mathcal{F}$, with:%
+\begin{equation*}
+p_{m}(j)=\frac{w^{\ast \gamma }p_{e}^{1-\gamma }}{A^{\ast }(j)}.
+\end{equation*}%
+With no trade cost we have the law of one price; these variety-level prices
+apply for consumers in either country.
+
+\paragraph{Price Index for Manufactues}
+
+The price index for the $m$-good is:%
+\begin{eqnarray}
+p_{m} &=&\left( \int_{0}^{1}p_{m}(j)^{-\left( \rho -1\right) }dj\right)
+^{-1/\left( \rho -1\right) }  \notag \\
+&=&\left( \int_{0}^{\bar{j}}\left( w^{\gamma }p_{e}^{1-\gamma }/A(j)\right)
+^{-\left( \rho -1\right) }dj+\int_{\bar{j}}^{1}\left( w^{\ast \gamma
+}p_{e}^{1-\gamma }/A^{\ast }(j)\right) ^{-\left( \rho -1\right) }dj\right)
+^{-1/\left( \rho -1\right) }.  \label{manufacturing price index definition}
+\end{eqnarray}%
+To solve this integral and to understand the properties of this price index,
+consider varieties produced in $\mathcal{H}$. The lowest price of any
+variety produced in $\mathcal{H}$ approaches $0$ and the highest price is
+given by (\ref{pm(j)}) evaluated at $j=\bar{j}$:%
+\begin{equation}
+\bar{p}=p_{m}(\bar{j})=\frac{\bar{j}^{1/\theta }w^{\gamma }p_{e}^{1-\gamma }%
+}{A},  \label{pbar}
+\end{equation}%
+which can be inverted to get:%
+\begin{equation*}
+\bar{j}=\left( \frac{\bar{p}A}{w^{\gamma }p_{e}^{1-\gamma }}\right) ^{\theta
+}.
+\end{equation*}%
+If we change the variable of integration from $j$ to $p_{m}(j)$ in the
+expression for the average of $p_{m}(j)^{-(\rho -1)}$ across varieties
+produced in $\mathcal{H}$, we get a simple result:%
+\begin{eqnarray*}
+\frac{1}{\bar{j}}\int_{0}^{\bar{j}}p_{m}(j)^{-\left( \rho -1\right) }dj
+&=&\left( \frac{\bar{p}A}{w^{\gamma }p_{e}^{1-\gamma }}\right) ^{-\theta
+}\int_{0}^{\bar{p}}p^{-(\rho -1)}\theta \left( \frac{pA}{w^{\gamma
+}p_{e}^{1-\gamma }}\right) ^{\theta -1}\frac{A}{w^{\gamma }p_{e}^{1-\gamma }}%
+dp \\
+&=&\bar{p}^{-\theta }\int_{0}^{\bar{p}}\theta p^{\theta -\rho }dp=\frac{%
+\theta }{\theta -\left( \rho -1\right) }\bar{p}^{-\left( \rho -1\right) }.
+\end{eqnarray*}%
+Now consider varieties produced by $\mathcal{F}$. The prices of these goods
+also vary from $0$ to $\bar{p}$, where for $\mathcal{F}$ we can write:%
+\begin{equation*}
+1-\bar{j}=\left( \frac{\bar{p}A^{\ast }}{w^{\ast \gamma }p_{e}^{1-\gamma }}%
+\right) ^{\theta }.
+\end{equation*}%
+Thus, the average of $p_{m}(j)^{-(\rho -1)}$ across varieties produced in $%
+\mathcal{F}$ is:%
+\begin{eqnarray*}
+\frac{1}{1-\bar{j}}\int_{\bar{j}}^{1}p_{m}(j)^{-\left( \rho -1\right) }dj
+&=&\left( \frac{\bar{p}A^{\ast }}{w^{\ast \gamma }p_{e}^{1-\gamma }}\right)
+^{-\theta }\int_{0}^{\bar{p}}p^{-(\rho -1)}\theta \left( \frac{pA^{\ast }}{%
+w^{\ast \gamma }p_{e}^{1-\gamma }}\right) ^{\theta -1}\frac{A^{\ast }}{%
+w^{\ast \gamma }p_{e}^{1-\gamma }}dp \\
+&=&\frac{\theta }{\theta -\left( \rho -1\right) }\bar{p}^{-\left( \rho
+-1\right) },
+\end{eqnarray*}%
+exactly the same as for $\mathcal{H}$. Since these averages are the same,
+independent of where the varieties are produced, the overall price index (%
+\ref{manufacturing price index definition}) can be expressed as:%
+\begin{equation*}
+p_{m}=\phi \bar{p},
+\end{equation*}%
+where 
+\begin{equation*}
+\phi =\left( \frac{\theta }{\theta -\left( \rho -1\right) }\right)
+^{-1/(\rho -1)},
+\end{equation*}%
+is finite if $\theta >\rho -1$ as we have assumed.\footnote{%
+If preferences over varieties are Cobb Douglas ($\rho =1$) then $\phi
+=e^{-1/\theta }$. Our result, about a particular average of prices being
+independent of which country produces the good in equilibrium, is a special
+case of a more general result. It is easy to show that, whether produced in $%
+H$ or $F$, the fraction of varieties sold at a price $p_{m}(j)\leq p$, which
+we can treat as the price distribution, is $\left( p/\bar{p}\right) ^{\theta
+}$.} Substituting in for $\bar{p}$ from (\ref{pbar}) and applying (\ref{jbar}%
+), we get: 
+\begin{eqnarray*}
+p_{m} &=&\phi w^{\gamma }p_{e}^{1-\gamma }\frac{1}{A}\left( \frac{A^{\theta
+}w^{-\gamma \theta }}{A^{\theta }w^{-\gamma \theta }+A^{\ast \theta }w^{\ast
+-\gamma \theta }}\right) ^{1/\theta } \\
+&=&\phi p_{e}^{1-\gamma }\left( A^{\theta }w^{-\gamma \theta }+A^{\ast
+\theta }w^{\ast -\gamma \theta }\right) ^{-1/\theta }.
+\end{eqnarray*}
+
+Because the relevant average price is independent of where a variety is
+produced, $\bar{j}$ given in (\ref{jbar}) is also the share of world
+spending on the $m$-good devoted to producers in $\mathcal{H}$ and $1-\bar{j}
+$ the share devoted to producers in $\mathcal{F}$. Note that this share does
+not depend on on $\rho $.\footnote{%
+Other than determining the value of $\phi $, the value of the parameter $%
+\rho $ is irrelevant to all that follows.} The so-called trade elasticity,
+giving the response of trade shares to factor costs, is $\theta $.
+
+\subsubsection{Equilibrium}
+
+As in Simple Model, we take $\mathcal{F}$'s wage $w^{\ast }=1$ as the
+numeraire and consider only equilibria in which each country produces
+positive quantities of the $l$-good. In such equilibria we have $%
+p_{l}=w=w^{\ast }=1$. (Even though they equal $1$, we sometimes leave wages
+in the formulas that follow for clarity.) Returning to earlier formulas, we
+now have:%
+\begin{equation}
+\bar{j}=\frac{A^{\theta }}{A^{\theta }+A^{\ast \theta }}  \label{jbar no tax}
+\end{equation}%
+and%
+\begin{equation}
+p_{m}=\phi p_{e}^{1-\gamma }\left( A^{\theta }+A^{\ast \theta }\right)
+^{-1/\theta }.  \label{pm no tax}
+\end{equation}%
+Thus, solving for the competitive equilibrium in this model reduces to
+finding the price of energy $p_{e}$ together with the allocation of labor
+across the three sectors in each country. We assume trade balance.
+
+\paragraph{Income}
+
+Turning to the determination of income, we have labor income $wL$ and income
+from rents on energy resources:%
+\begin{equation*}
+rE=\left( 1-\beta \right) p_{e}Q_{e}=\left( 1-\beta \right)
+p_{e}^{1/(1-\beta )}E.
+\end{equation*}%
+Thus, aggregate income in $\mathcal{H}$ is:%
+\begin{equation}
+Y=wL+\left( 1-\beta \right) p_{e}^{1/(1-\beta )}E,  \label{Y no tax}
+\end{equation}%
+exactly as in Simple Model. The analog holds for $\mathcal{F}$:%
+\begin{equation}
+Y^{\ast }=wL^{\ast }+\left( 1-\beta ^{\ast }\right) p_{e}^{1/(1-\beta ^{\ast
+})}E^{\ast }.  \label{Y star no tax}
+\end{equation}%
+World income is the total payment to all primary factors $L$, $L^{\ast }$, $%
+E $, and $E^{\ast }$:%
+\begin{equation}
+Y^{W}=L^{W}+\left( 1-\beta \right) p_{e}^{1/(1-\beta )}E+\left( 1-\beta
+^{\ast }\right) p_{e}^{1/(1-\beta ^{\ast })}E^{\ast }.  \label{Y^W no tax}
+\end{equation}
+
+\paragraph{Demand}
+
+With trade balance each country's income is also its total spending
+(measured in terms of the numeraire, the $l$-good, whose price is $p_{l}=1$%
+). The $e$-good and $m$-good combine with a Cobb-Douglas aggregator into
+what we have called the composite or $c$-good. The price of the $c$-good is:%
+\begin{equation}
+p_{c}=p_{c}^{\ast }=p_{m}^{\eta }p_{e}^{1-\eta }=\phi ^{\eta }p_{e}^{1-\eta
+\gamma }\left( A^{\theta }+A^{\ast \theta }\right) ^{-\eta /\theta }.
+\label{p_c no prod or cons taxes}
+\end{equation}%
+We are back in the demand system of Simple Model but with $p_{c}$ replacing $%
+p_{e}$. In particular, defining:%
+\begin{equation}
+D(p)=\frac{\alpha p^{-\left( \sigma -1\right) }}{\alpha p^{-(\sigma
+-1)}+(1-\alpha )},  \label{c spending share}
+\end{equation}%
+spending by $\mathcal{H}$ on the $c$-good is:%
+\begin{equation*}
+p_{c}C_{c}=D(p_{c})Y.
+\end{equation*}%
+We thus know how consumers allocate spending across the $c$-good and the $l$%
+-good given prices. We also know that a fraction $\eta $ of spending on the $%
+c$-good is allocated to the $m$-good, with the rest spent on the $e$-good.
+In $\mathcal{F}$ we have:%
+\begin{equation*}
+D^{\ast }(p)=\frac{\alpha ^{\ast }p^{-\left( \sigma -1\right) }}{\alpha
+^{\ast }p^{-(\sigma -1)}+(1-\alpha ^{\ast })}
+\end{equation*}%
+and:%
+\begin{equation*}
+p_{c}C_{c}^{\ast }=D^{\ast }(p_{c})Y^{\ast }.
+\end{equation*}
+
+\paragraph{Equilibrium Energy Price}
+
+We now have all the ingredients to find the price of energy that equates
+world supply and demand. Rather than equating quantities of energy, we will
+equate the value of those quantities. World spending on energy consists of
+world spending on consumption of the $e$-good plus world spending on energy
+intermediates, which represent a fraction $1-\gamma $ of world spending on
+the $m$-good. We can therefore express total spending on energy in terms of
+spending on the composite good:%
+\begin{eqnarray*}
+p_{e}\left( C_{e}+C_{e}^{\ast }\right) +p_{e}\left( M_{e}+M_{e}^{\ast
+}\right) &=&\left( 1-\eta \gamma \right) p_{c}C_{c}+\left( 1-\eta \gamma
+\right) p_{c}C_{c}^{\ast } \\
+&=&\left( 1-\eta \gamma \right) \left( D(p_{c})Y+D^{\ast }(p_{c})Y^{\ast
+}\right) .
+\end{eqnarray*}%
+Equating the value of world demand to the value of world energy supply
+(which is unchanged from Simple Model), the equilibrium price must satisfy:%
+\begin{equation*}
+p_{e}^{1/(1-\beta )}E+p_{e}^{1/(1-\beta ^{\ast })}E^{\ast }=\left( 1-\eta
+\gamma \right) \left( D(p_{c})Y+D^{\ast }(p_{c})Y^{\ast }\right) ,
+\end{equation*}%
+with $p_{c}$ given by (\ref{p_c no prod or cons taxes}), $Y$ given by (\ref%
+{Y no tax}), and $Y^{\ast }$ by (\ref{Y star no tax}).
+
+\paragraph{Employment}
+
+What about the allocation of labor? We'll start with employment in
+extraction. Having determined the equilibrium energy price, we get: 
+\begin{equation*}
+L_{e}=\beta \left( \frac{p_{e}}{w}\right) ^{1/(1-\beta )}E=\beta
+p_{e}^{1/(1-\beta )}E,
+\end{equation*}%
+and likewise for $L_{e}^{\ast }$.
+
+In solving for the equilibrium energy price, we've also solved for world
+income $Y^{W}$ and the price of the composite good, $p_{c}$. Thus, from the
+demand system (with wages equal to $1$) we know that world demand for labor
+in the $m$-sector is:%
+\begin{equation*}
+L_{m}^{W}=\gamma \eta \left( D(p_{c})Y+D^{\ast }(p_{c})Y^{\ast }\right) ,
+\end{equation*}%
+with a fraction $\bar{j}$ employed in $\mathcal{H}$, so that:%
+\begin{equation*}
+L_{m}=\ \frac{A^{\theta }}{A^{\theta }+A^{\ast \theta }}L_{m}^{W}.
+\end{equation*}%
+To support this equilibrium, we need positive employment in the $l$-sector
+in both $\mathcal{H}$ and $\mathcal{F}$. Thus we require:%
+\begin{equation*}
+L>L_{e}+L_{m}
+\end{equation*}%
+and%
+\begin{equation*}
+L^{\ast }>L_{e}^{\ast }+L_{m}^{\ast }.
+\end{equation*}%
+As a check, let's calculate world employment in the $l$-sector:%
+\begin{eqnarray*}
+L_{l}^{W} &=&L^{W}-L_{e}^{W}-L_{m}^{W} \\
+&=&L^{W}-\beta p_{e}^{1/(1-\beta )}E-\beta ^{\ast }p_{e}^{1/(1-\beta ^{\ast
+})}E^{\ast }-\gamma \eta \left( D(p_{c})Y+D^{\ast }(p_{c})Y^{\ast }\right) \\
+&=&Y^{W}-p_{e}^{1/(1-\beta )}E-p_{e}^{1/(1-\beta ^{\ast })}E^{\ast }-\gamma
+\eta \left( D(p_{c})Y+D^{\ast }(p_{c})Y^{\ast }\right) \\
+&=&Y^{W}-p_{e}M_{e}^{W}-p_{e}C_{e}^{W}-\gamma \eta \left( D(p_{c})Y+D^{\ast
+}(p_{c})Y^{\ast }\right) \\
+&=&Y^{W}-\left[ \left( 1-\gamma \right) \eta +\left( 1-\eta \right) +\gamma
+\eta \right] \left( D(p_{c})Y+D^{\ast }(p_{c})Y^{\ast }\right) \\
+&=&\left( 1-D(p_{c})\right) Y+\left( 1-D^{\ast }(p_{c})\right) Y^{\ast }.
+\end{eqnarray*}%
+Note that the last term is simply world spending on the $l$-good, all of
+which is paid to labor $L_{l}^{W}$, thus confirming the logic of the model.
+
+\subsection{Carbon Taxes}
+
+We now have three levels at which to tax carbon: extraction of energy,
+production (of manufactures), and consumption of energy (directly or as
+embodied in manufactures). As a notational convention, we will treate $p_{e}$
+and $p_{m}$ as world prices, while we treat the price of the $c$-good as
+being potentially country specific, due to taxes.
+
+The ad valorem extraction tax, $t_{e}$, is unchanged from our formulation in
+the simple model. It has the effect of reducing the extraction of energy
+where it is applied, reducing world energy supply, and increasing the energy
+price.
+
+The ad valorem production tax $t_{p}$ raises the cost of the energy
+intermediate for manufacturers. Since direct consumption of the $e$-good can
+be thought of as household production (driving a car to produce
+transportation services or running a furnace to produce heating services),
+we want the production tax to apply there as well. The production tax is
+straightforward since it simply raises the price of energy (for all users of
+energy) from $p_{e}$ to $(1+t_{p})p_{e}$.
+
+In Simple Model we had an ad valorem tax $t_{c}$ on direct consumption of
+energy, raising the price faced by consumers from $p_{e}$ to $(1+t_{c})p_{e}$%
+. We now need to expand the tax base to also cover the energy embodied in
+manufactures. The tax on consumption of the $m$-good is more complicated
+since we want it to mimic the incentive effects, on both producers and
+consumers, of the production tax. We discuss this issue below. The key
+distinction between a production and a consumption tax arises when these
+taxes are applied in only one country, say $\mathcal{H}$. In this case, the
+consumption tax, unlike the production tax, applies to $\mathcal{H}$'s
+imports of manufactures and does not apply to its manufacturing exports.
+
+\subsubsection{Implementing the Consumption Tax}
+
+Consider a firm producing variety $j$ of the $m$-good in $\mathcal{H}$. It
+takes as given the competitive prices for this good, $p(j)$ in $\mathcal{H}$
+and $p^{\ast }(j)$ in $\mathcal{F}$, inclusive of carbon taxes on
+consumption. The consumption tax is imposed at an ad valorem rate of $t_{c}$
+and $t_{c}^{\ast }$ on the value of energy embodied in the goods sold in $%
+\mathcal{H}$ and $\mathcal{F}$, respectively. Consumers must purchase the
+good at a discount, so that after paying the consumption tax the total cost
+to a consumer in $\mathcal{H}$ is $p_{m}(j)$ and to a consumer in $\mathcal{F%
+}$ is $p_{m}^{\ast }(j)$. (It simplifies notation to define the price of
+manufactured goods inclusive of taxes.)
+
+First consider the firm's sales to consumers in $\mathcal{H}$. The firm's
+problem is to choose inputs of labor $l$ and energy $e$ so as to maximize
+revenue per unit, taking into account that the consumption tax is not
+revenue:%
+\begin{equation*}
+\max_{l,e}\left\{ \left( p_{m}(j)-t_{c}p_{e}e\right) -wl-p_{e}e\right\}
+\end{equation*}%
+subject to:%
+\begin{equation*}
+A(j)\left( \frac{l}{\gamma }\right) ^{\gamma }\left( \frac{e}{1-\gamma }%
+\right) ^{1-\gamma }=1.
+\end{equation*}%
+Since the firm takes $p_{m}(j)$ as given, we can reformulate this problem as
+cost minimization:%
+\begin{equation*}
+\min_{l,e}\left\{ wl+\left( 1+t_{c}\right) p_{e}e\right\}
+\end{equation*}%
+subject to%
+\begin{equation*}
+A(j)\left( \frac{l}{\gamma }\right) ^{\gamma }\left( \frac{e}{1-\gamma }%
+\right) ^{1-\gamma }=1.
+\end{equation*}%
+The solution to this problem is a unit cost function:%
+\begin{equation*}
+c(j)=\frac{w^{\gamma }\left( \left( 1+t_{c}\right) p_{e}\right) ^{1-\gamma }%
+}{A(j)}
+\end{equation*}%
+and associated input shares:%
+\begin{equation*}
+wl(j)=\gamma c(j)
+\end{equation*}%
+\begin{equation*}
+\left( 1+t_{c}\right) p_{e}e(j)=\left( 1-\gamma \right) c(j).
+\end{equation*}%
+The competitive zero-profit condition is simply:%
+\begin{equation*}
+p_{m}(j)=c(j)=\left( 1+t_{c}\right) ^{1-\gamma }\frac{w^{\gamma
+}p_{e}^{1-\gamma }}{A(j)}.
+\end{equation*}
+
+For the firm's sales to consumers in $\mathcal{F}$ the same derivation
+applies, so that:%
+\begin{equation*}
+p_{m}^{\ast }(j)=\left( 1+t_{c}^{\ast }\right) ^{1-\gamma }\frac{w^{\gamma
+}p_{e}^{1-\gamma }}{A(j)}.
+\end{equation*}%
+For a firm in $\mathcal{F}$ producing good $j^{\prime }$, the price of its
+good (again, inclusive of the consumption tax) to consumers in $\mathcal{F}$
+is:%
+\begin{equation*}
+p_{m}^{\ast }(j^{\prime })=\left( 1+t_{c}^{\ast }\right) ^{1-\gamma }\frac{%
+w^{\ast \gamma }p_{e}^{1-\gamma }}{A^{\ast }(j)},
+\end{equation*}%
+and to consumers in $\mathcal{H}$ is:%
+\begin{equation*}
+p_{m}(j^{\prime })=\left( 1+t_{c}\right) ^{1-\gamma }\frac{w^{\ast \gamma
+}p_{e}^{1-\gamma }}{A^{\ast }(j)}.
+\end{equation*}
+
+Note that the consumption tax will give producers the same incentives to
+reduce energy inputs as would a production tax. Thus, it is not a simple ad
+valorem tax on consumption. Rather, it requires information on the actual
+energy used in production. Nonetheless, due to the Cobb-Douglas technology,
+in equilibrium it will appear as an ad valorem tax. For sales in $\mathcal{H}
+$ the ad valorem rate is $t_{m}$ on consumption of the $m$-good, with $%
+1+t_{m}=$ $\left( 1+t_{c}\right) ^{1-\gamma }$. The calculation of tax
+revenue differs from what would be obtained from an ad valorem tax at rate $%
+t_{m}$, however. For example, the tax revenue generated in $\mathcal{H}$ on
+consumption of variety $j$ produced in $\mathcal{H}$ is:%
+\begin{equation*}
+T_{c}(j)=t_{c}p_{e}M_{e}^{HH}(j)=\frac{t_{c}}{1+t_{c}}\left( 1-\gamma
+\right) p_{m}(j)C_{m}(j),
+\end{equation*}%
+where $M_{e}^{HH}(j)$ represents the quantity of the energy intermediate
+used by producers of $j$ in $\mathcal{H}$ to supply consumers in $\mathcal{H}
+$.
+
+A firm in $\mathcal{F}$ producing some variety $j^{\prime }$ to sell in $%
+\mathcal{H}$ will face similar considerations due to the consumption tax.
+The tax revenue generated in $\mathcal{H}$ on consumption of variety $%
+j^{\prime }$ produced in $\mathcal{F}$ is%
+\begin{equation*}
+T_{c}(j^{\prime })=t_{c}p_{e}M_{e}^{HF}(j^{\prime })=\frac{t_{c}}{1+t_{c}}%
+\left( 1-\gamma \right) p_{m}(j^{\prime })C_{m}(j^{\prime }),
+\end{equation*}%
+where $M_{e}^{HF}(j)$ represents the quantity of the energy intermediate
+used by producers of $j^{\prime }$ in $\mathcal{F}$ to supply consumers in $%
+\mathcal{H}$.
+
+\subsubsection{Uniform Taxes}
+
+Suppose both countries impose carbon taxes at the same rate. We will
+continue to assume that the world equilibrium remains one in which both
+countries continue to produce positive quantities of the $l$-good. We will
+consider taxes one by one, but accomodate the possibility that an extraction
+tax is imposed together with either a production or consumption tax.
+
+\paragraph{Extraction Tax}
+
+With an extraction tax, the extraction sector behaves as in Simple Model.
+World extraction is:%
+\begin{equation*}
+Q_{e}^{W}=\left( \frac{p_{e}}{1+t_{e}}\right) ^{\beta /(1-\beta )}E+\left( 
+\frac{p_{e}}{1+t_{e}}\right) ^{\beta ^{\ast }/(1-\beta ^{\ast })}E^{\ast }.
+\end{equation*}%
+After-tax revenue of $\mathcal{H}$ in the $e$-sector is:%
+\begin{equation*}
+R_{e}=\frac{p_{e}}{1+t_{e}}Q_{e}=\left( \frac{p_{e}}{1+t_{e}}\right)
+^{1/(1-\beta )}E,
+\end{equation*}%
+generating tax revenue:%
+\begin{equation*}
+T_{e}=t_{e}R_{e}=t_{e}\left( \frac{p_{e}}{1+t_{e}}\right) ^{1/(1-\beta )}E.
+\end{equation*}%
+Parallel equations hold for $\mathcal{F}$. Given its effect on the
+equilibrium price of energy, the extraction tax has no other effects that
+interact with the production or consumption tax.
+
+\paragraph{Production Tax}
+
+As explained above, a production tax is just a tax on using energy for
+either production or consumption. Energy goods now cost $p_{e}(1+t_{p})$ in
+either country, whether used as intermediates by manufacturers or as
+consumption goods by households.
+
+With a tax on energy inputs, producers substitute away from them toward the
+labor input. The cost of producing manufactures rises by the factor $%
+(1+t_{p})^{1-\gamma }$ in both countries. Specialization in the production
+of manufactures remains unchanged, with $\bar{j}$ still given by (\ref{jbar
+no tax}). The price of manufactures rises to: 
+\begin{equation*}
+p_{m}=\phi (p_{e}\left( 1+t_{p}\right) )^{1-\gamma }\left( A^{\theta
+}+A^{\ast \theta }\right) ^{-1/\theta }.
+\end{equation*}%
+The statements above treat $p_{e}$ as fixed. Of course the reduced demand
+leads to a fall in the price of energy, dampening the effects.
+
+The production tax also raises the price of energy consumed directly by
+households. The price of the composite good becomes:%
+\begin{equation}
+p_{c}=p_{m}^{\eta }(\left( 1+t_{p}\right) p_{e})^{1-\eta }=\phi ^{\eta
+}(\left( 1+t_{p}\right) p_{e})^{1-\eta \gamma }\left( A^{\theta }+A^{\ast
+\theta }\right) ^{-\eta /\theta },  \label{pc uniform production tax}
+\end{equation}%
+Given $p_{c}$, spending on the $c$-good is as above. Hence consumption
+spending on the $e$-good in $\mathcal{H}$ is:%
+\begin{equation*}
+(1+t_{p})p_{e}C_{e}=\left( 1-\eta \right) D(p_{c})Y,
+\end{equation*}%
+with the spending share $D(p_{c})$ given by (\ref{c spending share}). The
+analog holds in $\mathcal{F}$.
+
+Production tax revenue consists of the taxes collected from firms and those
+collected from households. The total in $\mathcal{H}$ is:%
+\begin{eqnarray*}
+T_{p} &=&t_{p}p_{e}M_{e}^{WH}+t_{p}p_{e}C_{e} \\
+&=&\frac{t_{p}}{1+t_{p}}\left[ \left( 1-\gamma \right) \frac{A^{\theta }}{%
+A^{\theta }+A^{\ast \theta }}\eta \left( D(p_{c})Y+D^{\ast }(p_{c})Y^{\ast
+}\right) +\left( 1-\eta \right) D(p_{c})Y\right] ,
+\end{eqnarray*}%
+Where $M_{e}^{WH}$ is the quantity of the energy input used by producers in $%
+\mathcal{H}$ to supply the world. In $\mathcal{F}$:%
+\begin{equation*}
+T_{p}^{\ast }=\frac{t_{p}}{1+t_{p}}\left[ \left( 1-\gamma \right) \frac{%
+A^{\ast \theta }}{A^{\theta }+A^{\ast \theta }}\eta \left( D(p_{c})Y+D^{\ast
+}(p_{c})Y^{\ast }\right) +\left( 1-\eta \right) D(p_{c})Y^{\ast }\right] .
+\end{equation*}%
+Hence, tax revenue for the world is:%
+\begin{equation*}
+T_{p}^{W}=\frac{t_{p}}{1+t_{p}}\left( 1-\gamma \eta \right) \left(
+D(p_{c})Y+D^{\ast }(p_{c})Y^{\ast }\right) .
+\end{equation*}%
+Income in $\mathcal{H}$ is given by:%
+\begin{equation*}
+Y=wL+rE+T_{e}+T_{p}=L+\left( 1-\beta +t_{e}\right) R_{e}+T_{p},
+\end{equation*}%
+while in $\mathcal{F}$:%
+\begin{equation*}
+Y^{\ast }=L^{\ast }+\left( 1-\beta ^{\ast }+t_{e}\right) R_{e}^{\ast
+}+T_{p}^{\ast }.
+\end{equation*}
+
+\paragraph{Consumption Tax}
+
+As explained above, a consumption tax raises the price faced by households
+for both the $m$-good and the $e$-good. In considering a consumption tax at
+rate $t_{c}$ we will set $t_{p}=0$ (below we consider a combination of the
+two taxes). We put no restriction on $t_{e}$. Since $t_{p}=0$, we are back
+to:%
+\begin{equation*}
+p_{m}=\phi (1+t_{c})^{1-\gamma }p_{e}^{1-\gamma }\left( A^{\theta }+A^{\ast
+\theta }\right) ^{-1/\theta }.
+\end{equation*}
+
+A household faces prices $(1+t_{c})p_{e}$ and $p_{m}$ (recall that the price
+for manufactures is inclusive of the consumption tax). The after-tax price
+of the $c$-good is thus:%
+\begin{equation*}
+p_{c}=(1+t_{c})^{1-\eta }p_{m}^{\eta }p_{e}^{1-\eta }=\phi ^{\eta }\left(
+(1+t_{c})p_{e}\right) ^{1-\eta \gamma }\left( A^{\theta }+A^{\ast \theta
+}\right) ^{-\eta /\theta },
+\end{equation*}%
+which is the same as (\ref{pc uniform production tax}) if $t_{c}=t_{p}$.
+Given $p_{c}$, spending by households on the $e$-good in $\mathcal{H}$ is:%
+\begin{equation*}
+(1+t_{c})p_{e}C_{e}=\left( 1-\eta \right) D(p_{c})Y.
+\end{equation*}%
+On the $m$-good households spend:%
+\begin{equation*}
+p_{m}C_{m}=\eta D(p_{c})Y,
+\end{equation*}%
+so that:%
+\begin{equation*}
+(1+t_{c})p_{e}M_{e}^{HH}=\left( 1-\gamma \right) p_{m}C_{m}=\left( 1-\gamma
+\right) \eta D(p_{c})Y.
+\end{equation*}%
+Tax revenue in $\mathcal{H}$ is:%
+\begin{eqnarray*}
+T_{c} &=&\frac{t_{c}}{1+t_{c}}\left( 1-\gamma \right) \eta D(p_{c})Y+\frac{%
+t_{c}}{1+t_{c}}\left( 1-\eta \right) D(p_{c})Y \\
+&=&\frac{t_{c}}{1+t_{c}}\left( 1-\gamma \eta \right) D(p_{c})Y,
+\end{eqnarray*}%
+while for the world:%
+\begin{equation*}
+T_{c}^{W}=\frac{t_{c}}{1+t_{c}}\left( 1-\gamma \eta \right) \left(
+D(p_{c})Y+D^{\ast }(p_{c})Y^{\ast }\right) .
+\end{equation*}%
+Income in $\mathcal{H}$ is given by:%
+\begin{equation*}
+Y=L+\left( 1-\beta +t_{e}\right) R_{e}+T_{c}.
+\end{equation*}
+
+\paragraph{Tax Equivalence}
+
+Equilibrium amounts to a price $p_{e}$ that equates world supply and demand
+for energy. The value of world supply, given a uniform extraction tax, is:%
+\begin{equation*}
+p_{e}Q_{e}^{W}=\left( 1+t_{e}\right) ^{-\beta /(1-\beta )}p_{e}^{1/(1-\beta
+)}E+\left( 1+t_{e}\right) ^{-\beta ^{\ast }/(1-\beta ^{\ast
+})}p_{e}^{1/(1-\beta ^{\ast })}E^{\ast },
+\end{equation*}%
+so at the equilbrium price:%
+\begin{equation*}
+p_{e}Q_{e}^{W}=p_{e}C_{e}^{W}+p_{e}M_{e}^{W},
+\end{equation*}%
+where:%
+\begin{equation*}
+M_{e}^{W}=M_{e}^{WH}+M_{e}^{WF},
+\end{equation*}%
+is total energy intermediates used in the world. For the demand side of this
+equation, we want to show that a uniform production tax is equivalent to a
+uniform consumption tax at rate $t_{c}=t_{p}=t$.
+
+Under either a production tax or a consumption tax, the value of world
+demand for energy by households is:%
+\begin{equation*}
+p_{e}C_{e}^{W}=\frac{1}{1+t}\left( 1-\eta \right) \left( D(p_{c})Y+D^{\ast
+}(p_{c})Y^{\ast }\right) ,
+\end{equation*}%
+and the value of world demand for energy by firms is:%
+\begin{equation*}
+p_{e}M_{e}^{W}=\frac{1}{1+t}\left( 1-\gamma \right) \eta \left(
+D(p_{c})Y+D^{\ast }(p_{c})Y^{\ast }\right) ,
+\end{equation*}%
+so that total demand is:%
+\begin{equation*}
+p_{e}Q_{e}^{W}=\frac{1}{1+t}\left( 1-\eta \gamma \right) \left(
+D(p_{c})Y+D^{\ast }(p_{c})Y^{\ast }\right) ,
+\end{equation*}%
+with $p_{c}$, in either case, given by (\ref{pc uniform production tax}).
+World income $Y^{W}$ under either tax is:%
+\begin{equation*}
+Y^{W}=L^{W}+\left( 1-\beta +t_{e}\right) R_{e}+\left( 1-\beta ^{\ast
+}+t_{e}\right) R_{e}^{\ast }+T^{W},
+\end{equation*}%
+where total tax revenue from the production or consumption tax is:%
+\begin{equation*}
+T^{W}=\frac{t}{1+t}\left( 1-\gamma \eta \right) \left( D(p_{c})Y+D^{\ast
+}(p_{c})Y^{\ast }\right)
+\end{equation*}
+
+Thus, the equilibrium price of energy is the same under a production tax at
+rate $t_{p}=t$ or a consumption tax at rate $t_{c}=t$. There is a difference
+in the distribution of tax revenue, however, since%
+\begin{equation*}
+T_{p}=\frac{t}{1+t}\left[ \left( 1-\gamma \right) \frac{A^{\theta }}{%
+A^{\theta }+A^{\ast \theta }}\eta \left( D(p_{c})Y+D^{\ast }(p_{c})Y^{\ast
+}\right) +\left( 1-\eta \right) D(p_{c})Y\right]
+\end{equation*}%
+need not equal%
+\begin{equation*}
+T_{c}=\frac{t}{1+t}\left( 1-\gamma \eta \right) D(p_{c})Y.
+\end{equation*}%
+Home will do better under a uniform production tax iff:%
+\begin{equation*}
+\frac{A^{\theta }}{A^{\theta }+A^{\ast \theta }}Y^{W}>Y,
+\end{equation*}%
+i.e. if it has a comparative advantage in manufactures.
+
+\subsubsection{Taxes in Home}
+
+Suppose only $\mathcal{H}$ taxes carbon. We will continue to assume that the
+world equilibrium remains one in which both countries continue to produce
+positive quantities of the $l$-good. We will consider taxes one by one, but
+accomodate the possibility that an extraction tax is imposed together with
+either a production or consumption tax. As above, we do not consider the
+simultaneous imposition of both a production and consumption tax.
+
+\paragraph{Extraction Tax}
+
+With an extraction tax, the extraction sector behaves as in Simple Model.
+Extraction in $\mathcal{H}$ is:%
+\begin{equation*}
+Q_{e}=\left( \frac{p_{e}}{1+t_{e}}\right) ^{\beta /(1-\beta )}E,
+\end{equation*}%
+generating after-tax revenue in the $e$-sector of:%
+\begin{equation*}
+R_{e}=\frac{p_{e}}{1+t_{e}}Q_{e}=\left( \frac{p_{e}}{1+t_{e}}\right)
+^{1/(1-\beta )}E.
+\end{equation*}%
+Tax revenue is:%
+\begin{equation*}
+T_{e}=t_{e}R_{e}=t_{e}\left( \frac{p_{e}}{1+t_{e}}\right) ^{1/(1-\beta )}E.
+\end{equation*}%
+In $\mathcal{F}$ we have:%
+\begin{equation*}
+Q_{e}^{\ast }=p_{e}^{\beta ^{\ast }/(1-\beta ^{\ast })}E^{\ast }.
+\end{equation*}%
+Since there are no taxes in $\mathcal{F}$, we have:%
+\begin{equation}
+Y^{\ast }=L^{\ast }+\left( 1-\beta ^{\ast }\right) p_{e}^{1/(1-\beta ^{\ast
+})}E^{\ast }.  \label{Y star}
+\end{equation}%
+Given its effect on the equilibrium price of energy, the extraction tax has
+no other effects that interact with the production or consumption tax.
+
+\paragraph{Production Tax}
+
+As explained above, a production tax is just a tax on using energy for
+either production or consumption. Energy goods now cost $p_{e}(1+t_{p})$
+whether used as intermediates by manufacturers in $\mathcal{H}$ or as
+consumption goods by households in $\mathcal{H}$.
+
+The cost of producing manufactures in $\mathcal{H}$ rises by the factor $%
+(1+t_{p})^{1-\gamma }$. Now $\mathcal{H}$ produces all varieties $j$ for
+which:%
+\begin{equation*}
+R(j)\geq \left( 1+t_{p}\right) ^{1-\gamma },
+\end{equation*}%
+where relative productivity $R(j)$ is given by (\ref{relative productivity}%
+). Thus $\mathcal{H}$ produces all varieties in the interval $[0,\bar{j}]$,
+where now:%
+\begin{equation}
+\bar{j}=\frac{A^{\theta }\left( 1+t_{p}\right) ^{-\theta \left( 1-\gamma
+\right) }}{A^{\theta }\left( 1+t_{p}\right) ^{-\theta \left( 1-\gamma
+\right) }+A^{\ast \theta }}.  \label{jbar home production tax}
+\end{equation}%
+The production tax alters how countries specialize across varieties of
+manufactures.
+
+With a production tax, the maximum price of a manufacturing variety becomes:%
+\begin{eqnarray*}
+\bar{p} &=&\frac{\bar{j}^{1/\theta }p_{e}^{1-\gamma }\left( 1+t_{p}\right)
+^{1-\gamma }}{A} \\
+&=&p_{e}^{1-\gamma }\left( A^{\theta }\left( 1+t_{p}\right) ^{-\theta \left(
+1-\gamma \right) }+A^{\ast \theta }\right) ^{-1/\theta }.
+\end{eqnarray*}%
+We still have that the manufacturing price index is $p_{m}=\phi \bar{p}$, so
+that when we substitute out $\bar{p}$: 
+\begin{equation*}
+p_{m}=\phi p_{e}^{1-\gamma }\left( A^{\theta }\left( 1+t_{p}\right)
+^{-\theta \left( 1-\gamma \right) }+A^{\ast \theta }\right) ^{-1/\theta }.
+\end{equation*}%
+Holding $p_{e}$ fixed, the production tax in $\mathcal{H}$ makes
+manufactures more expensive to consumers in both countries.
+
+The production tax also raises the price of energy consumed directly by
+households. The after-tax price of the composite good in $\mathcal{H}$
+becomes:%
+\begin{equation}
+p_{c}=p_{m}^{\eta }p_{e}^{1-\eta }(1+t_{p})^{1-\eta }=\phi ^{\eta
+}p_{e}^{1-\eta \gamma }(1+t_{p})^{1-\eta }\left( A^{\theta }\left(
+1+t_{p}\right) ^{-\theta \left( 1-\gamma \right) }+A^{\ast \theta }\right)
+^{-\eta /\theta },  \label{p_c home production tax}
+\end{equation}%
+while in $\mathcal{F}$ it is:%
+\begin{equation}
+p_{c}^{\ast }=p_{m}^{\eta }p_{e}^{1-\eta }=\phi ^{\eta }p_{e}^{1-\eta \gamma
+}\left( A^{\theta }\left( 1+t_{p}\right) ^{-\theta \left( 1-\gamma \right)
+}+A^{\ast \theta }\right) ^{-\eta /\theta }.
+\label{p_c star home production tax}
+\end{equation}%
+Given $p_{c}$, spending on the $c$-good is as above. Hence consumption
+spending on the $e$-good is:%
+\begin{equation*}
+(1+t_{p})p_{e}C_{e}=\left( 1-\eta \right) D(p_{c})Y,
+\end{equation*}%
+with the spending share $D(p_{c})$ given by (\ref{c spending share}).
+Production tax revenue consists of the taxes collected from firms and those
+collected from households. The total is:%
+\begin{eqnarray*}
+T_{p} &=&t_{p}p_{e}M_{e}^{WH}+t_{p}p_{e}C_{e} \\
+&=&\frac{t_{p}}{1+t_{p}}\left[ \left( 1-\gamma \right) \bar{j}\eta \left[
+D(p_{c})Y+D^{\ast }(p_{c}^{\ast })Y^{\ast }\right] +\left( 1-\eta \right)
+D(p_{c})Y\right] ,
+\end{eqnarray*}%
+with $\bar{j}$ given by (\ref{jbar home production tax}), and income in $%
+\mathcal{H}$ given by:%
+\begin{equation}
+Y=wL+rE+T_{e}+T_{p}=L+\left( 1-\beta +t_{e}\right) R_{e}+T_{p}.
+\label{Y home production tax}
+\end{equation}
+
+\paragraph{Consumption Tax}
+
+As explained above, a consumption tax raises the price of both the $m$-good
+and the $e$-good to households in $\mathcal{H}$. In considering a
+consumption tax at rate $t_{c}$ we continue to assume $t_{p}=0$, turning
+only later to the case of both taxes. We put no restriction on $t_{e}$.
+Since $t_{p}=0$, we are back to:%
+\begin{equation*}
+p_{m}=\phi (1+t_{c})^{1-\gamma }p_{e}^{1-\gamma }\left( A^{\theta }+A^{\ast
+\theta }\right) ^{-1/\theta }.
+\end{equation*}
+
+Since the household in $\mathcal{H}$ faces prices $(1+t_{c})p_{e}$ and $p_{m}
+$, the after-tax price of the $c$-good is:%
+\begin{eqnarray}
+p_{c} &=&p_{m}^{\eta }\left( p_{e}(1+t_{c})\right) ^{1-\eta }  \notag \\
+&=&\phi ^{\eta }p_{e}^{1-\eta \gamma }(1+t_{c})^{1-\eta \gamma }\left(
+A^{\theta }+A^{\ast \theta }\right) ^{-\eta /\theta },
+\label{p_c home consumption tax1}
+\end{eqnarray}%
+while the price in $\mathcal{F}$ is simply:%
+\begin{equation}
+p_{c}^{\ast }=\phi ^{\eta }p_{e}^{1-\eta \gamma }\left( A^{\theta }+A^{\ast
+\theta }\right) ^{-\eta /\theta }.  \label{p_c star home consumption tax}
+\end{equation}%
+Given $p_{c}$, spending by households on the $e$-good is:%
+\begin{equation*}
+(1+t_{c})p_{e}C_{e}=\left( 1-\eta \right) D(p_{c})Y,
+\end{equation*}%
+while on the $m$-good:%
+\begin{equation*}
+p_{m}C_{m}=\eta D(p_{c})Y.
+\end{equation*}%
+Spending on the energy input in $\mathcal{H}$ for sales of manufactures in $%
+\mathcal{H}$ is:%
+\begin{equation*}
+(1+t_{c})p_{e}M_{e}^{HH}=\left( 1-\gamma \right) \bar{j}\eta D(p_{c})Y.
+\end{equation*}%
+Since there is no consumption tax in $\mathcal{F}$, total spending on energy
+inputs in $\mathcal{H}$ is:%
+\begin{equation*}
+p_{e}M_{e}^{WH}=p_{e}M_{e}^{HH}+p_{e}M_{e}^{FH}=\left( 1-\gamma \right) \bar{%
+j}\eta \left[ \frac{1}{1+t_{c}}D(p_{c})Y+D^{\ast }(p_{c}^{\ast })Y^{\ast }%
+\right] .
+\end{equation*}%
+Total spending on energy inputs in $\mathcal{F}$ is:%
+\begin{equation*}
+p_{e}M_{e}^{WF}=p_{e}M_{e}^{HF}+p_{e}M_{e}^{FF}=\left( 1-\gamma \right)
+\left( 1-\bar{j}\right) \eta \left[ \frac{1}{1+t_{c}}D(p_{c})Y+D^{\ast
+}(p_{c}^{\ast })Y^{\ast }\right] ,
+\end{equation*}%
+so that world spending on energy inputs is:%
+\begin{equation*}
+p_{e}M_{e}^{W}=\left( 1-\gamma \right) \eta \left[ \frac{1}{1+t_{c}}%
+D(p_{c})Y+D^{\ast }(p_{c}^{\ast })Y^{\ast }\right] .
+\end{equation*}
+
+Tax revenue in $\mathcal{H}$ is:%
+\begin{eqnarray*}
+T_{c} &=&t_{c}p_{e}M_{e}^{HH}+t_{c}p_{e}M_{e}^{HF}+t_{c}p_{e}C_{e} \\
+&=&\frac{t_{c}}{1+t_{c}}\left( 1-\gamma \right) \eta D(p_{c})Y+\frac{t_{c}}{%
+1+t_{c}}\left( 1-\eta \right) D(p_{c})Y \\
+&=&\frac{t_{c}}{1+t_{c}}\left( 1-\eta \gamma \right) D(p_{c})Y.
+\end{eqnarray*}%
+Income in $\mathcal{H}$ is given by:%
+\begin{equation}
+Y=L+\left( 1-\beta +t_{e}\right) R_{e}+T_{c}.  \label{Y home consumption tax}
+\end{equation}
+
+\paragraph{Equilibrium with Taxes}
+
+Equilibrium amounts to a price $p_{e}$ that equates world supply and demand
+for energy, both valued at world prices. The value of world supply is:%
+\begin{equation*}
+p_{e}Q_{e}^{W}=\left( 1+t_{e}\right) ^{-\beta /(1-\beta )}p_{e}^{1/(1-\beta
+)}E+p_{e}^{1/(1-\beta ^{\ast })}E^{\ast }.
+\end{equation*}%
+At the equilbrium price we have:%
+\begin{equation*}
+p_{e}Q_{e}^{W}=p_{e}C_{e}^{W}+p_{e}M_{e}^{W}.
+\end{equation*}%
+For the demand side of this equation, we separately consider the case of the
+production tax and the consumption tax.
+
+Under a production tax in home, the value of world demand for energy by
+households is:%
+\begin{equation*}
+p_{e}C_{e}^{W}=\left( 1-\eta \right) \left[ \frac{1}{1+t_{p}}%
+D(p_{c})Y+D^{\ast }(p_{c}^{\ast })Y^{\ast }\right] ,
+\end{equation*}%
+and the value of world demand for energy by firms is:%
+\begin{equation*}
+p_{e}M_{e}^{W}=\left( 1-\gamma \right) \eta \left[ D(p_{c})Y+D^{\ast
+}(p_{c}^{\ast })Y^{\ast }\right] \left( \frac{1}{1+t_{p}}\bar{j}+\left( 1-%
+\bar{j}\right) \right) ,
+\end{equation*}%
+with $p_{c}$ given by (\ref{p_c home production tax}), $p_{c}^{\ast }$ given
+by (\ref{p_c star home production tax}), $\bar{j}$ given by (\ref{jbar home
+production tax}), $Y$ given by (\ref{Y home production tax}), and $Y^{\ast }$
+given by (\ref{Y star}).
+
+Under a consumption tax in home:%
+\begin{equation*}
+p_{e}C_{e}^{W}=\left( 1-\eta \right) \left[ \frac{1}{1+t_{c}}%
+D(p_{c})Y+D^{\ast }(p_{c}^{\ast })Y^{\ast }\right]
+\end{equation*}%
+and%
+\begin{equation*}
+p_{e}M_{e}^{W}=\left( 1-\gamma \right) \eta \left[ \frac{1}{1+t_{c}}%
+D(p_{c})Y+D^{\ast }(p_{c}^{\ast })Y^{\ast }\right] .
+\end{equation*}%
+Thus:%
+\begin{equation*}
+p_{e}C_{e}^{W}+p_{e}M_{e}^{W}=\left( 1-\eta \gamma \right) \left[ \frac{1}{%
+1+t_{c}}D(p_{c})Y+D^{\ast }(p_{c}^{\ast })Y^{\ast }\right] ,
+\end{equation*}%
+with $p_{c}$ given by (\ref{p_c home consumption tax1}), $p_{c}^{\ast }$
+given by (\ref{p_c star home consumption tax}), $Y$ given by (\ref{Y home
+consumption tax}), and $Y^{\ast }$ given by (\ref{Y star}).
+
+\paragraph{Border Adjustments}
+
+We now show that a production tax at rate $t_{p}$, with border tax
+adjustments (BTA's), is equivalent to a consumption tax at rate $t_{c}=t_{p}$%
+. Starting with the production tax, let's now add a tax on the value of
+energy embodied in $\mathcal{H}$'s imports of the $m$-good, at rate $t_{p}$,
+and a tax rebate on the value of energy embodied in $\mathcal{H}$'s exports
+of the $m$-good. Taking into account the tax on imports, to supply variety $%
+j $ to consumers in $\mathcal{H}$, a firm in $\mathcal{F}$ must charge%
+\begin{equation*}
+\frac{w^{\ast \gamma }p_{e}^{1-\gamma }(1+t_{p})^{1-\gamma }}{A^{\ast }(j)}=%
+\frac{(p_{e}\left( 1+t_{p}\right) )^{1-\gamma }}{A^{\ast }(j)},
+\end{equation*}%
+while, taking into account the production tax, a firm in $\mathcal{H}$
+charges 
+\begin{equation*}
+\frac{w^{\gamma }(p_{e}\left( 1+t_{p}\right) )^{1-\gamma }}{A(j)}=\frac{%
+(p_{e}\left( 1+t_{p}\right) )^{1-\gamma }}{A(j)}.
+\end{equation*}%
+Thus, the firm in $\mathcal{H}$ supplies variety $j$ if and only if it can
+produce that variety more efficiently: 
+\begin{equation*}
+R(j)=\frac{A(j)}{A^{\ast }(j)}\geq 1,
+\end{equation*}%
+i.e. if and only if:%
+\begin{equation*}
+j\leq \bar{j}=\frac{A^{\theta }}{A^{\theta }+A^{\ast \theta }}.
+\end{equation*}%
+Similarly, taking into account the tax rebate on exports, firms from $%
+\mathcal{H}$ and $\mathcal{F}$ both act as if they are untaxed when
+supplying consumers in $\mathcal{F}$. The same $\bar{j}$ applies, which is
+also the $\bar{j}$ for the case of a consumption tax.
+
+Now, consider the price of the $m$-good (recall that it includes taxes)
+faced by consumers in each country. Taking into account how $\bar{j}$
+responds to the BTA's, the price of the $m$-good in $\mathcal{F}$ is simply:%
+\begin{equation*}
+p_{m}=\phi p_{e}^{1-\gamma }\left( A^{\theta }+A^{\ast \theta }\right)
+^{-1/\theta }
+\end{equation*}%
+while in $\mathcal{H}$, since every supplier must cover taxes on the energy
+input, the price is:%
+\begin{equation*}
+p_{m}=\phi (p_{e}\left( 1+t_{p}\right) )^{1-\gamma }\left( A^{\theta
+}+A^{\ast \theta }\right) ^{-1/\theta }.
+\end{equation*}%
+The price of the composite good in $\mathcal{H}$ is:%
+\begin{equation*}
+p_{c}=p_{m}^{\eta }\left( \left( 1+t_{c}\right) p_{e}\right) ^{1-\eta }=\phi
+^{\eta }(p_{e}\left( 1+t_{c}\right) )^{1-\eta \gamma }\left( A^{\theta
+}+A^{\ast \theta }\right) ^{-\eta /\theta },
+\end{equation*}%
+while in $\mathcal{F}$ it is:%
+\begin{equation*}
+p_{c}^{\ast }=p_{m}^{\eta }p_{e}^{1-\eta }.
+\end{equation*}%
+Again, the production tax with BTA's gives the same outcomes as the
+consumption tax.
+
+Let's consider the determination of the equilibrium energy price under a
+production tax with BTA's. With BTA's, the global value of demand for energy
+by households is:%
+\begin{equation*}
+p_{e}C_{e}^{W}=\left( 1-\eta \right) \left[ \frac{1}{1+t_{p}}%
+D(p_{c})Y+D^{\ast }(p_{c}^{\ast })Y^{\ast }\right] ,
+\end{equation*}%
+while the global value of demand for energy inputs is%
+\begin{equation*}
+p_{e}M_{e}^{W}=\left( 1-\gamma \right) \eta \left[ \frac{1}{1+t_{p}}%
+D(p_{c})Y+D^{\ast }(p_{c}^{\ast })Y^{\ast }\right] .
+\end{equation*}%
+Thus the total value of global demand for energy is:%
+\begin{equation*}
+p_{e}C_{e}^{W}+p_{e}M_{e}^{W}=\left( 1-\eta \gamma \right) \left[ \frac{1}{%
+1+t_{p}}D(p_{c})Y+D^{\ast }(p_{c}^{\ast })Y^{\ast }\right] ,
+\end{equation*}%
+exactly the same as with a consumption tax at rate $t_{c}=t_{p}$. It follows
+that the equilibrium energy price is the same.
+
+Note that $\mathcal{H}$ gets tax revenue only on energy consumed directly by
+households in $\mathcal{H}$ and energy embodied in the $m$-good consumed in $%
+\mathcal{H}$, just as with a consumption tax. Thus tax revenue and hence
+income will be the same under a production tax with BTA's as under a
+consumption tax.
+
+\paragraph{Welfare Results}
+
+We now ask whether a consumption tax (which we have shown to be a production
+tax with BTA's) has any welfare advantages for home over a production tax
+without BTA's. Note that in making this comparison, we should not set $%
+t_{c}=t_{p}$. Rather, we should hold $p_{e}$ fixed in this comparison, since
+by doing so we fix global emissions of carbon. Thus, we want to ask, fixing
+global emissions, is it advantageous for $\mathcal{H}$ to impose a
+consumption tax at rate $t_{c}$ rather than a production tax at rate $t_{p}$%
+. Equivalently, is it advantageous for $\mathcal{H}$ to add BTA's to a
+production tax, changing the tax rate from $t_{p}$ to $t_{c}$ so as to
+acheive the same level of global emissions?
+
+By fixing $p_{e}$ we obtain some nice simplifications. First, income in $%
+\mathcal{F}$ is fixed while in $\mathcal{H}$ it will change only to the
+extent of a change in tax revenue. Second, of the three goods prices, only
+the price of the $m$-good will differ across these two tax regimes, since
+the price of the $e$-good and the $l$-good are fixed.
+
+\subparagraph{Home Dominates Manufacturing}
+
+To get sharp results, let's consider an extreme case. Suppose $A^{\ast }=0$,
+so that $\mathcal{H}$ produces all of the $m$-good for the world. We want to
+compare the equilibrium under a production tax with the equilibrium under a
+consumption tax.
+
+Under a production tax:%
+\begin{equation*}
+p_{m}=\frac{\phi }{A}\left( \left( 1+t_{p}\right) p_{e}\right) ^{1-\gamma }.
+\end{equation*}%
+Hence the price of the $c$-good in $\mathcal{H}$ is:%
+\begin{equation*}
+p_{c}=\left( \frac{\phi }{A}\right) ^{\eta }\left( \left( 1+t_{p}\right)
+p_{e}\right) ^{1-\eta \gamma }.
+\end{equation*}%
+Since the price of the $m$-good is the same everywhere, while the $e$-good
+is untaxed in $F$, consumers there pay:%
+\begin{equation*}
+p_{c}^{\ast }=\left( \frac{\phi }{A}\right) ^{\eta }\left( 1+t_{p}\right)
+^{\eta }p_{e}^{1-\eta \gamma }.
+\end{equation*}%
+The total value of demand for energy intermediates is:%
+\begin{equation*}
+p_{e}M_{e}^{W}=\left( 1-\gamma \right) \eta \frac{1}{1+t_{p}}\left[
+D(p_{c})Y+D^{\ast }(p_{c}^{\ast })Y^{\ast }\right] ,
+\end{equation*}%
+while the total value of demand for energy by households is:%
+\begin{equation*}
+p_{e}C_{e}^{W}=\left( 1-\eta \right) \left[ \frac{1}{1+t_{p}}%
+D(p_{c})Y+D^{\ast }(p_{c}^{\ast })Y^{\ast }\right] .
+\end{equation*}%
+Thus, the total value of demand for energy is:%
+\begin{equation*}
+p_{e}M_{e}^{W}+p_{e}C_{e}^{W}=\left( 1-\eta \gamma \right) \left[ \frac{1}{%
+1+t_{p}}D(p_{c})Y+D^{\ast }(p_{c}^{\ast })Y^{\ast }\right] -\frac{t_{p}}{%
+1+t_{p}}\left( 1-\gamma \right) \eta D^{\ast }(p_{c}^{\ast })Y^{\ast }
+\end{equation*}%
+Finally, tax revenue in $\mathcal{H}$ is:%
+\begin{equation*}
+T_{p}=\frac{t_{p}}{1+t_{p}}\left( 1-\eta \gamma \right) D(p_{c})Y+\frac{t_{p}%
+}{1+t_{p}}\left( 1-\gamma \right) \eta D^{\ast }(p_{c}^{\ast })Y^{\ast }
+\end{equation*}
+
+Under a consumption tax, consumers in $\mathcal{H}$ pay:%
+\begin{equation*}
+p_{m}=\frac{\phi }{A}\left( \left( 1+t_{c}\right) p_{e}\right) ^{1-\gamma },
+\end{equation*}%
+so that the price of the $c$-good in $\mathcal{H}$ is:%
+\begin{equation*}
+p_{c}=\left( \frac{\phi }{A}\right) ^{\eta }\left( \left( 1+t_{c}\right)
+p_{e}\right) ^{1-\eta \gamma }.
+\end{equation*}%
+Consumers in $\mathcal{F}$ pay only:%
+\begin{equation*}
+p_{c}^{\ast }=\left( \frac{\phi }{A}\right) ^{\eta }p_{e}^{1-\eta \gamma }.
+\end{equation*}%
+The total value of demand for energy is:%
+\begin{equation*}
+p_{e}M_{e}^{W}+p_{e}C_{e}^{W}=\left( 1-\eta \gamma \right) \left[ \frac{1}{%
+1+t_{c}}D(p_{c})Y+D^{\ast }(p_{c}^{\ast })Y^{\ast }\right] .
+\end{equation*}%
+Tax revenue is:%
+\begin{equation*}
+T_{c}=\frac{t_{c}}{1+t_{c}}\left( 1-\eta \gamma \right) D(p_{c})Y.
+\end{equation*}
+
+Let's compare the two tax regimes. If $t_{p}=t_{c}$, which tax regime would
+lead to more spending on energy? If the value of spending on energy would be
+higher under the consumption tax, then we can conclude that $t_{p}<t_{c}$ in
+order for $p_{e}$ to be the same in both regimes. Under the hypothetical in
+which $t_{p}=t_{c}$, there are three differences in the value of world
+energy demand. First, unlike the consumption tax, the production tax raises
+the price of manufactures everywhere. Hence spending under the production
+tax is lower by the amount $\frac{t_{p}}{1+t_{p}}\left( 1-\gamma \right)
+\eta D^{\ast }(p_{c}^{\ast })Y^{\ast }$. Second, for the same reason, the
+price of the $c$-good is lower in $\mathcal{F}$ under the consumption tax,
+which leads to more spending on energy. Third, tax revenue is higher under
+the production tax by the amount $\frac{t_{p}}{1+t_{p}}\left( 1-\gamma
+\right) \eta D^{\ast }(p_{c}^{\ast })Y^{\ast }$, which raises income by that
+amount in $\mathcal{H}$. Note that this third effect, which would lead to
+greater spending on energy under the production tax, is more than offset by
+the first effect. Thus, overall, spending on energy is lower under the
+production tax regime if $t_{p}=t_{c}$. To equate supply and demand in both
+regimes at the same energy price $p_{e}$, it must be that $t_{c}>t_{p}$.
+But, from the price equations, we see that if $t_{c}>t_{p}$ then the price
+of the $c$-good is higher under the consumption tax. Since income is higher
+under the production tax, and prices are equal or lower under the production
+tax, welfare must be higher under the prodution tax.
+
+What we've shown is that in an extreme case in which $\mathcal{H}$ is the
+dominant manufacturing country, the home country prefers a production tax.
+It would strictly prefer not to impose BTA's. The weakness of this extreme
+case is that, by setting $A^{\ast }=1$, we've ruled out an argument for
+BTA's, which is that they prevent a loss in $\mathcal{H}$'s market share in
+manufacturing (in this extreme case $\mathcal{H}$'s market share is fixed at 
+$1$). But, since in this extreme case $\mathcal{H}$ stictly prefers a
+production tax, by continuity it will also likely prefer a production tax if 
+$\mathcal{F}$'s market share in manufacturing is not too large.
+
+Finally, note that $\mathcal{F}$ will prefer the consumption tax since its
+income is invariant to taxes and the price of the $c$-good is lower with a
+consumption tax. The consumption tax removes any tax burden to $\mathcal{F}$.
+
+\subsection{Partial Border Tax Adjustments}
+
+We now consider a scenario in which $\mathcal{H}$ imposes a production tax
+together with some level of border tax adjustments (a tax on imports of the $%
+m$-good and a rebate on exports of the $m$-good). The two policy levers are
+thus the production tax rate $t_{p}\geq 0$ and the border tax adjustment
+rate $t_{b}\in \left[ 0,t_{p}\right] $. The production tax raises the
+effective cost of energy to consumers in $\mathcal{H}$ and of energy
+intermediates to producers in $\mathcal{H}$ by the factor $1+t_{p}$. The
+border tax adjustment has two parts: (i) a tariff of $t_{b}$ on the carbon
+content of $\mathcal{H}$'s imports of the $m$-good, effectively raising the
+cost of energy intermediates to producers in $\mathcal{F}$ selling in $%
+\mathcal{H}$ by the factor $1+t_{b}$ and (ii) a rebate to producers in $%
+\mathcal{H}$ on a portion of the production tax paid on the carbon content
+of their exports of the $m$-good, effectively lowering their costs of energy
+intermediates by a factor $1/(1+t_{b})$ from what that cost would be with
+the production tax on its own.
+
+If the border tax adjustment is set to $t_{b}=0$ then the policy is one of a
+pure production tax at rate $t_{p}$. If the border tax adjustment is set to $%
+t_{b}=t_{p}$ then the policy is one of a pure consumption tax at rate $t_{b}$%
+. We can also consider cases between these two extremes. Setting $t_{p}>0$
+in combination with $t_{b}\in (0,t_{p})$ is equivalent to a consumption tax
+at rate:%
+\begin{equation*}
+\tilde{t}_{c}=t_{b}
+\end{equation*}%
+combined with a production tax at rate\footnote{%
+We thank David Weisbach's colleague ??? for this interpretation of partial
+BTA's.}:%
+\begin{equation*}
+\tilde{t}_{p}=\frac{1+t_{p}}{1+t_{b}}-1=\frac{t_{p}-t_{b}}{1+t_{b}}.
+\end{equation*}%
+This production tax, which is applied on top of the consumption tax, yields
+an effective tax on production in $\mathcal{H}$ for domestic consumption of:%
+\begin{equation*}
+\left( 1+\tilde{t}_{p}\right) \left( 1+\tilde{t}_{c}\right) -1=\frac{1+t_{p}%
+}{1+t_{b}}\left( 1+t_{b}\right) -1=t_{p}.
+\end{equation*}
+
+\subsubsection{Specialization and Prices}
+
+As explained above, a production tax is a tax on using energy for either
+production or consumption. Energy goods now cost $p_{e}(1+t_{p})$ in $%
+\mathcal{H}$ whether used there as an intermediate by manufacturers (to
+supply consumers in $\mathcal{H}$) or directly as a consumption good by
+households in $\mathcal{H}$.
+
+Consider producers in either country supplying manufactures to consumers in $%
+\mathcal{H}$. For producers in $\mathcal{H}$ the production tax raises costs
+by the factor $(1+t_{p})^{1-\gamma }$. For producers in $\mathcal{F}$ the
+border tax raises costs by the factor $(1+t_{b})^{1-\gamma }$. Thus
+producers in $\mathcal{H}$ supply all varieties $j$ for which:%
+\begin{equation*}
+R(j)\geq \left( \frac{1+t_{p}}{1+t_{b}}\right) ^{1-\gamma },
+\end{equation*}%
+i.e. all varieties in the interval $[0,\bar{j}]$, where, from (\ref{relative
+productivity}):%
+\begin{equation}
+\bar{j}=\frac{A^{\theta }\left( \frac{1+t_{p}}{1+t_{b}}\right) ^{-\theta
+\left( 1-\gamma \right) }}{A^{\theta }\left( \frac{1+t_{p}}{1+t_{b}}\right)
+^{-\theta \left( 1-\gamma \right) }+A^{\ast \theta }}=\frac{A^{\theta
+}\left( 1+\tilde{t}_{p}\right) ^{-\theta \left( 1-\gamma \right) }}{%
+A^{\theta }\left( 1+\tilde{t}_{p}\right) ^{-\theta \left( 1-\gamma \right)
+}+A^{\ast \theta }}.  \label{jbar partial bta}
+\end{equation}%
+These taxes alter how countries specialize across varieties of manufactures,
+reducing $\mathcal{H}$'s share if $t_{p}>t_{b}$ (i.e. if $\tilde{t}_{p}>0$).
+To illustrate the symmetry, we can also write:%
+\begin{equation*}
+\bar{j}=\frac{A^{\theta }\left( 1+t_{p}\right) ^{-\theta \left( 1-\gamma
+\right) }}{A^{\theta }\left( 1+t_{p}\right) ^{-\theta \left( 1-\gamma
+\right) }+A^{\ast \theta }\left( 1+t_{b}\right) ^{-\theta \left( 1-\gamma
+\right) }}.
+\end{equation*}%
+Just as the production tax hits $\mathcal{H}$, so the border tax adjustment
+hits $\mathcal{F}$.
+
+Now consider producers in either country supplying manufactures to consumers
+in $\mathcal{F}$. For producers in $\mathcal{H}$ the production tax,
+together with the border rebate of taxes on exports, raises costs by the
+factor:%
+\begin{equation*}
+\left( (1+t_{p})/(1+t_{b})\right) ^{1-\gamma }=\left( 1+\tilde{t}_{p}\right)
+^{1-\gamma }.
+\end{equation*}%
+Producers in $\mathcal{F}$ face no taxes. Thus (\ref{jbar partial bta}) is
+the cutoff determining which country supplies which varieties to consumers
+anywhere.
+
+The maximum price of a manufacturing variety supplied to consumers in $%
+\mathcal{H}$ is:%
+\begin{eqnarray*}
+\bar{p} &=&\frac{\bar{j}^{1/\theta }p_{e}^{1-\gamma }\left( 1+t_{p}\right)
+^{1-\gamma }}{A} \\
+&=&p_{e}^{1-\gamma }\left( A^{\theta }\left( 1+t_{p}\right) ^{-\theta \left(
+1-\gamma \right) }+A^{\ast \theta }\left( 1+t_{b}\right) ^{-\theta \left(
+1-\gamma \right) }\right) ^{-1/\theta }.
+\end{eqnarray*}%
+We still have that the manufacturing price index is $p_{m}=\phi \bar{p}$, so
+that when we substitute out $\bar{p}$: 
+\begin{equation*}
+p_{m}=\phi p_{e}^{1-\gamma }\left( A^{\theta }\left( 1+t_{p}\right)
+^{-\theta \left( 1-\gamma \right) }+A^{\ast \theta }\left( 1+t_{b}\right)
+^{-\theta \left( 1-\gamma \right) }\right) ^{-1/\theta }.
+\end{equation*}%
+Holding $p_{e}$ fixed, the production tax and border tax adjustment in $%
+\mathcal{H}$ makes manufactures more expensive to consumers there. What
+about for consumers in $\mathcal{F}$? The maximum price there is:%
+\begin{equation*}
+\bar{p}^{\ast }=\frac{\bar{j}^{1/\theta }p_{e}^{1-\gamma }\left( \frac{%
+1+t_{p}}{1+t_{b}}\right) ^{1-\gamma }}{A},
+\end{equation*}%
+so that%
+\begin{equation*}
+p_{m}^{\ast }=\phi p_{e}^{1-\gamma }\left( A^{\theta }\left( \frac{1+t_{p}}{%
+1+t_{b}}\right) ^{-\theta \left( 1-\gamma \right) }+A^{\ast \theta }\right)
+^{-1/\theta }=\left( 1+t_{b}\right) ^{-\left( 1-\gamma \right) }p_{m}.
+\end{equation*}
+
+The production tax also raises the price of energy consumed directly by
+households in $\mathcal{H}$. The after-tax price of the composite good in $%
+\mathcal{H}$ becomes:%
+\begin{eqnarray}
+p_{c} &=&p_{m}^{\eta }p_{e}^{1-\eta }(1+t_{p})^{1-\eta }  \notag \\
+&=&\phi ^{\eta }p_{e}^{1-\eta \gamma }(1+t_{p})^{1-\eta }\left( A^{\theta
+}\left( 1+t_{p}\right) ^{-\theta \left( 1-\gamma \right) }+A^{\ast \theta
+}\left( 1+t_{b}\right) ^{-\theta \left( 1-\gamma \right) }\right) ^{-\eta
+/\theta }.  \label{p_c partial bta}
+\end{eqnarray}%
+Since there is no production tax in $\mathcal{F}$, the after-tax price of
+the composite good there is:%
+\begin{equation}
+p_{c}^{\ast }=\phi ^{\eta }p_{e}^{1-\eta \gamma }\left( A^{\theta }\left( 
+\frac{1+t_{p}}{1+t_{b}}\right) ^{-\theta \left( 1-\gamma \right) }+A^{\ast
+\theta }\right) ^{-\eta /\theta }.  \label{p_c star partial bta}
+\end{equation}%
+Given $p_{c}$, spending on the $c$-good is $D(p_{c})Y$, with spending share $%
+D(p_{c})$ given by (\ref{c spending share}). Hence consumption spending on
+the $e$-good is:%
+\begin{equation*}
+(1+t_{p})p_{e}C_{e}=\left( 1-\eta \right) D(p_{c})Y.
+\end{equation*}%
+In $F$ we have:%
+\begin{equation*}
+p_{e}C_{e}^{\ast }=\left( 1-\eta \right) D^{\ast }(p_{c}^{\ast })Y^{\ast }.
+\end{equation*}
+
+\subsubsection{Income}
+
+If $\mathcal{H}$ also imposes an extraction tax, world energy production is:%
+\begin{equation*}
+Q_{e}^{W}=\left( \frac{p_{e}}{1+t_{e}}\right) ^{\beta /(1-\beta
+)}E+p_{e}^{\beta ^{\ast }/(1-\beta ^{\ast })}E^{\ast }.
+\end{equation*}%
+Since there are no taxes in $\mathcal{F}$, total income there is:%
+\begin{equation}
+Y^{\ast }=L^{\ast }+\left( 1-\beta ^{\ast }\right) p_{e}^{1/(1-\beta ^{\ast
+})}E^{\ast }.  \label{Y star partial bta}
+\end{equation}%
+In $\mathcal{H}$, income is:%
+\begin{equation*}
+Y=L+\left( 1-\beta +t_{e}\right) \left( \frac{p_{e}}{1+t_{e}}\right)
+^{1/(1-\beta )}E+T_{p}+T_{b},
+\end{equation*}%
+where $T_{p}$ is revenue from the production tax and $T_{b}$ is revenue
+(positive or negative) from border tax adjustments.
+
+To calculate tax revenue, we need expressions for spending on energy
+intermediates. Spending on the energy input in $\mathcal{H}$ for sales of
+manufactures in $\mathcal{H}$ is:%
+\begin{equation*}
+(1+t_{p})p_{e}M_{e}^{HH}=\left( 1-\gamma \right) \bar{j}\eta D(p_{c})Y,
+\end{equation*}%
+while for $\mathcal{H}$'s sales of manufactures in $\mathcal{F}$ the border
+adjustment applies:%
+\begin{equation*}
+\left( 1+\tilde{t}_{p}\right) p_{e}M_{e}^{FH}=\frac{1+t_{p}}{1+t_{b}}%
+p_{e}M_{e}^{FH}=\left( 1-\gamma \right) \bar{j}\eta D^{\ast }(p_{c}^{\ast
+})Y^{\ast }.
+\end{equation*}%
+Spending on the energy input in $\mathcal{F}$ for sales of manufactures in $%
+\mathcal{H}$ is:%
+\begin{equation*}
+\left( 1+t_{b}\right) p_{e}M_{e}^{HF}=\left( 1-\gamma \right) \left( 1-\bar{j%
+}\right) \eta D(p_{c})Y,
+\end{equation*}%
+while for $\mathcal{F}$'s sales of manufactures in $\mathcal{F}$ no tax
+applies:%
+\begin{equation*}
+p_{e}M_{e}^{FF}=\left( 1-\gamma \right) \left( 1-\bar{j}\right) \eta D^{\ast
+}(p_{c}^{\ast })Y^{\ast }.
+\end{equation*}
+
+Production tax revenue consists of the taxes collected from firms and those
+collected from households. The total is:%
+\begin{eqnarray*}
+T_{p} &=&t_{p}p_{e}M_{e}^{HH}+t_{p}p_{e}M_{e}^{FH}+t_{p}p_{e}C_{e} \\
+&=&\frac{t_{p}}{1+t_{p}}\left( 1-\gamma \right) \bar{j}\eta D(p_{c})Y+\frac{%
+t_{p}}{1+\tilde{t}_{p}}\left( 1-\gamma \right) \bar{j}\eta D^{\ast
+}(p_{c}^{\ast })Y^{\ast }+\frac{t_{p}}{1+t_{p}}\left( 1-\eta \right)
+D(p_{c})Y \\
+&=&\frac{t_{p}}{1+t_{p}}\left[ \left( 1-\gamma \right) \bar{j}\eta
+D(p_{c})Y+\left( 1-\eta \right) D(p_{c})Y+\left( 1+t_{b}\right) \left(
+1-\gamma \right) \bar{j}\eta D^{\ast }(p_{c}^{\ast })Y^{\ast }\right] ,
+\end{eqnarray*}%
+with $\bar{j}$ given by (\ref{jbar partial bta}). The revenue (positive or
+negative) from border tax adjustments is:%
+\begin{eqnarray*}
+T_{b} &=&t_{b}p_{e}M_{e}^{HF}-\left( t_{p}-\tilde{t}_{p}\right)
+p_{e}M_{e}^{FH} \\
+&=&\frac{t_{b}}{1+t_{b}}\left( 1-\gamma \right) \left( 1-\bar{j}\right) \eta
+D(p_{c})Y-\frac{t_{p}-\tilde{t}_{p}}{1+\tilde{t}_{p}}\left( 1-\gamma \right) 
+\bar{j}\eta D^{\ast }(p_{c}^{\ast })Y^{\ast } \\
+&=&\frac{t_{b}}{1+t_{b}}\left[ \left( 1-\gamma \right) \left( 1-\bar{j}%
+\right) \eta D(p_{c})Y-\left( 1+t_{b}\right) \left( 1-\gamma \right) \bar{j}%
+\eta D^{\ast }(p_{c}^{\ast })Y^{\ast }\right] 
+\end{eqnarray*}%
+Adding in tax revenue, income in $\mathcal{H}$ is given by:%
+\begin{eqnarray}
+Y &=&L+\left( 1-\beta +t_{e}\right) R_{e}  \notag \\
+&&+\left( \frac{t_{p}}{1+t_{p}}\left[ \left( 1-\gamma \right) \bar{j}\eta
++\left( 1-\eta \right) \right] +\frac{t_{b}}{1+t_{b}}\left( 1-\gamma \right)
+\left( 1-\bar{j}\right) \eta \right) D(p_{c})Y  \notag \\
+&&+\left( \frac{t_{p}-t_{b}}{1+t_{p}}\right) \left( 1-\gamma \right) \bar{j}%
+\eta D^{\ast }(p_{c}^{\ast })Y^{\ast }.  \label{Y home partial bta}
+\end{eqnarray}
+
+\subsubsection{Equilibrium with Partial BTA's}
+
+Equilibrium consists of a price $p_{e}$ that equates world supply and demand
+for energy. Valuing both at world prices, we have:%
+\begin{equation*}
+\left( 1+t_{e}\right) ^{-\beta /(1-\beta )}p_{e}^{1/(1-\beta
+)}E+p_{e}^{1/(1-\beta ^{\ast })}E^{\ast }=p_{e}C_{e}^{W}+p_{e}M_{e}^{W}.
+\end{equation*}%
+The value of world demand for energy by households is:%
+\begin{equation}
+p_{e}C_{e}^{W}=\left( 1-\eta \right) \left( \frac{1}{1+t_{p}}%
+D(p_{c})Y+D^{\ast }(p_{c}^{\ast })Y^{\ast }\right) ,
+\label{world consumption spending}
+\end{equation}%
+and the value of world demand for energy by firms is:%
+\begin{eqnarray}
+p_{e}M_{e}^{W} &=&p_{e}M_{e}^{HW}+p_{e}M_{e}^{FW}  \notag \\
+&=&\left( 1-\gamma \right) \eta \left[ \left( \frac{\bar{j}}{1+t_{p}}+\frac{%
+1-\bar{j}}{1+t_{b}}\right) D(p_{c})Y+\left( \frac{\bar{j}}{1+\tilde{t}_{p}}%
++1-\bar{j}\right) D^{\ast }(p_{c}^{\ast })Y^{\ast }\right]   \notag \\
+&=&\left( 1-\gamma \right) \eta \left( \frac{1+t_{b}}{1+t_{p}}\bar{j}+1-\bar{%
+j}\right) \left( \frac{1}{1+t_{b}}D(p_{c})Y+D^{\ast }(p_{c}^{\ast })Y^{\ast
+}\right) .  \label{world intermediate spending}
+\end{eqnarray}%
+with $p_{c}$ given by (\ref{p_c partial bta}), $p_{c}^{\ast }$ given by (\ref%
+{p_c star partial bta}), $\bar{j}$ given by (\ref{jbar partial bta}), $Y$
+given by (\ref{Y home partial bta}), and $Y^{\ast }$ given by (\ref{Y star
+partial bta}).
+
+\subsection{Optimal Partial BTA's}
+
+We now consider what level of border tax adjustment is optimal for $\mathcal{%
+H}$ given some goal $\hat{Q}_{e}^{W}=G<1$ for reduction of global emissions.
+The two policy levers are the production tax $t_{p}^{\prime }\geq 0$ and the
+border tax adjustment $t_{b}^{\prime }\in \left[ 0,t_{p}^{\prime }\right] $.
+For now we ignore extraction taxes, setting $t_{e}^{\prime }=0$. We will
+work out the answer in the form of changes from a baseline that can be
+calibrated to data. For simplicity, we assume no taxes in this baseline. We
+also set $\beta =\beta ^{\ast }$.
+
+\subsubsection{Properties of the Baseline}
+
+In the baseline, income in $\mathcal{H}$ is:%
+\begin{equation*}
+Y=L+rE=L+(1-\beta )p_{e}Q_{e}
+\end{equation*}%
+so that, dividing both sides by $Y$:%
+\begin{equation*}
+1-\pi _{L}=(1-\beta )\pi _{e},
+\end{equation*}%
+where%
+\begin{equation*}
+\pi _{e}=\frac{p_{e}Q_{e}}{Y}
+\end{equation*}%
+is the share of the energy or extraction sector in GDP. The same holds in $%
+\mathcal{F}$:%
+\begin{equation*}
+1-\pi _{L}^{\ast }=(1-\beta )\pi _{e}^{\ast }.
+\end{equation*}
+
+The cutoff manufacturing variety in the baseline is:%
+\begin{equation*}
+\bar{j}=\frac{A^{\theta }}{A^{\theta }+A^{\ast \theta }}.
+\end{equation*}%
+In data, the analog of $\bar{j}$ is the fraction of spending on manufactures
+devoted to those produced in $\mathcal{H}$. We also need an expression for
+how $\bar{j}$ evolves from its baseline when we introduce carbon taxes. From
+(\ref{jbar partial bta}) we get the convenient expression:%
+\begin{equation}
+\bar{j}^{\prime }(t_{b}^{\prime },t_{p}^{\prime })=\frac{\bar{j}\left( \frac{%
+1+t_{p}^{\prime }}{1+t_{b}^{\prime }}\right) ^{-\theta \left( 1-\gamma
+\right) }}{\bar{j}\left( \frac{1+t_{p}^{\prime }}{1+t_{b}^{\prime }}\right)
+^{-\theta \left( 1-\gamma \right) }+1-\bar{j}}.  \label{jbar prime}
+\end{equation}
+
+Our definition of the consumption share is now:%
+\begin{equation*}
+\pi _{c}=\frac{p_{c}C_{c}}{Y}=D(p_{c})
+\end{equation*}%
+in $\mathcal{H}$ and 
+\begin{equation*}
+\pi _{c}^{\ast }=D^{\ast }(p_{c}^{\ast })
+\end{equation*}%
+in $\mathcal{F}$, i.e. $1$ minus the share of income spent on the $l$-good
+(reducing to Simple Model for the case of $\eta =0$). Applying (\ref{c
+spending share}) we have:%
+\begin{equation*}
+\pi _{c}=\frac{\alpha p_{c}^{-\left( \sigma -1\right) }}{\alpha
+p_{c}^{-(\sigma -1)}+1-\alpha }.
+\end{equation*}%
+When we introduced carbon taxes, this share in $H$ evolves to:%
+\begin{equation}
+\pi _{c}^{\prime }=\frac{\pi _{c}\hat{p}_{c}^{-\left( \sigma -1\right) }}{%
+\pi _{c}\hat{p}_{c}^{-\left( \sigma -1\right) }+1-\pi _{c}}.
+\label{c share prime}
+\end{equation}%
+In $F$ it evolves to:%
+\begin{equation}
+\pi _{c}^{\ast \prime }=\frac{\pi _{c}^{\ast }\left( \hat{p}_{c}^{\ast
+}\right) ^{-\left( \sigma -1\right) }}{\pi _{c}^{\ast }\left( \hat{p}%
+_{c}^{\ast }\right) ^{-\left( \sigma -1\right) }+1-\pi _{c}^{\ast }}.
+\label{c share star prime}
+\end{equation}%
+Carbon taxes do not show up directly in these expressions because $\hat{p}%
+_{c}$ and $\hat{p}_{c}^{\ast }$ already embody the effect of the tax on the
+spending share.
+
+\subsubsection{Energy Supply}
+
+Recall that $G$ represents the goal for a reduction in global emissions.
+Because there is no extraction tax, the supply side is simply:%
+\begin{equation}
+G=\omega _{e}\hat{p}_{e}^{\beta /(1-\beta )}+\left( 1-\omega _{e}\right) 
+\hat{p}_{e}^{\beta /(1-\beta )},  \label{supply change partial btas}
+\end{equation}%
+where%
+\begin{equation*}
+\omega _{e}=\frac{\pi _{e}Y}{\pi _{e}Y+\pi _{e}^{\ast }Y^{\ast }}=\frac{%
+p_{e}Q_{e}}{p_{e}Q_{e}^{W}}.
+\end{equation*}%
+The global emission goal $G$ nails down the change in the energy price:%
+\begin{equation}
+\hat{p}_{e}=G^{\left( 1-\beta \right) /\beta },  \label{phat energy of G}
+\end{equation}%
+which we can henceforth take as given.
+
+\subsubsection{Prices}
+
+With the change in the energy price nailed down, we can solve for the other
+prices. From (\ref{p_c partial bta}) we have in $\mathcal{H}$:%
+\begin{equation*}
+\hat{p}_{c}=\hat{p}_{m}^{\eta }\hat{p}_{e}^{1-\eta }(1+t_{p}^{\prime
+})^{1-\eta }
+\end{equation*}%
+with $\hat{p}_{m}$ given by%
+\begin{equation*}
+\hat{p}_{m}=\hat{p}_{e}^{1-\gamma }\left( \bar{j}\left( 1+t_{p}^{\prime
+}\right) ^{-\theta \left( 1-\gamma \right) }+\left( 1-\bar{j}\right) \left(
+1+t_{b}^{\prime }\right) ^{-\theta \left( 1-\gamma \right) }\right)
+^{-1/\theta }.
+\end{equation*}%
+Combining these pieces, the change in the price of the $c$-good in $\mathcal{%
+H}$ is:%
+\begin{equation}
+\hat{p}_{c}(t_{b}^{\prime },t_{p}^{\prime })=\hat{p}_{e}^{1-\gamma \eta
+}(1+t_{p}^{\prime })^{1-\eta }\left( \bar{j}\left( 1+t_{p}^{\prime }\right)
+^{-\theta \left( 1-\gamma \right) }+\left( 1-\bar{j}\right) \left(
+1+t_{b}^{\prime }\right) ^{-\theta \left( 1-\gamma \right) }\right) ^{-\eta
+/\theta }.  \label{phat c given G}
+\end{equation}%
+The change in the price of the $c$-good in $\mathcal{F}$ reflects the fact
+that neither energy used in final consumption nor manufactures produced in $%
+\mathcal{F}$ for domestic consumption are taxed:%
+\begin{equation}
+\hat{p}_{c}^{\ast }(t_{b}^{\prime },t_{p}^{\prime })=\hat{p}_{e}^{1-\gamma
+\eta }\left( \bar{j}\left( \frac{1+t_{p}^{\prime }}{1+t_{b}^{\prime }}%
+\right) ^{-\theta \left( 1-\gamma \right) }+\left( 1-\bar{j}\right) \right)
+^{-\eta /\theta }.  \label{phat c star given G}
+\end{equation}%
+We can substitute (\ref{phat c given G}) into (\ref{c share prime}) to get:%
+\begin{equation}
+\pi _{c}^{\prime }(t_{b}^{\prime },t_{p}^{\prime })=\frac{\pi _{c}\hat{p}%
+_{c}(t_{b}^{\prime },t_{p}^{\prime })^{-\left( \sigma -1\right) }}{\pi _{c}%
+\hat{p}_{c}(t_{b}^{\prime },t_{p}^{\prime })^{-\left( \sigma -1\right)
+}+1-\pi _{c}},  \label{c share prime function}
+\end{equation}%
+and (\ref{phat c star given G}) into (\ref{c share star prime}) to get: 
+\begin{equation}
+\pi _{c}^{\ast \prime }(t_{b}^{\prime },t_{p}^{\prime })=\frac{\pi
+_{c}^{\ast }\hat{p}_{c}^{\ast }(t_{b}^{\prime },t_{p}^{\prime })^{-\left(
+\sigma -1\right) }}{\pi _{c}^{\ast }\hat{p}_{c}^{\ast }(t_{b}^{\prime
+},t_{p}^{\prime })^{-\left( \sigma -1\right) }+1-\pi _{c}^{\ast }}.
+\label{c share star prime function}
+\end{equation}
+
+\subsubsection{Income}
+
+For the change in $\mathcal{H}$'s income, we can rewrite (\ref{Y home
+partial bta}) as:
+
+\begin{eqnarray*}
+\hat{Y} &=&\pi _{L}+\left( 1-\beta \right) \pi _{e}\hat{p}_{e}^{1/(1-\beta )}
+\\
+&&+\left( \frac{t_{p}^{\prime }}{1+t_{p}^{\prime }}\left( \left( 1-\gamma
+\right) \bar{j}^{\prime }\eta +\left( 1-\eta \right) \right) +\frac{%
+t_{b}^{\prime }}{1+t_{b}^{\prime }}\left( 1-\gamma \right) \left( 1-\bar{j}%
+^{\prime }\right) \eta \right) \pi _{c}^{\prime }\hat{Y} \\
+&&+\left( \frac{t_{p}^{\prime }-t_{b}^{\prime }}{1+t_{p}^{\prime }}\right)
+\left( 1-\gamma \right) \bar{j}^{\prime }\eta \pi _{c}^{\ast \prime }\frac{%
+Y^{\ast }}{Y}\hat{Y}^{\ast }.
+\end{eqnarray*}%
+Hence:%
+\begin{equation}
+\hat{Y}(t_{b}^{\prime },t_{p}^{\prime })=\frac{\pi _{L}+\left( 1-\beta
+\right) \pi _{e}\hat{p}_{e}^{1/(1-\beta )}+\left( \frac{t_{p}^{\prime
+}-t_{b}^{\prime }}{1+t_{p}^{\prime }}\right) \left( 1-\gamma \right) \bar{j}%
+^{\prime }\eta \pi _{c}^{\ast \prime }\frac{Y^{\ast }}{Y}\hat{Y}^{\ast }}{%
+1-\left( \frac{t_{p}^{\prime }}{1+t_{p}^{\prime }}\left( \left( 1-\gamma
+\right) \bar{j}^{\prime }\eta +\left( 1-\eta \right) \right) +\frac{%
+t_{b}^{\prime }}{1+t_{b}^{\prime }}\left( 1-\gamma \right) \left( 1-\bar{j}%
+^{\prime }\right) \eta \right) \pi _{c}^{\prime }},
+\label{Y hat partial btas}
+\end{equation}%
+where $\bar{j}^{\prime }=\bar{j}^{\prime }(t_{b}^{\prime },t_{p}^{\prime })$
+given by (\ref{jbar prime}), $\pi _{c}^{\prime }=\pi _{c}^{\prime
+}(t_{b}^{\prime },t_{p}^{\prime })$ by (\ref{c share prime function}), $\pi
+_{c}^{\ast \prime }=$ $\pi _{c}^{\ast \prime }(t_{b}^{\prime },t_{p}^{\prime
+})$ by (\ref{c share star prime function}), and the change in $\mathcal{F}$%
+'s income:%
+\begin{equation}
+\hat{Y}^{\ast }=\pi _{L}^{\ast }+\left( 1-\beta \right) \pi _{e}^{\ast }\hat{%
+p}_{e}^{1/(1-\beta )}.  \label{Y star hat partial btas}
+\end{equation}%
+Everywhere we evaluate $\hat{p}_{e}$ using (\ref{phat c given G}).
+
+\subsubsection{Demand}
+
+Combining (\ref{world consumption spending}) and (\ref{world intermediate
+spending}), with taxes world spending on energy becomes:%
+\begin{eqnarray*}
+X_{e}^{W^{\prime }} &=&p_{e}^{\prime }C_{e}^{W\prime }+p_{e}^{\prime
+}M_{e}^{W\prime }=\left( 1-\eta \right) \left( \frac{1}{1+t_{p}^{\prime }}%
+D(p_{c}^{\prime })Y^{\prime }+D^{\ast }(p_{c}^{\ast \prime })Y^{\ast \prime
+}\right) \\
+&&+\left( 1-\gamma \right) \eta \left( \frac{1+t_{b}^{\prime }}{%
+1+t_{p}^{\prime }}\bar{j}^{\prime }+1-\bar{j}^{\prime }\right) \left( \frac{1%
+}{1+t_{b}^{\prime }}D(p_{c}^{\prime })Y^{\prime }+D^{\ast }(p_{c}^{\ast
+\prime })Y^{\ast \prime }\right) \\
+&=&\left( \frac{1-\eta }{1+t_{p}^{\prime }}+\left( \frac{1-\gamma }{%
+1+t_{b}^{\prime }}\right) \eta \left( \frac{1+t_{b}^{\prime }}{%
+1+t_{p}^{\prime }}\bar{j}^{\prime }+1-\bar{j}^{\prime }\right) \right)
+D(p_{c}^{\prime })Y^{\prime } \\
+&&+\left( \left( 1-\eta \right) +\left( 1-\gamma \right) \eta \left( \frac{%
+1+t_{b}^{\prime }}{1+t_{p}^{\prime }}\bar{j}^{\prime }+1-\bar{j}^{\prime
+}\right) \right) D^{\ast }(p_{c}^{\ast \prime })Y^{\ast \prime }.
+\end{eqnarray*}%
+Thus, the change in world energy spending can be written as:%
+\begin{eqnarray}
+\hat{X}_{e}^{W}(t_{b}^{\prime },t_{p}^{\prime }) &=&\left( \frac{1-\eta }{%
+1+t_{p}^{\prime }}+\left( \frac{1-\gamma }{1+t_{b}^{\prime }}\right) \eta
+\left( \frac{1+t_{b}^{\prime }}{1+t_{p}^{\prime }}\bar{j}^{\prime }+1-\bar{j}%
+^{\prime }\right) \right) \frac{\omega _{e}}{\pi _{e}}\pi _{c}^{\prime }\hat{%
+Y}  \notag \\
+&&+\left( \left( 1-\eta \right) +\left( 1-\gamma \right) \eta \left( \frac{%
+1+t_{b}^{\prime }}{1+t_{p}^{\prime }}\bar{j}^{\prime }+1-\bar{j}^{\prime
+}\right) \right) \frac{\omega _{e}^{\ast }}{\pi _{e}^{\ast }}\pi _{c}^{\ast
+\prime }\hat{Y}^{\ast }.  \label{demand change partial btas}
+\end{eqnarray}%
+where $\bar{j}^{\prime }=\bar{j}^{\prime }(t_{b}^{\prime },t_{p}^{\prime })$
+is given by (\ref{jbar prime}), $\pi _{c}^{\prime }=\pi _{c}^{\prime
+}(t_{b}^{\prime },t_{p}^{\prime })$ by (\ref{c share prime function}), $\pi
+_{c}^{\ast \prime }=$ $\pi _{c}^{\ast \prime }(t_{b}^{\prime },t_{p}^{\prime
+})$ by (\ref{c share star prime function}), $\hat{Y}=\hat{Y}(t_{b}^{\prime
+},t_{p}^{\prime })$ by (\ref{Y hat partial btas}), $\hat{Y}^{\ast }$ by (\ref%
+{Y star hat partial btas}), and all evaluated at (\ref{phat c star given G}).
+
+\subsubsection{Welfare}
+
+Welfare in $\mathcal{H}$ is:%
+\begin{equation*}
+W=\frac{Y}{p},
+\end{equation*}%
+where the aggregate price index is from (\ref{aggregate price index II}). We
+want to select the tax pair that maximizes:%
+\begin{equation*}
+\hat{W}=\frac{W^{\prime }}{W}=\frac{\hat{Y}}{\hat{p}}.
+\end{equation*}%
+We already have an expression (\ref{Y hat partial btas}) for $\hat{Y}$. From
+(\ref{aggregate price index II}), the change in the aggregate price level
+can be written as: 
+\begin{equation}
+\hat{p}(t_{b}^{\prime },t_{p}^{\prime })=\left( \pi _{c}\hat{p}%
+_{c}(t_{b}^{\prime },t_{p}^{\prime })^{-\left( \sigma -1\right) }+(1-\pi
+_{c})\right) ^{-1/(\sigma -1)},  \label{phat aggregate}
+\end{equation}%
+with $\hat{p}_{c}(t_{b}^{\prime },t_{p}^{\prime })$ given by (\ref{phat c
+given G}).
+
+As a result of these substitutions, we can express the change in welfare as
+a function of just the two policy instruments:%
+\begin{equation*}
+\hat{W}(t_{b}^{\prime },t_{p}^{\prime })=\frac{\hat{Y}(t_{b}^{\prime
+},t_{p}^{\prime })}{\hat{p}(t_{b}^{\prime },t_{p}^{\prime })}.
+\end{equation*}%
+The constraint is that global consumption of energy decline by the same
+amount as supply:%
+\begin{equation*}
+g(t_{b}^{\prime },t_{p}^{\prime })=\frac{\hat{X}_{e}^{W}(t_{b}^{\prime
+},t_{p}^{\prime })}{\hat{p}_{e}}=G,
+\end{equation*}%
+where $\hat{p}_{e}$ is given by (\ref{phat c star given G}). Our problem
+reduces to maximizing the Lagrangian:%
+\begin{equation*}
+\mathcal{L}=\hat{W}(t_{b}^{\prime },t_{p}^{\prime })+\lambda \left[
+G-g(t_{b}^{\prime },t_{p}^{\prime })\right] ,
+\end{equation*}%
+where $\lambda $ is the lagrange multiplier.
+
+\subsubsection{Special Cases}
+
+To get some insight into this problem we consider several extreme cases. We
+focus on the determinants of the change in world demand for energy, as given
+by (\ref{demand change partial btas}).
+
+\paragraph{Only Direct Consumption of Energy}
+
+The simplest case is $\eta =0$ so that manufactures are not consumed. Hence,
+energy is consumed only directly by households, as in Simple Model. In this
+case (\ref{demand change partial btas}) simplifies to:%
+\begin{equation*}
+\hat{X}_{e}^{W}=\frac{1}{1+t_{p}^{\prime }}\frac{\omega _{e}}{\pi _{e}}\pi
+_{c}^{\prime }\hat{Y}+\frac{\omega _{e}^{\ast }}{\pi _{e}^{\ast }}\pi
+_{c}^{\ast \prime }\hat{Y}^{\ast }.
+\end{equation*}%
+How is this expression altered by a shift in demand? Inspection of (\ref{c
+share prime}) shows that $\pi _{c}^{\prime }$ is increasing in $\pi _{c}$
+and of (\ref{c share star prime}) that $\pi _{c}^{\ast \prime }$ is
+increasing in $\pi _{c}^{\ast }$. Thus, a shift in preference for energy
+from $\mathcal{F}$ to $\mathcal{H}$ (an increase in $\pi _{c}$ together with
+a decrease in $\pi _{c}^{\ast }$) will increase the tax base in $\mathcal{H}$
+so that a \emph{lower} production tax rate in $\mathcal{H}$ will acheive the
+same reduction in world energy consumption, given $\hat{Y}$.
+
+Taking account of the change in income in $\mathcal{H}$ strengthens this
+effect. Note that (\ref{Y hat partial btas}) reduces to:%
+\begin{equation*}
+\hat{Y}=\frac{\pi _{L}+\left( 1-\beta \right) \pi _{e}\hat{p}%
+_{e}^{1/(1-\beta )}}{1-\frac{t_{p}^{\prime }}{1+t_{p}^{\prime }}\pi
+_{c}^{\prime }},
+\end{equation*}%
+which is increasing in $\pi _{c}^{\prime }$.
+
+Another case delivering essentially the same result is if $\eta >0$ but $%
+\gamma =1$. In this case the manufacturing sector is active, but only labor
+is used to produce manufactures. Then (\ref{demand change partial btas})
+simplifies to:%
+\begin{equation*}
+\hat{X}_{e}^{W}=\left( 1-\eta \right) \left( \frac{1}{1+t_{p}^{\prime }}%
+\frac{\omega _{e}}{\pi _{e}}\pi _{c}^{\prime }\hat{Y}+\frac{\omega
+_{e}^{\ast }}{\pi _{e}^{\ast }}\pi _{c}^{\ast \prime }\hat{Y}^{\ast }\right)
+.
+\end{equation*}%
+The only difference is the multiplicative term, which represents direct
+spending on energy as a share of spending on the $c$-good. As above, income
+in $\mathcal{H}$ rises with an increase in $\pi _{c}^{\prime }$, now
+according to:%
+\begin{equation*}
+\hat{Y}=\frac{\pi _{L}+\left( 1-\beta \right) \pi _{e}\hat{p}%
+_{e}^{1/(1-\beta )}}{1-\frac{t_{p}^{\prime }}{1+t_{p}^{\prime }}\left(
+1-\eta \right) \pi _{c}^{\prime }}.
+\end{equation*}
+
+\paragraph{Only Indirect Consumption of Energy}
+
+Now consider $\eta =1$, so that there is no direct spending on energy.
+Energy is demanded only indirectly as it is embodied in manufactures. In
+this case (\ref{demand change partial btas}) reduces to:%
+\begin{equation*}
+\hat{X}_{e}^{W}=\left( 1-\gamma \right) \left( \frac{1+t_{b}^{\prime }}{%
+1+t_{p}^{\prime }}\bar{j}^{\prime }+1-\bar{j}^{\prime }\right) \left( \frac{1%
+}{1+t_{b}^{\prime }}\frac{\omega _{e}}{\pi _{e}}\pi _{c}^{\prime }\hat{Y}+%
+\frac{\omega _{e}^{\ast }}{\pi _{e}^{\ast }}\pi _{c}^{\ast \prime }\hat{Y}%
+^{\ast }\right) .
+\end{equation*}%
+In this case, consider an improvement in $\mathcal{H}$'s comparative
+advantage in manufactures. In particular, raising $\bar{j}$ will, via (\ref%
+{jbar prime}), lead to a rise in $\bar{j}^{\prime }$. The resulting increase
+in the tax base will, given $t_{b}^{\prime }$, allow for a \emph{lower}
+production tax rate to acheive the same reduction in world demand for
+energy. In this case we can ignore $\hat{Y}$ and $\hat{Y}^{\ast }$ since
+they don't vary with $\bar{j}$.
+
+We can now return to the analysis of a shift in demand, imposing initial
+symmetry across countries to keep things simple ($\pi _{e}=\pi _{e}^{\ast }$
+and $\omega _{e}=$ $\omega _{e}^{\ast }$, so that $Y=Y^{\ast }$):
+
+\begin{equation*}
+\hat{X}_{e}^{W}=\left( 1-\gamma \right) \left( \frac{1}{1+t_{p}^{\prime }}%
+\bar{j}^{\prime }+1-\bar{j}^{\prime }\right) \left( \pi _{c}^{\prime }\hat{Y}%
++\pi _{c}^{\ast \prime }\hat{Y}^{\ast }\right) ,
+\end{equation*}%
+where we have assumed no border adjustments so that $t_{b}^{\prime }=0$. In
+this case, it appears that a shift in preference for energy from $\mathcal{F}
+$ to $\mathcal{H}$ will raise overall energy demand, requiring a \emph{higher%
+} production tax rate to reduce energy demand by the same amount. To confirm
+this intuition, consider the change in income (imposing $Y=Y^{\ast }$):%
+\begin{equation*}
+\hat{Y}=\frac{\pi _{L}+\left( 1-\beta \right) \pi _{e}\hat{p}%
+_{e}^{1/(1-\beta )}+\left( 1-\gamma \right) \frac{t_{p}^{\prime }}{%
+1+t_{p}^{\prime }}\bar{j}^{\prime }\pi _{c}^{\ast \prime }\hat{Y}^{\ast }}{%
+1-\left( 1-\gamma \right) \frac{t_{p}^{\prime }}{1+t_{p}^{\prime }}\bar{j}%
+^{\prime }\pi _{c}^{\prime }}.
+\end{equation*}%
+Consider how the income change is affected by changes in $\pi _{c}^{\prime }$
+and $\pi _{c}^{\ast \prime }$:%
+\begin{equation*}
+\frac{\partial \hat{Y}}{\partial \pi _{c}^{\prime }}=\frac{(1-\gamma )\frac{%
+t_{p}^{\prime }}{1+t_{p}^{\prime }}\bar{j}^{\prime }}{\left( 1-(1-\gamma )%
+\frac{t_{p}^{\prime }}{1+t_{p}^{\prime }}\bar{j}^{\prime }\pi _{c}^{\prime
+}\right) ^{2}}
+\end{equation*}%
+\begin{equation*}
+\frac{\partial \hat{Y}}{\partial \pi _{c}^{\ast \prime }}=\frac{(1-\gamma )%
+\frac{t_{p}^{\prime }}{1+t_{p}^{\prime }}\bar{j}^{\prime }\hat{Y}^{\ast }}{%
+1-(1-\gamma )\frac{t_{p}^{\prime }}{1+t_{p}^{\prime }}\bar{j}^{\prime }\pi
+_{c}^{\prime }}
+\end{equation*}%
+Noting that $1-(1-\gamma )\frac{t_{p}^{\prime }}{1+t_{p}^{\prime }}\bar{j}%
+^{\prime }\pi _{c}^{\prime }<1$ and $\hat{Y}^{\ast }<1$, it follows that $%
+\frac{\partial \hat{Y}}{\partial \pi _{c}^{\prime }}>\frac{\partial \hat{Y}}{%
+\partial \pi _{c}^{\ast \prime }}$. Thus, a shift in energy preference from $%
+\mathcal{F}$ to $\mathcal{H}$ tends to increase $\hat{Y}$. Taking into
+account that $\hat{Y}^{\ast }$ is invariable to energy preference, it must
+then be that this shift increases $\left( \pi _{c}^{\prime }\hat{Y}+\pi
+_{c}^{\ast \prime }\hat{Y}^{\ast }\right) $. To maintain the same goal for
+emissions reduction, $\left( \frac{1}{1+t_{p}^{\prime }}\bar{j}^{\prime }+1-%
+\bar{j}^{\prime }\right) $ must fall to compensate. How should $%
+t_{p}^{\prime }$ change to achieve this decrease? To determine this,
+substitute (\ref{jbar prime}) into the expression. This yields 
+\begin{eqnarray*}
+\left( \frac{1}{1+t_{p}^{\prime }}\bar{j}^{\prime }+1-\bar{j}^{\prime
+}\right) &=&1-\frac{t_{p}^{\prime }}{1+t_{p}^{\prime }}\left( \frac{\bar{j}%
+(1+t_{p}^{\prime })^{-\theta (1-\gamma )}}{\bar{j}(1+t_{p}^{\prime
+})^{-\theta (1-\gamma )}+1-\bar{j}}\right) \\
+&=&1-\frac{t_{p}^{\prime }}{(1+t_{p}^{\prime })\left( 1+\bar{j}(1-\bar{j}%
+)(1+t_{p}^{\prime })^{\theta (1-\gamma )}\right) }
+\end{eqnarray*}%
+Now take a derivative with respect to $t_{p}^{\prime }$ to get (after
+rearranging):%
+\begin{equation*}
+\bar{j}(1-\bar{j})(1+t_{p}^{\prime })^{\theta (1-\gamma )}\left( \theta
+(1-\gamma )t_{p}^{\prime }-1\right) -1
+\end{equation*}%
+When this derivative is positive, a \textit{decrease} in $t_{p}^{\prime }$
+is needed to balance the increase in the consumption term. When it is
+negative, an \textit{increase} in $t_{p}^{\prime }$ is needed. An exact
+solution must be determined numerically after asserting values for
+parameters, but immediately one can see that if $t_{p}^{\prime }\leq \frac{1%
+}{\theta (1-\gamma )}$, which for reasonable values of $\theta $ and $\gamma 
+$ is true for tax rates of up to and greater than 100\%, an \textit{increase}
+in $t_{p}^{\prime }$ is unequivocally needed to maintain the same level of
+emissions reduction as energy preference shifts from $\mathcal{F}$ to $%
+\mathcal{H}$.
+
+\subsection{Leakage Under Partial BTA's}
+
+Imposition of carbon taxes typically results in production and consumption
+leakage; $\mathcal{F}$ increases production and consumption of energy,
+somewhat offsetting the reductions in $\mathcal{H}$. Here we derive formulas
+for leakage resulting from introducing partial BTA's, continuing to assume
+baseline taxes are zero.
+
+We start by summarizing results from above that are the key ingredients for
+leakage calculations. There are six ways in which energy is used throughout
+the world: for production of manufactures in either country for delivery to
+either country and directly for consumption in either country.
+
+After imposing partial BTA's, the value of the energy used in $\mathcal{H}$
+to supply the domestic market is:
+
+\begin{equation*}
+p_{e}^{\prime }M_{e}^{HH\prime }=\left( 1-\gamma \right) \bar{j}^{\prime
+}\eta \frac{\pi _{c}^{\prime }Y^{\prime }}{1+t_{p}^{\prime }}
+\end{equation*}%
+while for the foreign market:%
+\begin{equation*}
+p_{e}^{\prime }M_{e}^{FH\prime }=\left( 1-\gamma \right) \bar{j}^{\prime
+}\eta \frac{\pi _{c}^{\ast \prime }Y^{\ast \prime }}{1+\tilde{t}_{p}^{\prime
+}}.
+\end{equation*}%
+The value of the energy used in $\mathcal{F}$ to supply manufactures to $%
+\mathcal{H}$ is:%
+\begin{equation*}
+p_{e}^{\prime }M_{e}^{HF\prime }=\left( 1-\gamma \right) \left( 1-\bar{j}%
+^{\prime }\right) \eta \frac{\pi _{c}^{\prime }Y^{\prime }}{1+t_{b}^{\prime }%
+},
+\end{equation*}%
+while in producing for $\mathcal{F}$:%
+\begin{equation*}
+p_{e}^{\prime }M_{e}^{FF\prime }=\left( 1-\gamma \right) \left( 1-\bar{j}%
+^{\prime }\right) \eta \pi _{c}^{\ast \prime }Y^{\ast \prime }.
+\end{equation*}%
+Direct demand for energy by households in $\mathcal{H}$ is:%
+\begin{equation*}
+p_{e}^{\prime }C_{e}^{\prime }=\left( 1-\eta \right) \frac{\pi _{c}^{\prime
+}Y^{\prime }}{1+t_{p}^{\prime }},
+\end{equation*}%
+while in $\mathcal{F}$:%
+\begin{equation*}
+p_{e}^{\prime }C_{e}^{\ast \prime }=\left( 1-\eta \right) \pi _{c}^{\ast
+\prime }Y^{\ast \prime }.
+\end{equation*}
+
+We can exploit the equations above, together with (\ref{jbar prime}), to
+derive expressions for the changes in the quantity of energy used for each
+of these six purposes:%
+\begin{equation}
+\hat{M}_{e}^{HH}=\left( \frac{\left( 1+\tilde{t}_{p}^{\prime }\right)
+^{-\theta \left( 1-\gamma \right) }}{\bar{j}\left( 1+\tilde{t}_{p}^{\prime
+}\right) ^{-\theta \left( 1-\gamma \right) }+1-\bar{j}}\right) \frac{\hat{\pi%
+}_{c}\hat{Y}}{\left( 1+t_{p}^{\prime }\right) \hat{p}_{e}},  \label{MhatH}
+\end{equation}
+
+\begin{equation}
+\hat{M}_{e}^{FH}=\left( \frac{\left( 1+\tilde{t}_{p}^{\prime }\right)
+^{-\theta \left( 1-\gamma \right) }}{\bar{j}\left( 1+\tilde{t}_{p}^{\prime
+}\right) ^{-\theta \left( 1-\gamma \right) }+1-\bar{j}}\right) \frac{\hat{\pi%
+}_{c}^{\ast }\hat{Y}^{\ast }}{\left( 1+\tilde{t}_{p}^{\prime }\right) \hat{p}%
+_{e}},  \label{MhatF}
+\end{equation}%
+\begin{equation}
+\hat{C}_{e}=\frac{\hat{\pi}_{c}\hat{Y}}{\left( 1+t_{p}^{\prime }\right) \hat{%
+p}_{e}},  \label{Chate}
+\end{equation}%
+\begin{equation}
+\hat{M}_{e}^{HF}=\left( \frac{1}{\bar{j}\left( 1+\tilde{t}_{p}^{\prime
+}\right) ^{-\theta \left( 1-\gamma \right) }+1-\bar{j}}\right) \frac{\hat{\pi%
+}_{c}\hat{Y}}{\left( 1+t_{b}^{\prime }\right) \hat{p}_{e}},
+\label{MhatHstar}
+\end{equation}%
+\begin{equation}
+\hat{M}_{e}^{FF}=\left( \frac{1}{\bar{j}\left( 1+\tilde{t}_{p}^{\prime
+}\right) ^{-\theta \left( 1-\gamma \right) }+1-\bar{j}}\right) \frac{\hat{\pi%
+}_{c}^{\ast }\hat{Y}^{\ast }}{\hat{p}_{e}},  \label{MhatFstar}
+\end{equation}%
+and%
+\begin{equation}
+\hat{C}_{e}^{\ast }=\frac{\hat{\pi}_{c}^{\ast }\hat{Y}^{\ast }}{\hat{p}_{e}}.
+\label{Chatestar}
+\end{equation}%
+We now turn to formulas for production leakage and consumption leakage, in
+turn.
+
+\subsubsection{Production Leakage}
+
+Consider production leakage first, where production includes the energy used
+in manufacturing together with direct consumption of energy (which we
+interpret as household production). Production leakage represents the
+increase in energy used in production in the $\mathcal{F}$ divided by the
+decline in energy used in production in $\mathcal{H}$:%
+\begin{eqnarray*}
+l_{P} &=&\frac{\left( M_{e}^{HF\prime }+M_{e}^{FF\prime }+C_{e}^{\ast \prime
+}\right) -\left( M_{e}^{HF}+M_{e}^{FF}+C_{e}^{\ast }\right) }{\left(
+M_{e}^{HH}+M_{e}^{FH}+C_{e}\right) -\left( M_{e}^{HH\prime }+M_{e}^{FH\prime
+}+C_{e}^{\prime }\right) } \\
+&=&\frac{p_{e}M_{e}^{HF}\left( \hat{M}_{e}^{HF}-1\right)
++p_{e}M_{e}^{FF}\left( \hat{M}_{e}^{FF}-1\right) +p_{e}C_{e}^{\ast }\left( 
+\hat{C}_{e}^{\ast }-1\right) }{p_{e}M_{e}^{HH}\left( 1-\hat{M}%
+_{e}^{HH}\right) +p_{e}M_{e}^{FH}\left( 1-\hat{M}_{e}^{FH}\right)
++p_{e}C_{e}\left( 1-\hat{C}_{e}\right) }.
+\end{eqnarray*}%
+Plugging in the expressions for the six forms of spending on energy above:%
+\begin{equation*}
+l_{P}=\frac{\left( 1-\gamma \right) \eta \left( 1-\bar{j}\right) \left[ \pi
+_{c}Y\left( \hat{M}_{e}^{HF}-1\right) +\pi _{c}^{\ast }Y^{\ast }\left( \hat{M%
+}_{e}^{FF}-1\right) \right] +\left( 1-\eta \right) \pi _{c}^{\ast }Y^{\ast
+}\left( \hat{C}_{e}^{\ast }-1\right) }{\left( 1-\gamma \right) \eta \bar{j}%
+\left[ \pi _{c}Y\left( 1-\hat{M}_{e}^{HH}\right) +\pi _{c}^{\ast }Y^{\ast
+}\left( 1-\hat{M}_{e}^{FH}\right) \right] +\left( 1-\eta \right) \pi
+_{c}Y\left( 1-\hat{C}_{e}\right) }.
+\end{equation*}%
+Defining the $\mathcal{H}$'s share of world spending on the $c$-good by:%
+\begin{equation*}
+\omega _{c}=\frac{\pi _{c}Y}{\pi _{c}Y+\pi _{c}^{\ast }Y^{\ast }},
+\end{equation*}%
+we can write:%
+\begin{equation*}
+l_{P}=\frac{\left( 1-\gamma \right) \eta \left( 1-\bar{j}\right) \left[
+\left( \omega _{c}\hat{M}_{e}^{HF}+\left( 1-\omega _{c}\right) \hat{M}%
+_{e}^{FF}\right) -1\right] +\left( 1-\eta \right) \left( 1-\omega
+_{c}\right) \pi _{c}^{\ast }Y^{\ast }\left( \hat{C}_{e}^{\ast }-1\right) }{%
+\left( 1-\gamma \right) \eta \bar{j}\left[ 1-\left( \omega _{c}\hat{M}%
+_{e}^{HH}+\left( 1-\omega _{c}\right) \hat{M}_{e}^{FH}\right) \right]
++\left( 1-\eta \right) \omega _{c}\left( 1-\hat{C}_{e}\right) }
+\end{equation*}%
+Plugging in equation (\ref{MhatH}) to (\ref{Chatestar}) yields our formula
+for production leakage.
+
+\subsubsection{Consumption Leakage}
+
+Now consider consumption leakage, where consumption includes both the energy
+consumed directly by households as well as the energy embodied in
+consumption of manufactures. This form of leakage is simply a rearrangement
+of the terms in the formula for production leakage:%
+\begin{equation*}
+l_{C}=\frac{\left( M_{e}^{FH\prime }+M_{e}^{FF\prime }+C_{e}^{\ast \prime
+}\right) -\left( M_{e}^{FH}+M_{e}^{FF}+C_{e}^{\ast }\right) }{\left(
+M_{e}^{HH}+M_{e}^{HF}+C_{e}\right) -\left( M_{e}^{HH\prime }+M_{e}^{HF\prime
+}+C_{e}^{\prime }\right) }.
+\end{equation*}%
+Plugging in the expressions for the six forms of spending on energy above:%
+\begin{equation*}
+l_{C}=\frac{\left( 1-\gamma \right) \eta \pi _{c}^{\ast }Y^{\ast }\left[ 
+\bar{j}\left( \hat{M}_{e}^{FH}-1\right) +\left( 1-\bar{j}\right) \left( \hat{%
+M}_{e}^{FF}-1\right) \right] +\left( 1-\eta \right) \pi _{c}^{\ast }Y^{\ast
+}\left( \hat{C}_{e}^{\ast }-1\right) }{\left( 1-\gamma \right) \eta \pi _{c}Y%
+\left[ \bar{j}\left( 1-\hat{M}_{e}^{HH}\right) +\left( 1-\bar{j}\right)
+\left( 1-\hat{M}_{e}^{HF}\right) \right] +\left( 1-\eta \right) \pi
+_{c}Y\left( 1-\hat{C}_{e}\right) }
+\end{equation*}%
+or%
+\begin{equation*}
+l_{C}=\frac{\left( 1-\gamma \right) \eta \left( 1-\omega _{c}\right) \left[
+\left( \bar{j}\hat{M}_{e}^{FH}+\left( 1-\bar{j}\right) \hat{M}%
+_{e}^{FF}\right) -1\right] +\left( 1-\eta \right) \left( 1-\omega
+_{c}\right) \left( \hat{C}_{e}^{\ast }-1\right) }{\left( 1-\gamma \right)
+\eta \omega _{c}\left[ 1-\left( \bar{j}\hat{M}_{e}^{HH}+\left( 1-\bar{j}%
+\right) \hat{M}_{e}^{HF}\right) \right] +\left( 1-\eta \right) \omega
+_{c}\left( 1-\hat{C}_{e}\right) }
+\end{equation*}%
+Plugging in equation (\ref{MhatH}) to (\ref{Chatestar}) yields our formula
+for consumption leakage.
+
+\subsubsection{A Modified Leakage Formula}
+
+Suppose we redefine leakage to be the increase in emissions abroad relative
+to the decline in \emph{global} emissions. This definition has the
+convenient property that the denominator is the same for production leakage,
+consumption leakage, or even extraction leakage. Another advantage is that
+the denominator is always positive given a set of taxes that reduce global
+emissions.
+
+Consider this formulation, which we denote by $\tilde{l}$, as it relates to
+production leakage:%
+\begin{eqnarray*}
+\tilde{l}_{P} &=&\frac{p_{e}M_{e}^{HF}\left( \hat{M}_{e}^{HF}-1\right)
++p_{e}M_{e}^{FF}\left( \hat{M}_{e}^{FF}-1\right) +p_{e}C_{e}^{\ast }\left( 
+\hat{C}_{e}^{\ast }-1\right) }{p_{e}Q_{e}^{W}\left( 1-G\right) } \\
+&=&\frac{\left( 1-\gamma \right) \eta \left( 1-\bar{j}\right) \left[ \pi
+_{c}Y\left( \hat{M}_{e}^{HF}-1\right) +\pi _{c}^{\ast }Y^{\ast }\left( \hat{M%
+}_{e}^{FF}-1\right) \right] +\left( 1-\eta \right) \pi _{c}^{\ast }Y^{\ast
+}\left( \hat{C}_{e}^{\ast }-1\right) }{p_{e}C_{e}^{W}\left( 1-G\right) } \\
+&=&\frac{\left( 1-\gamma \right) \eta \left( 1-\bar{j}\right) \left[ \left(
+\omega _{c}\hat{M}_{e}^{HF}+\left( 1-\omega _{c}\right) \hat{M}%
+_{e}^{FF}\right) -1\right] +\left( 1-\eta \right) \left( 1-\omega
+_{c}\right) \pi _{c}^{\ast }Y^{\ast }\left( \hat{C}_{e}^{\ast }-1\right) }{%
+\left( 1-\eta \gamma \right) \left( 1-G\right) }.
+\end{eqnarray*}%
+For consumption leakage:%
+\begin{equation*}
+\tilde{l}_{C}=\frac{\left( 1-\gamma \right) \eta \left( 1-\omega _{c}\right) %
+\left[ \left( \bar{j}\hat{M}_{e}^{FH}+\left( 1-\bar{j}\right) \hat{M}%
+_{e}^{FF}\right) -1\right] +\left( 1-\eta \right) \left( 1-\omega
+_{c}\right) \left( \hat{C}_{e}^{\ast }-1\right) }{\left( 1-\eta \gamma
+\right) \left( 1-G\right) }
+\end{equation*}%
+Modified leakage is related to the standard leakage expression $l$ via:%
+\begin{equation}
+\tilde{l}=\frac{l}{1-l},  \label{ltilde vs. l}
+\end{equation}%
+or looked at the other way around:%
+\begin{equation*}
+l=\frac{\tilde{l}}{1+\tilde{l}}.
+\end{equation*}%
+We now turn to the value of these various leakage measures in special cases
+of the model.
+
+\subsubsection{Analysis of Special Cases}
+
+Consider the special case of $\eta =1$ so that energy is consumed only
+indirectly. Production leakage simplifies to:%
+\begin{equation*}
+l_{P}=\left( \frac{1-\bar{j}}{\bar{j}}\right) \frac{\left( \omega _{c}\hat{M}%
+_{e}^{HF}+\left( 1-\omega _{c}\right) \hat{M}_{e}^{FF}\right) -1}{1-\left(
+\omega _{c}\hat{M}_{e}^{HH}+\left( 1-\omega _{c}\right) \hat{M}%
+_{e}^{FH}\right) },
+\end{equation*}%
+and the modified formula is:%
+\begin{equation*}
+\tilde{l}_{P}=\left( 1-\bar{j}\right) \frac{\left( \omega _{c}\hat{M}%
+_{e}^{HF}+\left( 1-\omega _{c}\right) \hat{M}_{e}^{FF}\right) -1}{1-G}.
+\end{equation*}%
+Consumption leakage simplifies to:%
+\begin{equation*}
+l_{C}=\left( \frac{1-\omega _{c}}{\omega _{c}}\right) \frac{\left( \bar{j}%
+\hat{M}_{e}^{FH}+\left( 1-\bar{j}\right) \hat{M}_{e}^{FF}\right) -1}{%
+1-\left( \bar{j}\hat{M}_{e}^{HH}+\left( 1-\bar{j}\right) \hat{M}%
+_{e}^{HF}\right) }
+\end{equation*}%
+and%
+\begin{equation*}
+\tilde{l}_{C}=\left( 1-\omega _{c}\right) \frac{\left( \bar{j}\hat{M}%
+_{e}^{FH}+\left( 1-\bar{j}\right) \hat{M}_{e}^{FF}\right) -1}{1-G}
+\end{equation*}
+
+\paragraph{Pure Consumption Tax}
+
+Suppose we have a pure consumption tax, $t_{b}^{\prime }=t_{p}^{\prime }=%
+\tilde{t}_{c}^{\prime }$ and $\tilde{t}_{p}^{\prime }=0$. In this case (\ref%
+{MhatH}) simplifies to:%
+\begin{equation*}
+\hat{M}_{e}^{HH}=\frac{\hat{X}_{e}^{HH}}{\left( 1+\tilde{t}_{c}^{\prime
+}\right) \hat{p}_{e}}=\frac{\hat{\pi}_{c}\hat{Y}}{\left( 1+\tilde{t}%
+_{c}^{\prime }\right) \hat{p}_{e}},
+\end{equation*}%
+(\ref{MhatF}) to:
+
+\begin{equation*}
+\hat{M}_{e}^{FH}=\frac{\hat{X}_{e}^{FH}}{\hat{p}_{e}}=\frac{\hat{\pi}%
+_{c}^{\ast }\hat{Y}^{\ast }}{\hat{p}_{e}},
+\end{equation*}%
+(\ref{MhatHstar}) to:%
+\begin{equation*}
+\hat{M}_{e}^{HF}=\frac{\hat{X}_{e}^{HF}}{\left( 1+\tilde{t}_{c}^{\prime
+}\right) \hat{p}_{e}}=\frac{\hat{\pi}_{c}\hat{Y}}{\left( 1+\tilde{t}%
+_{c}^{\prime }\right) \hat{p}_{e}},
+\end{equation*}%
+and (\ref{MhatFstar}) to:%
+\begin{equation*}
+\hat{M}_{e}^{FF}=\frac{\hat{X}_{e}^{FF}}{\hat{p}_{e}}=\frac{\hat{\pi}%
+_{c}^{\ast }\hat{Y}^{\ast }}{\hat{p}_{e}}.
+\end{equation*}%
+Price changes are given by:%
+\begin{equation*}
+\hat{p}_{c}=\hat{p}_{e}^{1-\gamma }\left( \bar{j}\left( 1+\tilde{t}%
+_{c}^{\prime }\right) ^{-\theta \left( 1-\gamma \right) }+\left( 1-\bar{j}%
+\right) \left( 1+\tilde{t}_{c}^{\prime }\right) ^{-\theta \left( 1-\gamma
+\right) }\right) ^{-1/\theta }=\hat{p}_{e}^{1-\gamma }\left( 1+\tilde{t}%
+_{c}^{\prime }\right) ^{\left( 1-\gamma \right) }
+\end{equation*}%
+and%
+\begin{equation*}
+\hat{p}_{c}^{\ast }=\hat{p}_{e}^{1-\gamma }.
+\end{equation*}%
+The resulting changes in consumption shares are:%
+\begin{equation*}
+\hat{\pi}_{c}=\frac{\hat{p}_{c}^{-\left( \sigma -1\right) }}{\pi _{c}\hat{p}%
+_{c}^{-\left( \sigma -1\right) }+1-\pi _{c}}
+\end{equation*}%
+and%
+\begin{equation*}
+\hat{\pi}_{c}^{\ast }=\frac{\hat{p}_{e}^{-\left( \sigma -1\right) \left(
+1-\gamma \right) }}{\pi _{c}^{\ast }\hat{p}_{e}^{-\left( \sigma -1\right)
+\left( 1-\gamma \right) }+1-\pi _{c}^{\ast }}.
+\end{equation*}
+
+Production leakage reduces to:%
+\begin{equation*}
+l_{P}=\left( \frac{1-\bar{j}}{\bar{j}}\right) \frac{\left( \omega _{c}\frac{%
+\hat{\pi}_{c}\hat{Y}}{\left( 1+\tilde{t}_{c}^{\prime }\right) \hat{p}_{e}}%
++\left( 1-\omega _{c}\right) \frac{\hat{\pi}_{c}^{\ast }\hat{Y}^{\ast }}{%
+\hat{p}_{e}}\right) -1}{1-\left( \omega _{c}\frac{\hat{\pi}_{c}\hat{Y}}{%
+\left( 1+\tilde{t}_{c}^{\prime }\right) \hat{p}_{e}}+\left( 1-\omega
+_{c}\right) \frac{\hat{\pi}_{c}^{\ast }\hat{Y}^{\ast }}{\hat{p}_{e}}\right) }%
+=-\left( \frac{1-\bar{j}}{\bar{j}}\right) .
+\end{equation*}%
+Noting that 
+\begin{eqnarray*}
+\omega _{c}\frac{\hat{\pi}_{c}\hat{Y}}{\left( 1+\tilde{t}_{c}^{\prime
+}\right) \hat{p}_{e}}+\left( 1-\omega _{c}\right) \frac{\hat{\pi}_{c}^{\ast }%
+\hat{Y}^{\ast }}{\hat{p}_{e}} &=&\omega _{c}\hat{M}_{e}^{HW}+\left( 1-\omega
+_{c}\right) \hat{M}_{e}^{FW}= \\
+&=&\frac{p_{e}M_{e}^{HW}}{p_{e}M_{e}^{W}}\hat{M}_{e}^{HW}+\frac{%
+p_{e}M_{e}^{FW}}{p_{e}M_{e}^{W}}\hat{M}_{e}^{FW} \\
+&=&\frac{M_{e}^{HW^{\prime }}}{M_{e}^{W}}+\frac{M_{e}^{FW^{\prime }}}{%
+M_{e}^{W}} \\
+&=&\frac{M_{e}^{W^{\prime }}}{M_{e}^{W}}=G
+\end{eqnarray*}%
+modified production leakage is:%
+\begin{equation*}
+\tilde{l}_{P}=-\left( 1-\bar{j}\right) .
+\end{equation*}%
+Of course this result also follows from (\ref{ltilde vs. l}). With a pure
+consumption tax, production leakage is always negative as $\mathcal{F}$
+reduces its production of emissions along with $\mathcal{H}$. The magnitude
+(of the reduction in $\mathcal{F}$'s emissions) depends (negatively) on $%
+\mathcal{H}$'s initial share in the global production of manufactures. We
+learn nothing new from the production leakage measure in this setting.
+
+Consumption leakage is more relevant in this setting. Evaluating consumption
+leakage:%
+\begin{eqnarray*}
+l_{C} &=&\left( \frac{1-\omega _{c}}{\omega _{c}}\right) \frac{\left( \bar{j}%
+\frac{\hat{\pi}_{c}^{\ast }\hat{Y}^{\ast }}{\hat{p}_{e}}+\left( 1-\bar{j}%
+\right) \frac{\hat{\pi}_{c}^{\ast }\hat{Y}^{\ast }}{\hat{p}_{e}}\right) -1}{%
+1-\left( \bar{j}\frac{\hat{\pi}_{c}\hat{Y}}{\left( 1+\tilde{t}_{c}^{\prime
+}\right) \hat{p}_{e}}+\left( 1-\bar{j}\right) \frac{\hat{\pi}_{c}\hat{Y}}{%
+\left( 1+\tilde{t}_{c}^{\prime }\right) \hat{p}_{e}}\right) } \\
+&=&\left( \frac{1-\omega _{c}}{\omega _{c}}\right) \frac{\frac{\hat{\pi}%
+_{c}^{\ast }\hat{Y}^{\ast }}{\hat{p}_{e}}-1}{1-\frac{\hat{\pi}_{c}\hat{Y}}{%
+\left( 1+\tilde{t}_{c}^{\prime }\right) \hat{p}_{e}}} \\
+&=&\left( \frac{1-\omega _{c}}{\omega _{c}}\right) \frac{\frac{\hat{p}%
+_{e}^{-\left( \sigma -1\right) \left( 1-\gamma \right) -1}}{\pi _{c}^{\ast }%
+\hat{p}_{e}^{-\left( \sigma -1\right) \left( 1-\gamma \right) }+1-\pi
+_{c}^{\ast }}\hat{Y}^{\ast }-1}{1-\frac{\left( \hat{p}_{e}\left( 1+\tilde{t}%
+_{c}^{\prime }\right) \right) ^{-\left( \sigma -1\right) \left( 1-\gamma
+\right) -1}}{\pi _{c}\left( \hat{p}_{e}\left( 1+\tilde{t}_{c}^{\prime
+}\right) \right) ^{-\left( \sigma -1\right) \left( 1-\gamma \right) }+1-\pi
+_{c}}\hat{Y}},
+\end{eqnarray*}%
+In this setting, $\hat{p}_{e}<1$ (as dictated by the global emissions
+reduction goal) and $\hat{p}_{e}\left( 1+\tilde{t}_{c}^{\prime }\right) >1$
+(as dictated by $\tilde{t}_{c}^{\prime }$ being sufficient to acheive the
+global emissions goal through a reduction in demand for manufactures in $%
+\mathcal{H}$). Its easier to see using the modified leakage formula:%
+\begin{equation*}
+\tilde{l}_{C}=\left( \frac{1-\omega _{c}}{1-G}\right) \left( \frac{\hat{p}%
+_{e}^{-\left( \sigma -1\right) \left( 1-\gamma \right) -1}}{\pi _{c}^{\ast }%
+\hat{p}_{e}^{-\left( \sigma -1\right) \left( 1-\gamma \right) }+1-\pi
+_{c}^{\ast }}\hat{Y}^{\ast }-1\right) .
+\end{equation*}%
+Consumption leakage is determined by the energy price decline and the extent
+to which that decline leads $\mathcal{F}$ to substitute away from the $l$%
+-good into manufactures. Consumption leakage is also proportional to $%
+\mathcal{F}$'s initial share $1-\omega _{c}$ of global spending on
+manufactures. 
+
+Substituting in the energy price decline dictated by the global emission
+goal:%
+\begin{equation}
+\tilde{l}_{C}=\left( \frac{1-\omega _{c}}{1-G}\right) \left( \frac{%
+G^{-\left( \sigma -\sigma \gamma +\gamma \right) \left( 1-\beta \right)
+/\beta }}{\pi _{c}^{\ast }G^{-\left( \sigma -1\right) \left( 1-\gamma
+\right) \left( 1-\beta \right) /\beta }+1-\pi _{c}^{\ast }}\left( \pi
+_{L}^{\ast }+\left( 1-\beta \right) \pi _{e}^{\ast }G^{1/\beta }\right)
+-1\right) .  \label{modified consumption leakage with full BTA}
+\end{equation}%
+A nice feature of this leakage formula is that the tax rate itself doesn't
+enter, as it is subsumed in $G$. For a given $G$, the larger is $\left(
+\sigma -\sigma \gamma +\gamma \right) \left( 1-\beta \right) /\beta $, the
+greater the consumption leakage resulting from a pure consumption tax.
+Consumption leakage is increasing in the demand elasticity $\sigma $ and
+decreasing in the extraction elasticity $\beta /\left( 1-\beta \right) $. A
+smaller extraction elasticity implies a larger price decline to acheive the
+global goal, and a higher demand elasticity implies a greater increase in $%
+\mathcal{F}$'s consumption of embodied energy for a given price decline.
+
+\paragraph{Pure Production Tax}
+
+Suppose we have a pure production tax, $t_{b}^{\prime }=0$ and $\tilde{t}%
+_{p}^{\prime }=t_{p}^{\prime }$. In this case (\ref{MhatH}) simplifies to:%
+\begin{equation*}
+\hat{M}_{e}^{HH}=\left( \frac{\left( 1+t_{p}^{\prime }\right) ^{-\theta
+\left( 1-\gamma \right) -1}}{\bar{j}\left( 1+t_{p}^{\prime }\right)
+^{-\theta \left( 1-\gamma \right) }+1-\bar{j}}\right) \frac{\hat{\pi}_{c}%
+\hat{Y}}{\hat{p}_{e}},
+\end{equation*}%
+(\ref{MhatF}) to:
+
+\begin{equation*}
+\hat{M}_{e}^{FH}=\left( \frac{\left( 1+t_{p}^{\prime }\right) ^{-\theta
+\left( 1-\gamma \right) -1}}{\bar{j}\left( 1+t_{p}^{\prime }\right)
+^{-\theta \left( 1-\gamma \right) }+1-\bar{j}}\right) \frac{\hat{\pi}%
+_{c}^{\ast }\hat{Y}^{\ast }}{\hat{p}_{e}},
+\end{equation*}%
+(\ref{MhatHstar}) to:%
+\begin{equation*}
+\hat{M}_{e}^{HF}=\left( \frac{1}{\bar{j}\left( 1+t_{p}^{\prime }\right)
+^{-\theta \left( 1-\gamma \right) }+1-\bar{j}}\right) \frac{\hat{\pi}_{c}%
+\hat{Y}}{\hat{p}_{e}},
+\end{equation*}%
+and (\ref{MhatFstar}) to:%
+\begin{equation*}
+\hat{M}_{e}^{FF}=\left( \frac{1}{\bar{j}\left( 1+t_{p}^{\prime }\right)
+^{-\theta \left( 1-\gamma \right) }+1-\bar{j}}\right) \frac{\hat{\pi}%
+_{c}^{\ast }\hat{Y}^{\ast }}{\hat{p}_{e}}.
+\end{equation*}%
+Price changes are given by:%
+\begin{equation*}
+\hat{p}_{c}=\hat{p}_{c}^{\ast }=\hat{p}_{e}^{1-\gamma }\left( \bar{j}\left(
+1+t_{p}^{\prime }\right) ^{-\theta \left( 1-\gamma \right) }+\left( 1-\bar{j}%
+\right) \right) ^{-1/\theta }.
+\end{equation*}%
+\begin{equation*}
+\hat{p}_{c}^{-\theta }=\hat{p}_{e}^{-\theta \left( 1-\gamma \right) }\left( 
+\bar{j}\left( 1+t_{p}^{\prime }\right) ^{-\theta \left( 1-\gamma \right)
+}+\left( 1-\bar{j}\right) \right) 
+\end{equation*}
+
+In this setting (unlike the setting of the pure consumption tax) production
+leakage should be a useful measure. Modified production leakage is%
+\begin{eqnarray*}
+\tilde{l}_{P} &=&\left( \frac{1-\bar{j}}{1-G}\right) \left( \left( \frac{1}{%
+\bar{j}\left( 1+t_{p}^{\prime }\right) ^{-\theta \left( 1-\gamma \right) }+1-%
+\bar{j}}\right) \left( \omega _{c}\frac{\hat{\pi}_{c}\hat{Y}}{\hat{p}_{e}}%
++\left( 1-\omega _{c}\right) \frac{\hat{\pi}_{c}^{\ast }\hat{Y}^{\ast }}{%
+\hat{p}_{e}}\right) -1\right)  \\
+&=&\left( \frac{1-\bar{j}}{1-G}\right) \left( \frac{G^{-\left( 1-\beta
+\right) /\beta }}{\bar{j}\left( 1+t_{p}^{\prime }\right) ^{-\theta \left(
+1-\gamma \right) }+1-\bar{j}}\hat{X}_{c}^{W}-1\right) .
+\end{eqnarray*}
+
+\end{document}

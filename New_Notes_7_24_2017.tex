@@ -1,0 +1,188 @@
+%2multibyte Version: 5.50.0.2960 CodePage: 65001
+%\input{tcilatex}
+%\input{tcilatex}
+
+
+\documentclass[notitlepage,12pt]{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsfonts}
+\usepackage{amsmath}
+
+\setcounter{MaxMatrixCols}{10}
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=5.00.0.2552}
+%TCIDATA{Codepage=65001}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{Created=Tuesday, November 13, 2012 12:43:14}
+%TCIDATA{LastRevised=Tuesday, July 25, 2017 14:23:56}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Standard LaTeX Article">}
+%TCIDATA{Language=American English}
+%TCIDATA{CSTFile=40 LaTeX article.cst}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\input{tcilatex}
+
+\begin{document}
+
+\title{Competitiveness and Carbon Taxes}
+\author{Kortum and Weisbach \\
+%EndAName
+Yale and University of Chicago}
+\maketitle
+
+\begin{abstract}
+Blah blah blah
+\end{abstract}
+
+\section{Introduction}
+
+\section{Leakage}
+
+We define \emph{proportional leakage} $l_{P}$ as the proportional change in
+emissions in $\mathcal{F}$ (brought about by a unilateral carbon tax in $%
+\mathcal{H}$) relative to the proportional change in global emissions $G$
+(for any unilateral carbon tax worth considering we can presume $G<1$). A
+value of $l_{P}=1$ means that emissions in both countries fall in parallel
+while a value of $1/G$ means that emissions in $\mathcal{F}$ are unchanged.
+Values of $l_{P}$ in excess of $1/G$ indicate a classic case of leakage, in
+which the policy in $\mathcal{H}$ to reduce global emissions leads $\mathcal{%
+F}$ to actually increase its emissions.
+
+The tax in $\mathcal{H}$ is a combination of a production tax $t_{p}^{\prime
+}$ and a border tax adjustment $t_{b}^{\prime }\in \lbrack 0,t_{p}^{\prime }]
+$. With no border adjustments ($t_{b}^{\prime }=0$) it is a pure production
+tax (at rate $t_{p}^{\prime }$) while with full border adjustments ($%
+t_{b}^{\prime }=t_{p}^{\prime }$) it is a pure consumption tax (at rate $%
+t_{b}^{\prime }$). The reduction in global emissions $G$ under such policies
+is acheived by driving down the price of energy faced by the extraction
+sector, leading that sector to supply less energy on the world market. This
+reduction in the price of energy $\hat{p}_{e}$, known as the \emph{fuel
+price effect}, is connected to the reduction in global emissions via the
+energy supply curve:%
+\begin{equation*}
+\hat{p}_{e}=G^{(1-\beta )/\beta }.
+\end{equation*}
+
+To simplify a bit, we focus on the case of $\eta =1$, in which energy is
+consumed only indirectly through consumption of manufactures. Leakage can
+then be decomposed into (i) the change in $\mathcal{F}$'s market share in
+manufacturing multiplied by (ii) the change in world spending on the
+manufactured good (which equals the change in spending on energy, since
+energy has a fixed share in the value of manufactured goods) all divided by
+(iii) the change in the energy price and the reduction in global emissions:%
+\begin{equation*}
+l_{P}=\frac{\left( 1-\bar{j}^{\prime }\right) \left( \pi _{c}^{\prime
+}Y^{\prime }+\pi _{c}^{\ast \prime }Y^{\ast \prime }\right) }{\left( 1-\bar{j%
+}\right) \left( \pi _{c}Y+\pi _{c}^{\ast }Y^{\ast }\right) }\frac{1}{\hat{p}%
+_{e}G}.
+\end{equation*}%
+Defining $\mathcal{H}$'s share of world spending on the $c$-good by%
+\begin{equation*}
+\omega _{c}=\frac{\pi _{c}Y}{\pi _{c}Y+\pi _{c}^{\ast }Y^{\ast }},
+\end{equation*}%
+we get:%
+\begin{equation*}
+l_{P}=\frac{1-\bar{j}^{\prime }}{1-\bar{j}}\left( \omega _{c}\hat{\pi}_{c}%
+\hat{Y}+\left( 1-\omega _{c}\right) \hat{\pi}_{c}^{\ast }\hat{Y}^{\ast
+}\right) G^{-1/\beta },
+\end{equation*}%
+which brings out the role of changes in spending shares on manufactures in
+each country.
+
+Consider these parts separately. The change in $\mathcal{F}$'s market share
+in manufactures (which is the change in its trade share, given costless
+trade) is:%
+\begin{equation*}
+\frac{1-\bar{j}^{\prime }}{1-\bar{j}}=\frac{1}{\bar{j}\left( \frac{%
+1+t_{p}^{\prime }}{1+t_{b}^{\prime }}\right) ^{-\theta \left( 1-\gamma
+\right) }+1-\bar{j}}.
+\end{equation*}%
+This change is increasing in the effective production tax rate $\tilde{t}%
+_{p}^{\prime }$ defined by $1+\tilde{t}_{p}^{\prime }=(1+t_{p}^{\prime
+})/(1+t_{b}^{\prime })$. It is the component of leakage that is independent
+of the fuel price effect.
+
+The other components of leakage arise from the fuel price effect. The change
+in the share of income spent on the manufactured good in $\mathcal{H}$ is:%
+\begin{equation*}
+\hat{\pi}_{c}=\frac{\hat{p}_{c}^{-\left( \sigma -1\right) }}{\pi _{c}\hat{p}%
+_{c}^{-\left( \sigma -1\right) }+1-\pi _{c}}
+\end{equation*}%
+and likewise for $\mathcal{F}$. Changes in these shares depend on changes in
+the price of the manufactured good. In $\mathcal{H}$ that change is given by:%
+\begin{eqnarray*}
+\hat{p}_{c} &=&\hat{p}_{m}=\hat{p}_{e}^{1-\gamma }\left( \bar{j}\left(
+1+t_{p}^{\prime }\right) ^{-\theta \left( 1-\gamma \right) }+\left( 1-\bar{j}%
+\right) \left( 1+t_{b}^{\prime }\right) ^{-\theta \left( 1-\gamma \right)
+}\right) ^{-1/\theta } \\
+&=&\left( 1+t_{b}^{\prime }\right) ^{\left( 1-\gamma \right) }\hat{p}%
+_{e}^{1-\gamma }\left( \bar{j}\left( \frac{1+t_{p}^{\prime }}{%
+1+t_{b}^{\prime }}\right) ^{-\theta \left( 1-\gamma \right) }+\left( 1-\bar{j%
+}\right) \right) ^{-1/\theta },
+\end{eqnarray*}%
+while in $H$:%
+\begin{equation*}
+\hat{p}_{c}^{\ast }=\hat{p}_{e}^{1-\gamma }\left( \bar{j}\left( \frac{%
+1+t_{p}^{\prime }}{1+t_{b}^{\prime }}\right) ^{-\theta \left( 1-\gamma
+\right) }+\left( 1-\bar{j}\right) \right) ^{-1/\theta }.
+\end{equation*}%
+The last term in each expression is the proportional increase in the price
+of the manufactured good caused by the effective production tax, which
+raises costs in $H$ and leads to a change in the goods that each country
+specializes in. The fuel price effect partially offsets this price increase.
+Only the border tax adjustment causes prices to rise more in $\mathcal{H}$
+than in $\mathcal{F}$:%
+\begin{equation*}
+\frac{\hat{p}_{c}}{\hat{p}_{c}^{\ast }}=\left( 1+t_{b}^{\prime }\right)
+^{\left( 1-\gamma \right) }.
+\end{equation*}
+
+\subsection{Pure Production Tax}
+
+In the case of a pure production tax ($t_{b}^{\prime }=0$), these price
+changes would be the same. If the initial shares were the same ($\pi
+_{c}=\pi _{c}^{\ast }$) then changes in shares would be the same $\hat{\pi}%
+_{c}=\hat{\pi}_{c}^{\ast }$. In this case leakage is simply:%
+\begin{eqnarray*}
+l_{P} &=&\hat{\pi}_{c}\frac{\omega _{c}\hat{Y}+\left( 1-\omega _{c}\right) 
+\hat{Y}^{\ast }}{\bar{j}\left( \frac{1+t_{p}^{\prime }}{1+t_{b}^{\prime }}%
+\right) ^{-\theta \left( 1-\gamma \right) }+1-\bar{j}}G^{-1/\beta } \\
+&=&
+\end{eqnarray*}
+
+\subsection{Pure Consumption Tax}
+
+In the case of a pure consumption tax ($t_{b}^{\prime }=t_{p}^{\prime }$),
+there is no change in $F$'s trade share:%
+\begin{equation*}
+\frac{1-\bar{j}^{\prime }}{1-\bar{j}}=\frac{1}{\bar{j}+1-\bar{j}}=1.
+\end{equation*}%
+Thus leakage is due only to the increase in foreign consumption brou%
+\begin{equation*}
+l_{P}=\left( \omega _{c}\hat{\pi}_{c}\hat{Y}+\left( 1-\omega _{c}\right) 
+\hat{\pi}_{c}^{\ast }\hat{Y}^{\ast }\right) G^{-1/\beta }
+\end{equation*}
+
+\end{document}
