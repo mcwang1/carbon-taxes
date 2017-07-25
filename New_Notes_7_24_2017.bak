@@ -14,7 +14,7 @@
 %TCIDATA{Codepage=65001}
 %TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
 %TCIDATA{Created=Tuesday, November 13, 2012 12:43:14}
-%TCIDATA{LastRevised=Tuesday, July 25, 2017 14:45:49}
+%TCIDATA{LastRevised=Tuesday, July 25, 2017 14:23:56}
 %TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
 %TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Standard LaTeX Article">}
 %TCIDATA{Language=American English}
@@ -56,6 +56,8 @@ Yale and University of Chicago}
 Blah blah blah
 \end{abstract}
 
+\section{Introduction}
+
 \section{Leakage}
 
 We define \emph{proportional leakage} $l_{P}$ as the proportional change in
@@ -69,16 +71,16 @@ which the policy in $\mathcal{H}$ to reduce global emissions leads $\mathcal{%
 F}$ to actually increase its emissions.
 
 The tax in $\mathcal{H}$ is a combination of a production tax $t_{p}^{\prime
-}$ and a border tax adjustment $t_{b}^{\prime }\in \lbrack 0,t_{p}^{\prime
-}] $. With no border adjustments ($t_{b}^{\prime }=0$) it is a pure
-production tax (at rate $t_{p}^{\prime }$) while with full border
-adjustments ($t_{b}^{\prime }=t_{p}^{\prime }$) it is a pure consumption tax
-(at rate $t_{b}^{\prime }$). The reduction in global emissions $G$ under
-such policies is acheived by driving down the price of energy faced by the
-extraction sector, leading that sector to supply less energy on the world
-market. This reduction in the price of energy $\hat{p}_{e}$, known as the 
-\emph{fuel price effect}, is connected to the reduction in global emissions
-via the energy supply curve:%
+}$ and a border tax adjustment $t_{b}^{\prime }\in \lbrack 0,t_{p}^{\prime }]
+$. With no border adjustments ($t_{b}^{\prime }=0$) it is a pure production
+tax (at rate $t_{p}^{\prime }$) while with full border adjustments ($%
+t_{b}^{\prime }=t_{p}^{\prime }$) it is a pure consumption tax (at rate $%
+t_{b}^{\prime }$). The reduction in global emissions $G$ under such policies
+is acheived by driving down the price of energy faced by the extraction
+sector, leading that sector to supply less energy on the world market. This
+reduction in the price of energy $\hat{p}_{e}$, known as the \emph{fuel
+price effect}, is connected to the reduction in global emissions via the
+energy supply curve:%
 \begin{equation*}
 \hat{p}_{e}=G^{(1-\beta )/\beta }.
 \end{equation*}
