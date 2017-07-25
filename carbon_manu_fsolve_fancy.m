@@ -1,4 +1,4 @@
-% carbon_manu_fsolve_fancy.m
+    % carbon_manu_fsolve_fancy.m
 % Loops over a user-supplied input parameter
 
 % Michael Wang
