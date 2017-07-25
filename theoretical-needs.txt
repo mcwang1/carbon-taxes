@@ -1,5 +1,9 @@
+start latex file in repository
+
 1. What are the dynamics when both countries impose taxes?
 
 3. Can we separate out the fossil fuel price effect from production and consumption?
+
+5. Derive expressions for home/foreign production/consumption of energy
 
 7. Need to derive expected world welfare
