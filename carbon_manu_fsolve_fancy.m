@@ -99,6 +99,7 @@ for i = 1:n_param
     phat_star(1,i) = i10;
     welfare(1,i) = i6/i9;
     welfare_star(1,i) = i7/i10;
+    welfare_world(1,i) = wL*welfare(1,i) + wL_star*welfare_star(1,i);
 
     [l1,l2,l3,l4] = Fun_leakage_manu([tp_prime_solution,tb_prime_frac]);
     prod_leakage(1,i) = l1;
@@ -107,6 +108,8 @@ for i = 1:n_param
     cons_leakage_new(1,i) = l4;
 end
 
+%%
+
 % Figure 1 - results
 figure(1)
 subplot(2,2,1)
@@ -114,14 +117,12 @@ plot(param(1,:),tp_prime_grid(1,:))
 title(['Production tax rate vs ' params{choice}])
 xlabel(params{choice})
 ylabel('tp-prime')
-%ylim([0,1])
 
 subplot(2,2,2)
 plot(param(1,:),prod_leakage(1,:),param(1,:),cons_leakage(1,:))
 title(['Leakage vs ' params{choice}])
 xlabel(params{choice})
 ylabel('leakage')
-%ylim([-0.7,0.7])
 legend('production leakage','consumption leakage')
 
 subplot(2,2,[3,4])
@@ -141,7 +142,6 @@ hold on
 plot(param(1,:),phat_star(1,:))
 xlabel(params{choice})
 ylabel('price change')
-%ylim([0.9,1.05])
 legend('phat_e','phat','phat-star')
 hold off
 
@@ -149,32 +149,27 @@ subplot(2,3,2)
 plot(param(1,:),phat_c(1,:),param(1,:),phat_cstar(1,:))
 xlabel(params{choice})
 ylabel('price change')
-%ylim([0.95,1.15])
 legend('phat_c','phat_cstar')
 
 subplot(2,3,3)
 plot(param(1,:),pi_chat(1,:),param(1,:),pi_cstar_hat(1,:))
 xlabel(params{choice})
 ylabel('change in consumption share')
-%ylim([0.95,1.10])
 legend('pi_chat','pi_chat-star')
 
 subplot(2,3,4)
 plot(param(1,:),jbar_hat(1,:))
 xlabel(params{choice})
 ylabel('jbar-hat')
-%ylim([0.5,1])
 
-subplot(2,3,5)
+subplot(2,3,[5 6])
 plot(param(1,:),Yhat(1,:),param(1,:),Yhat_star(1,:))
 xlabel(params{choice})
 ylabel('change in income')
-%ylim([0.97,1.07])
 legend('Y-hat','Yhat-star')
 
-subplot(2,3,6)
-plot(param(1,:),welfare(1,:),param(1,:),welfare_star(1,:))
+figure(3)
+plot(param(1,:),welfare(1,:),param(1,:),welfare_world(1,:))
 xlabel(params{choice})
 ylabel('welfare change')
-%ylim([0.97,1.03])
-legend('Home','Foreign')
+legend('Home','World')
