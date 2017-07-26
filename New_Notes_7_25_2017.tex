@@ -14,7 +14,7 @@
 %TCIDATA{Codepage=65001}
 %TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
 %TCIDATA{Created=Tuesday, November 13, 2012 12:43:14}
-%TCIDATA{LastRevised=Wednesday, July 26, 2017 14:05:19}
+%TCIDATA{LastRevised=Wednesday, July 26, 2017 14:52:51}
 %TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
 %TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Standard LaTeX Article">}
 %TCIDATA{Language=American English}
@@ -60,8 +60,8 @@ Blah blah blah
 
 We focus on the case of $\eta =1$, in which energy is consumed only
 indirectly through consumption of manufactures. In that case emissions show
-up as: $M_{e}^{HH}$, $M_{e}^{FH}$, $M_{e}^{HF}$, and $M_{e}^{FF}$ (the first
-subscript is the point of consumption and the second the point of
+up in four terms: $M_{e}^{HH}$, $M_{e}^{FH}$, $M_{e}^{HF}$, and $M_{e}^{FF}$
+(the first subscript is the point of consumption and the second the point of
 production). In a baseline of no carbon taxes, the fraction of emissions due
 to \emph{production} in $\mathcal{F}$ is:%
 \begin{eqnarray*}
@@ -104,10 +104,10 @@ M_{e}^{HH}+M_{e}^{FH}+M_{e}^{HF}+M_{e}^{FF}} \\
 &=&\frac{1-\bar{j}}{1-G}\left( \omega _{c}\hat{M}_{e}^{HF}+\left( 1-\omega
 _{c}\right) \hat{M}_{e}^{FF}-1\right) .
 \end{eqnarray*}%
-It is driven by the proportional increase in $\mathcal{F}$'s use of energy
-in manufactures produced for its export market and in manufactures produced
-for its home market. To derive expressions for these changes, we need to
-take a stand on the specific carbon taxes being considered.
+Leakage is driven by the proportional increase in $\mathcal{F}$'s use of
+energy in manufactures produced for its export market and in manufactures
+produced for its home market. To derive expressions for these changes, we
+need to take a stand on the specific carbon taxes being considered.
 
 We treat the carbon tax in $\mathcal{H}$ as a combination of a production
 tax $t_{p}^{\prime }$ and a border tax adjustment $t_{b}^{\prime }\in
@@ -125,7 +125,7 @@ energy supply curve:%
 \hat{p}_{e}=G^{(1-\beta )/\beta }.  \label{fuel price effect}
 \end{equation}
 
-The effect of such policies on changes in production in $\mathcal{F}$ are
+The effect of such policies on changes in $\mathcal{F}$'s energy use are
 given by:%
 \begin{equation*}
 \hat{M}_{e}^{HF}=\frac{1-\bar{j}^{\prime }}{1-\bar{j}}\frac{\hat{\pi}_{c}%
@@ -143,7 +143,7 @@ Plugging these expressions into the leakage formula:%
 +\left( 1-\omega _{c}\right) \hat{\pi}_{c}^{\ast }\hat{Y}^{\ast }\right] 
 \frac{1}{\hat{p}_{e}}-1\right) 
 \end{equation*}%
-Leakage is driven by three basic factors: (i) the trade share effect is the
+Leakage depends on three basic factors: (i) the trade share effect is the
 change in $\mathcal{F}$'s market share in manufacturing $\left( 1-\bar{j}%
 ^{\prime }\right) /\left( 1-\bar{j}\right) $, (ii) the fuel price effect is
 the inverse of the proportional decline in the global energy price $1/\hat{p}%
@@ -153,8 +153,7 @@ manufactured goods (taking account of any border tax adjustment) $\omega _{c}%
 _{c}\right) \hat{\pi}_{c}^{\ast }\hat{Y}^{\ast }$. We can consider these
 factor separately.
 
-The trade share effect is the change in $\mathcal{F}$'s market share in
-manufactures, given by:%
+The trade share effect is given by:%
 \begin{equation*}
 \frac{1-\bar{j}^{\prime }}{1-\bar{j}}=\frac{1}{\bar{j}\left( \frac{%
 1+t_{p}^{\prime }}{1+t_{b}^{\prime }}\right) ^{-\theta \left( 1-\gamma
@@ -164,7 +163,7 @@ This factor is increasing in the effective production tax rate $\tilde{t}%
 _{p}^{\prime }$, defined by $1+\tilde{t}_{p}^{\prime }=(1+t_{p}^{\prime
 })/(1+t_{b}^{\prime })$, which shifts production from $\mathcal{H}$ to $%
 \mathcal{F}$. With full border tax adjustments this factor reduces to $1$
-and no longer contributes to leakage.
+and thus no longer contributes to leakage.
 
 The second factor is the fuel price effect. If a carbon tax leads to a
 reduction in global emissions, equation (\ref{fuel price effect}) tells us
@@ -173,19 +172,21 @@ denominator, the fuel price effect always contributes positively to leakage.
 For a given change in spending on manufactures (and hence on energy), it
 implies a greater increase in energy use. But, unlike the trade share
 effect, the fuel price effect leads to greater energy use in both countries.
+In fact, there would be a fuel price effect even with no trade in
+manufactures.
 
-The third factor is the most nuanced. There are declines in income in both
-countries due to reduced rents from energy deposits. There are increases in
-income in $\mathcal{H}$ due to new tax revenue. There are also changes in
-the share of income spent on manufactures, due to price changes and taxes.
-Consider the change in the share of income spent on the manufactured good in 
-$\mathcal{H}$:%
+The third factor is the most nuanced. Income falls in both countries due to
+reduced rents from energy deposits. But, income may rise in $\mathcal{H}$
+due to new tax revenue. There are also changes in the share of income spent
+on manufactures, due to price changes from both taxes and the fuel price
+effect. The change in the share of income spent on the manufactured good in $%
+\mathcal{H}$ is:%
 \begin{equation*}
 \hat{\pi}_{c}=\frac{\hat{p}_{c}^{-\left( \sigma -1\right) }}{\pi _{c}\hat{p}%
 _{c}^{-\left( \sigma -1\right) }+1-\pi _{c}}
 \end{equation*}%
-and likewise for $\mathcal{F}$. Changes in these shares depend on changes in
-the price of the manufactured good. In $\mathcal{H}$ that change is given by:%
+and likewise for $\mathcal{F}$. The change in the price of the manufactured
+good in $\mathcal{H}$ is given by:%
 \begin{eqnarray*}
 \hat{p}_{c} &=&\hat{p}_{m}=\hat{p}_{e}^{1-\gamma }\left( \bar{j}\left(
 1+t_{p}^{\prime }\right) ^{-\theta \left( 1-\gamma \right) }+\left( 1-\bar{j}%
@@ -202,50 +203,13 @@ while in $H$:%
 1+t_{p}^{\prime }}{1+t_{b}^{\prime }}\right) ^{-\theta \left( 1-\gamma
 \right) }+\left( 1-\bar{j}\right) \right) ^{-1/\theta }.
 \end{equation*}%
-The last term in each expression is the proportional increase in the price
-of the manufactured good caused by the effective production tax, which
-raises costs in $\mathcal{H}$ and leads to a change in the goods that each
-country specializes in. The fuel price effect partially offsets this price
-increase. Only the border tax adjustment causes prices to rise more in $%
-\mathcal{H}$ than in $\mathcal{F}$:%
+Prices fall due to the fuel price effect, but taxes that shift trade shares
+push prices up. In general, these shifts work in parallel in either country.
+The border tax adjustment, however causes prices to rise more in $\mathcal{H}
+$ than in $\mathcal{F}$:%
 \begin{equation*}
 \frac{\hat{p}_{c}}{\hat{p}_{c}^{\ast }}=\left( 1+t_{b}^{\prime }\right)
 ^{\left( 1-\gamma \right) }.
-\end{equation*}%
-To understand these three factors more clearly, it is helpful to consider
-two special cases.
-
-\subsection{Pure Production Tax}
-
-In the case of a pure production tax ($t_{b}^{\prime }=0$), these price
-changes would be the same. If the initial shares were the same ($\pi
-_{c}=\pi _{c}^{\ast }$) then changes in shares would be the same $\hat{\pi}%
-_{c}=\hat{\pi}_{c}^{\ast }$. In this case leakage is simply:%
-\begin{eqnarray*}
-l_{P} &=&\hat{\pi}_{c}\frac{\omega _{c}\hat{Y}+\left( 1-\omega _{c}\right) 
-\hat{Y}^{\ast }}{\bar{j}\left( \frac{1+t_{p}^{\prime }}{1+t_{b}^{\prime }}%
-\right) ^{-\theta \left( 1-\gamma \right) }+1-\bar{j}}G^{-1/\beta } \\
-&=&
-\end{eqnarray*}
-
-\begin{equation*}
-\tilde{l}_{P}=\frac{1-\bar{j}}{1-G}\left( \frac{1-\bar{j}^{\prime }}{1-\bar{j%
-}}\left[ \omega _{c}\hat{\pi}_{c}\hat{Y}/\left( 1+t_{b}^{\prime }\right)
-+\left( 1-\omega _{c}\right) \hat{\pi}_{c}^{\ast }\hat{Y}^{\ast }\right] 
-\frac{1}{\hat{p}_{e}}-1\right) 
-\end{equation*}
-
-\subsection{Pure Consumption Tax}
-
-In the case of a pure consumption tax ($t_{b}^{\prime }=t_{p}^{\prime }$),
-there is no change in $F$'s trade share:%
-\begin{equation*}
-\frac{1-\bar{j}^{\prime }}{1-\bar{j}}=\frac{1}{\bar{j}+1-\bar{j}}=1.
-\end{equation*}%
-Thus leakage is due only to the increase in foreign consumption brou%
-\begin{equation*}
-l_{P}=\left( \omega _{c}\hat{\pi}_{c}\hat{Y}+\left( 1-\omega _{c}\right) 
-\hat{\pi}_{c}^{\ast }\hat{Y}^{\ast }\right) G^{-1/\beta }
 \end{equation*}
 
 \end{document}

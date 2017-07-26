@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159-1.00b-pretest-20020211 (Web2c 7.3.7x) (format=pdflatex_ml 2003.4.19)  26 JUL 2017 14:06
+This is pdfTeX, Version 3.14159-1.00b-pretest-20020211 (Web2c 7.3.7x) (format=pdflatex_ml 2003.4.19)  26 JUL 2017 14:52
 **&pdflatex_ml C:/swp50/temp/swp0000.tex
 (c:/swp50/temp/swp0000.tex{c:\swp50\TCITeX/pdftex/config/pdftex.cfg}
 LaTeX2e <2001/06/01>
@@ -135,30 +135,30 @@ File: umsb.fd 1995/01/05 v2.2e AMS font definitions
 ) [1
 
 {c:\swp50\TCITeX/pdftex/config/TrueTeX.map}{c:\swp50\TCITeX/pdftex/config/WinFo
-nts.map}{c:\swp50\TCITeX/pdftex/config/msi.map}] [2] [3] [4] [5] (./swp0000.aux
-) ) 
+nts.map}{c:\swp50\TCITeX/pdftex/config/msi.map}] [2] [3] [4] (./swp0000.aux) ) 
 Here is how much of TeX's memory you used:
- 1220 strings out of 50434
- 12968 string characters out of 1190098
+ 1219 strings out of 50434
+ 12952 string characters out of 1190098
  65373 words of memory out of 1500001
- 4224 multiletter control sequences out of 10000+15000
- 22945 words of font info for 67 fonts, out of 210000 for 1000
+ 4223 multiletter control sequences out of 10000+15000
+ 21880 words of font info for 65 fonts, out of 210000 for 1000
  22 hyphenation exceptions out of 1000
  27i,13n,22p,293b,239s stack positions out of 3000i,500n,3000p,200000b,40000s
- 52 PDF objects out of 200000
+ 49 PDF objects out of 200000
  0 named destinations out of 131072
  0 words of extra memory for PDF output out of 65536
-{c:\swp50\TCITeX/fonts/type1/cmmi6.enc}<c:\swp50\TCITeX/fonts/truetype/cmmi6
-.ttf>{c:\swp50\TCITeX/fonts/type1/cmr8.enc}<c:\swp50\TCITeX/fonts/truetype/cmr8
-.ttf>{c:\swp50\TCITeX/fonts/type1/cmsy6.enc}<c:\swp50\TCITeX/fonts/truetype/cms
-y6.ttf>{c:\swp50\TCITeX/fonts/type1/cmex10.enc}<c:\swp50\TCITeX/fonts/truetype/
-cmex10.ttf>{c:\swp50\TCITeX/fonts/type1/cmsy8.enc}<c:\swp50\TCITeX/fonts/truety
-pe/cmsy8.ttf>{c:\swp50\TCITeX/fonts/type1/cmsy10.enc}<c:\swp50\TCITeX/fonts/tru
-etype/cmsy10.ttf>{c:\swp50\TCITeX/fonts/type1/dcti10.enc}<c:\swp50\TCITeX/fonts
-/truetype/dcti10.ttf>{c:\swp50\TCITeX/fonts/type1/cmmi8.enc}<c:\swp50\TCITeX/fo
-nts/truetype/cmmi8.ttf>{c:\swp50\TCITeX/fonts/type1/cmr12.enc}<c:\swp50\TCITeX/
-fonts/truetype/cmr12.ttf>{c:\swp50\TCITeX/fonts/type1/cmmi12.enc}<c:\swp50\TCIT
-eX/fonts/truetype/cmmi12.ttf>{c:\swp50\TCITeX/fonts/type1/dcbx10.enc}<c:\swp50\
-TCITeX/fonts/truetype/dcbx10.ttf>{c:\swp50\TCITeX/fonts/type1/dcr10.enc}<c:\swp
-50\TCITeX/fonts/truetype/dcr10.ttf>
-Output written on swp0000.pdf (5 pages, 74388 bytes).
+{
+c:\swp50\TCITeX/fonts/type1/cmmi6.enc}<c:\swp50\TCITeX/fonts/truetype/cmmi6.ttf
+>{c:\swp50\TCITeX/fonts/type1/cmr8.enc}<c:\swp50\TCITeX/fonts/truetype/cmr8.ttf
+>{c:\swp50\TCITeX/fonts/type1/cmsy6.enc}<c:\swp50\TCITeX/fonts/truetype/cmsy6.t
+tf>{c:\swp50\TCITeX/fonts/type1/cmex10.enc}<c:\swp50\TCITeX/fonts/truetype/cmex
+10.ttf>{c:\swp50\TCITeX/fonts/type1/cmsy8.enc}<c:\swp50\TCITeX/fonts/truetype/c
+msy8.ttf>{c:\swp50\TCITeX/fonts/type1/cmsy10.enc}<c:\swp50\TCITeX/fonts/truetyp
+e/cmsy10.ttf>{c:\swp50\TCITeX/fonts/type1/dcti10.enc}<c:\swp50\TCITeX/fonts/tru
+etype/dcti10.ttf>{c:\swp50\TCITeX/fonts/type1/cmmi8.enc}<c:\swp50\TCITeX/fonts/
+truetype/cmmi8.ttf>{c:\swp50\TCITeX/fonts/type1/cmr12.enc}<c:\swp50\TCITeX/font
+s/truetype/cmr12.ttf>{c:\swp50\TCITeX/fonts/type1/cmmi12.enc}<c:\swp50\TCITeX/f
+onts/truetype/cmmi12.ttf>{c:\swp50\TCITeX/fonts/type1/dcbx10.enc}<c:\swp50\TCIT
+eX/fonts/truetype/dcbx10.ttf>{c:\swp50\TCITeX/fonts/type1/dcr10.enc}<c:\swp50\T
+CITeX/fonts/truetype/dcr10.ttf>
+Output written on swp0000.pdf (4 pages, 68943 bytes).
