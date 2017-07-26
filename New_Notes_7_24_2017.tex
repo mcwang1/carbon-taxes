@@ -42,7 +42,7 @@
 \newtheorem{solution}[theorem]{Solution}
 \newtheorem{summary}[theorem]{Summary}
 \newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
-\input{tcilatex}
+%\input{tcilatex}
 
 \begin{document}
 
@@ -182,5 +182,29 @@ Thus leakage is due only to the increase in foreign consumption brou%
 l_{P}=\left( \omega _{c}\hat{\pi}_{c}\hat{Y}+\left( 1-\omega _{c}\right) 
 \hat{\pi}_{c}^{\ast }\hat{Y}^{\ast }\right) G^{-1/\beta }
 \end{equation*}
+
+\section{Welfare}
+
+The ultimate goal of any carbon taxing scheme is to maximize welfare conditional on meeting emissions reduction criteria. In this model, a country's welfare is its spending power - more precisely, its income divided by a price index of energy, manufactures, and the l-good (see :
+
+\begin{equation*}
+W = \frac{Y}{p}
+\end{equation*}
+After taxes, welfare can change, and we denote this as before with a hat:
+
+\begin{equation*}
+\hat{W} = \frac{W^\prime}{W}
+\end{equation*}
+These expressions are analogous for Foreign with stars. There is one more relevant measure which is world welfare. Since welfare can differ between Home and Foreign, world welfare is expressed in expectation, weighted by the sizes of the countries' respective labor forces:
+
+\begin{equation}
+W_{world} = \omega_L*W + \omega_L^\star*W^\star
+\end{equation}
+where $\omega_L$ and $\omega_L^\star$ denote the world share of labor returns in Home and Foreign, respectively (recall that wages are equalized):
+
+\begin{align}
+&\omega_L = \frac{\pi_L*Y_{rel}}{\pi_L*Y_{rel} + \pi_L^\star}\\
+&\omega_L^\star = \frac{\pi_L^\star}{\pi_L*Y_{rel} + \pi_L^\star}
+\end{align}
 
 \end{document}
