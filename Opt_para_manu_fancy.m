@@ -4,7 +4,7 @@
 % parameters
 sigma = 0.3 % elasticity of substitution b/t c-good and l-good
 beta = 0.5 % labor share of energy extraction
-eta = 0.75 % manufacturing good share of the c-good
+eta = 0.9 % manufacturing good share of the c-good
 gamma = 0.8 % labor share of manufacturing goods
 theta = 4 % how differentiated H and F's production strengths are
 jbar = 0.5 % cutoff manufacturing variety produced in H vs F
