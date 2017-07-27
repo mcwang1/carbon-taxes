@@ -15,7 +15,7 @@
 %TCIDATA{Codepage=65001}
 %TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
 %TCIDATA{Created=Tuesday, November 13, 2012 12:43:14}
-%TCIDATA{LastRevised=Wednesday, July 26, 2017 21:55:11}
+%TCIDATA{LastRevised=Thursday, July 27, 2017 14:15:13}
 %TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
 %TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Standard LaTeX Article">}
 %TCIDATA{Language=American English}
@@ -94,13 +94,21 @@ production tax $t_{p}^{\prime }$ and a border tax adjustment $t_{b}^{\prime
 }\in \lbrack 0,t_{p}^{\prime }]$. With no border adjustments ($t_{b}^{\prime
 }=0$) it is a pure production tax (at rate $t_{p}^{\prime }$) while with
 full border adjustments ($t_{b}^{\prime }=t_{p}^{\prime }$) it is a pure
-consumption tax (at rate $t_{b}^{\prime }$). The proportional reduction in
-global emissions $G<1$ under such policies is acheived through reduced
-demand for energy, which drives down the price of energy faced by the
-extraction sector, leading that sector to supply less energy on the world
-market. This reduction in the price of energy $\hat{p}_{e}$, known as the 
-\emph{fuel price effect}, is connected to the reduction in global emissions
-via the energy supply curve:%
+consumption tax (at rate $t_{b}^{\prime }$). It is often helpful to
+parameterize carbon taxes in terms of the border adjustment $t_{b}^{\prime }$
+and the effective production tax $\tilde{t}_{p}^{\prime }$, satisfying:%
+\begin{equation*}
+1+\tilde{t}_{p}^{\prime }=\frac{1+t_{p}^{\prime }}{1+t_{b}^{\prime }}.
+\end{equation*}%
+In this space, there are no constraints on the tax rates, other than $%
+t_{b}^{\prime }\geq 1$ and $\tilde{t}_{p}^{\prime }\geq 1$.
+
+The proportional reduction in global emissions $G<1$ under such policies is
+acheived through reduced demand for energy, which drives down the price of
+energy faced by the extraction sector, leading that sector to supply less
+energy on the world market. This reduction in the price of energy $\hat{p}%
+_{e}$, known as the \emph{fuel price effect}, is connected to the reduction
+in global emissions via the energy supply curve:%
 \begin{equation}
 \hat{p}_{e}=G^{(1-\beta )/\beta }.  \label{fuel price effect}
 \end{equation}
@@ -148,7 +156,9 @@ _{c}\right) \frac{\hat{\pi}_{c}^{\ast }\hat{Y}^{\ast }}{\hat{p}_{e}}\right)
 ^{\prime }\right) \left( \omega _{c}\frac{\hat{\pi}_{c}\hat{Y}}{\left(
 1+t_{b}^{\prime }\right) \hat{p}_{e}}+\left( 1-\omega _{c}\right) \frac{\hat{%
 \pi}_{c}^{\ast }\hat{Y}^{\ast }}{\hat{p}_{e}}\right) .  \label{G equation}
-\end{eqnarray}
+\end{eqnarray}%
+We will exploit this equation below to substitute out terms involving
+changes in income.
 
 We define \emph{modified leakage} $\tilde{l}_{P}$ as the increased emissions
 in $\mathcal{F}$ resulting from a unilateral carbon tax in $\mathcal{H}$
@@ -193,7 +203,7 @@ and%
 ^{-\theta \left( 1-\gamma \right) }}{\bar{j}\left( 1+\tilde{t}_{p}^{\prime
 }\right) ^{-\theta \left( 1-\gamma \right) }+1-\bar{j}}
 \end{equation*}%
-Using the expression for $\bar{j}^{\prime }$ we get:%
+Incorporating these expressions:%
 \begin{eqnarray*}
 \tilde{l}_{P} &=&\frac{1-\bar{j}}{1-G}\left( \frac{1}{\bar{j}\left( 1+\tilde{%
 t}_{p}^{\prime }\right) ^{-\theta \left( 1-\gamma \right) }+1-\bar{j}}\frac{G%
@@ -205,36 +215,16 @@ t}_{p}^{\prime }\right) ^{-\theta \left( 1-\gamma \right) }+1-\bar{j}}\frac{G%
 _{p}^{\prime }\right) ^{-\theta \left( 1-\gamma \right) }\left( 1-\frac{%
 \tilde{t}_{p}^{\prime }}{1+\tilde{t}_{p}^{\prime }}\right) +1-\bar{j}}%
 -1\right)  \\
-&=&\frac{1-\bar{j}}{1-G}\left( \frac{G}{1-\bar{j}\left( 1-\left( 1+\tilde{t}%
-_{p}^{\prime }\right) ^{-\theta \left( 1-\gamma \right) -1}\right) }%
+&=&\frac{1-\bar{j}}{1-G}\left( \frac{G}{\bar{j}\left( 1+\tilde{t}%
+_{p}^{\prime }\right) ^{-\theta \left( 1-\gamma \right) -1}+1-\bar{j}}%
 -1\right) .
 \end{eqnarray*}%
-One result is that, given $G$, leakage depends only on $\tilde{t}%
-_{p}^{\prime }$, and is increasing in $\tilde{t}_{p}^{\prime }$. If $\tilde{t%
-}_{p}^{\prime }=0$, as under a full border tax adjustment, leakage reduces
-to:%
-\begin{equation*}
-\tilde{l}_{P}=\frac{1-\bar{j}}{1-G}\left( G-1\right) =-\left( 1-\bar{j}%
-\right) .
-\end{equation*}%
-In this case there is negative leakage as $\mathcal{F}$ contibutes to global
-emission reductions in proportion to its initial share of global emissions.
-
-Returning to (\ref{G equation}), we can use it to solve for the set of taxes
-that deliver global emission reductions of $G$.%
-\begin{eqnarray*}
-G\hat{p}_{e} &=&G^{1/\beta }=\left( 1-\frac{\tilde{t}_{p}^{\prime }}{1+%
-\tilde{t}_{p}^{\prime }}\bar{j}^{\prime }\right) \left( \omega _{c}\frac{%
-\hat{\pi}_{c}\hat{Y}}{\left( 1+t_{b}^{\prime }\right) }+\left( 1-\omega
-_{c}\right) \hat{\pi}_{c}^{\ast }\hat{Y}^{\ast }\right)  \\
-&=&\left( 1-\frac{\tilde{t}_{p}^{\prime }}{1+\tilde{t}_{p}^{\prime }}\frac{%
-\bar{j}\left( 1+\tilde{t}_{p}^{\prime }\right) ^{-\theta \left( 1-\gamma
-\right) }}{\bar{j}\left( 1+\tilde{t}_{p}^{\prime }\right) ^{-\theta \left(
-1-\gamma \right) }+1-\bar{j}}\right) \left( \omega _{c}\frac{\hat{\pi}_{c}%
-\hat{Y}}{\left( 1+t_{b}^{\prime }\right) }+\left( 1-\omega _{c}\right) \hat{%
-\pi}_{c}^{\ast }\hat{Y}^{\ast }\right)  \\
-&&
-\end{eqnarray*}
+One implication is that, given $G$, leakage depends only on $\tilde{t}%
+_{p}^{\prime }$. Furthermore, leakage is monotonically increasing in $\tilde{%
+t}_{p}^{\prime }$. At the extreme of $\tilde{t}_{p}^{\prime }=0$, as under a
+full border tax adjustment, the leakage formula reduces to $-\left( 1-\bar{j}%
+\right) $. Leakage is negative as $\mathcal{F}$ contibutes to reductions in
+global emissions in proportion to its initial share of those emissions.
 
 \section{Welfare}
 
