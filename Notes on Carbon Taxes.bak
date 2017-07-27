@@ -15,7 +15,7 @@
 %TCIDATA{Codepage=65001}
 %TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
 %TCIDATA{Created=Tuesday, November 13, 2012 12:43:14}
-%TCIDATA{LastRevised=Wednesday, July 26, 2017 21:55:11}
+%TCIDATA{LastRevised=Wednesday, July 26, 2017 21:33:21}
 %TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
 %TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Standard LaTeX Article">}
 %TCIDATA{Language=American English}
@@ -220,21 +220,7 @@ to:%
 In this case there is negative leakage as $\mathcal{F}$ contibutes to global
 emission reductions in proportion to its initial share of global emissions.
 
-Returning to (\ref{G equation}), we can use it to solve for the set of taxes
-that deliver global emission reductions of $G$.%
-\begin{eqnarray*}
-G\hat{p}_{e} &=&G^{1/\beta }=\left( 1-\frac{\tilde{t}_{p}^{\prime }}{1+%
-\tilde{t}_{p}^{\prime }}\bar{j}^{\prime }\right) \left( \omega _{c}\frac{%
-\hat{\pi}_{c}\hat{Y}}{\left( 1+t_{b}^{\prime }\right) }+\left( 1-\omega
-_{c}\right) \hat{\pi}_{c}^{\ast }\hat{Y}^{\ast }\right)  \\
-&=&\left( 1-\frac{\tilde{t}_{p}^{\prime }}{1+\tilde{t}_{p}^{\prime }}\frac{%
-\bar{j}\left( 1+\tilde{t}_{p}^{\prime }\right) ^{-\theta \left( 1-\gamma
-\right) }}{\bar{j}\left( 1+\tilde{t}_{p}^{\prime }\right) ^{-\theta \left(
-1-\gamma \right) }+1-\bar{j}}\right) \left( \omega _{c}\frac{\hat{\pi}_{c}%
-\hat{Y}}{\left( 1+t_{b}^{\prime }\right) }+\left( 1-\omega _{c}\right) \hat{%
-\pi}_{c}^{\ast }\hat{Y}^{\ast }\right)  \\
-&&
-\end{eqnarray*}
+Returning to (), we 
 
 \section{Welfare}
 
