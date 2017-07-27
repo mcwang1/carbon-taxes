@@ -1,7 +1,6 @@
 %2multibyte Version: 5.50.0.2960 CodePage: 65001
 %\input{tcilatex}
 %\input{tcilatex}
-%\input{tcilatex}
 
 
 \documentclass[notitlepage,12pt]{article}
@@ -15,7 +14,7 @@
 %TCIDATA{Codepage=65001}
 %TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
 %TCIDATA{Created=Tuesday, November 13, 2012 12:43:14}
-%TCIDATA{LastRevised=Thursday, July 27, 2017 14:15:13}
+%TCIDATA{LastRevised=Wednesday, July 26, 2017 14:52:51}
 %TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
 %TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Standard LaTeX Article">}
 %TCIDATA{Language=American English}
@@ -43,7 +42,7 @@
 \newtheorem{solution}[theorem]{Solution}
 \newtheorem{summary}[theorem]{Summary}
 \newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
-\input{tcilatex}
+%\input{tcilatex}
 
 \begin{document}
 
@@ -228,11 +227,7 @@ global emissions in proportion to its initial share of those emissions.
 
 \section{Welfare}
 
-The goal of a carbon tax policy is to reduce global emissions while
-minimizing any reduction in the standard of living of individuals in the
-country imposing the tax. In this model, a country's welfare is its spending
-power - more precisely, its income divided by a price index of energy,
-manufactures, and the l-good (see :
+The ultimate goal of any carbon taxing scheme is to maximize welfare conditional on meeting emissions reduction criteria. In this model, a country's welfare is its spending power - more precisely, its income divided by a price index of energy, manufactures, and the l-good (see :
 
 \begin{equation*}
 W = \frac{Y}{p}
@@ -242,20 +237,71 @@ After taxes, welfare can change, and we denote this as before with a hat:
 \begin{equation*}
 \hat{W} = \frac{W^\prime}{W}
 \end{equation*}
-These expressions are analogous for Foreign with stars. There is one more
-relevant measure which is world welfare. Since welfare can differ between
-Home and Foreign, world welfare is expressed in expectation, weighted by the
-sizes of the countries' respective labor forces:
+These expressions are analogous for Foreign with stars. There is one more relevant measure which is world welfare. Since welfare can differ between Home and Foreign, world welfare is expressed in expectation, weighted by the sizes of the countries' respective labor forces:
 
 \begin{equation}
 W_{world} = \omega_L*W + \omega_L^\star*W^\star
 \end{equation}
-where $\omega_L$ and $\omega_L^\star$ denote the world share of labor
-returns in Home and Foreign, respectively (recall that wages are equalized):
+where $\omega_L$ and $\omega_L^\star$ denote the world share of labor returns in Home and Foreign, respectively (recall that wages are equalized):
 
 \begin{align}
-&\omega_L = \frac{\pi_L*Y_{rel}}{\pi_L*Y_{rel} + \pi_L^\star} \\
+&\omega_L = \frac{\pi_L*Y_{rel}}{\pi_L*Y_{rel} + \pi_L^\star}\\
 &\omega_L^\star = \frac{\pi_L^\star}{\pi_L*Y_{rel} + \pi_L^\star}
 \end{align}
 
+\section{Changes in Production and Consumption of Energy}
+
+After imposing a tax,  the value of the energy used in $\mathcal{H}$
+to supply the domestic market is:
+
+\begin{equation*}
+p_{e}^{\prime }M_{e}^{HH\prime }=\left( 1-\gamma \right) \bar{j}^{\prime
+} \frac{\pi _{c}^{\prime }Y^{\prime }}{1+t_{p}^{\prime }}
+\end{equation*}%
+while for the foreign market:%
+\begin{equation*}
+p_{e}^{\prime }M_{e}^{FH\prime }=\left( 1-\gamma \right) \bar{j}^{\prime
+} \frac{\pi _{c}^{\ast \prime }Y^{\ast \prime }}{1+\tilde{t}_{p}^{\prime
+}}.
+\end{equation*}%
+The value of the energy used in $\mathcal{F}$ to supply manufactures to $%
+\mathcal{H}$ is:%
+\begin{equation*}
+p_{e}^{\prime }M_{e}^{HF\prime }=\left( 1-\gamma \right) \left( 1-\bar{j}%
+^{\prime }\right) \frac{\pi _{c}^{\prime }Y^{\prime }}{1+t_{b}^{\prime }%
+},
+\end{equation*}%
+while in producing for $\mathcal{F}$:%
+\begin{equation*}
+p_{e}^{\prime }M_{e}^{FF\prime }=\left( 1-\gamma \right) \left( 1-\bar{j}%
+^{\prime }\right) \pi _{c}^{\ast \prime }Y^{\ast \prime }.
+\end{equation*}%
+From these expressions, we can derive:
+\begin{enumerate}
+\item The post-tax change in Home production of energy:
+\begin{align*}
+(\hat{M_e^{HH}+M_e^{HF}}) &= \frac{M_e^{HH\prime}+M_e^{HF\prime}}{M_e^{HH}+M_e^{HF}}\\
+&= \frac{\frac{(1-\gamma) \bar{j}^{\prime
+} \frac{\pi _{c}^{\prime }Y^{\prime }}{1+t_{p}^{\prime }}}{p_e^\prime} + \frac{(1-\gamma) \bar{j}^{\prime
+} \frac{\pi _{c}^{\ast \prime }Y^{\ast \prime }}{1+\tilde{t}_{p}^{\prime
+}}}{p_e^\prime}}{\frac{(1-\gamma) \bar{j} \pi_{c}Y}{p_e} + \frac{(1-\gamma) \bar{j} \pi _c^\ast Y^\ast}{p_e}}\\
+&= \frac{\bar{j}^\prime}{\hat{p_e} j} \frac{\pi_c^\prime Y^\prime + \pi_c^{\ast \prime} Y^{\ast \prime}(1+t_b^\prime)}{(\pi_c Y + \pi_c^\ast Y^\ast)(1+t_p^\prime)}\\
+&= \frac{\bar{j}^\prime}{\hat{p_e} j} \frac{\omega_c \hat{\pi_c} \hat{Y} + (1-\omega_c)\hat{\pi_c}^\ast \hat{Y}^\ast (1+t_b^\prime)}{1+t_p^\prime}
+\end{align*}
+\item The post-tax change in Foreign production of energy:
+\begin{align*}
+(\hat{M_e^{HF}+M_e^{FF}}) &= \frac{M_e^{HF\prime}+M_e^{FF\prime}}{M_e^{HF}+M_e^{FF}}\\
+&= \frac{1-\bar{j}^\prime}{(1-j)\hat{p_e}} \frac{\omega_c \hat{\pi_c} \hat{Y}(1+t_b^\prime) + (1-\omega_c)\hat{\pi_c}^\ast \hat{Y}^\ast }{1+t_b^\prime}
+\end{align*}
+\item The post-tax change in Home consumption of energy:
+\begin{align*}
+(\hat{M_e^{HH}+M_e^{HF}}) &= \frac{M_e^{HH\prime}+M_e^{HF\prime}}{M_e^{HH}+M_e^{HF}}\\
+&= \frac{\hat{\pi_c}\hat{Y}}{\hat{p_e}}(\frac{\bar{j}^\prime}{1+t_p^\prime} + \frac{1-\bar{j}^\prime}{1+t_b^\prime})
+\end{align*}
+\item The post-tax change in Foreign consumption of energy:
+\begin{align*}
+(\hat{M_e^{FH}+M_e^{FF}}) &= \frac{M_e^{FH\prime}+M_e^{FF\prime}}{M_e^{FH}+M_e^{FF}}\\
+&= \frac{\hat{\pi_c}^\ast \hat{Y}^\ast}{\hat{p_e}}(\frac{\bar{j}^\prime}{1+\tilde{t_p}^\prime} + (1-\bar{j}^\prime))
+\end{align*}
+\end{enumerate}
 \end{document}
