@@ -14,7 +14,7 @@
 %TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
 %TCIDATA{BibliographyScheme=Manual}
 %TCIDATA{Created=Tuesday, November 13, 2012 12:43:14}
-%TCIDATA{LastRevised=Thursday, August 10, 2017 17:40:53}
+%TCIDATA{LastRevised=Thursday, August 10, 2017 17:23:04}
 %TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
 %TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Standard LaTeX Article">}
 %TCIDATA{Language=American English}
@@ -57,7 +57,7 @@ Blah blah blah
 
 \section{Introduction}
 
-Leakage is a central concern to design of climate change policy.
+Leakage central concern to design of climate change policy.
 
 Originally, concern about developed countries adopting carbon prices while
 developing do not. Even without such extreme differentiation, still concern
@@ -476,7 +476,7 @@ given the competitive price fo the good $p\left( j\right) $ in $H$ and $%
 p^{\ast }\left( j\right) $ in $F$, inclusive of ad valorem taxes $t_{c}$ and 
 $t_{c^{\ast }}$ on consumption: 
 \begin{equation*}
-\max_{l,e}\left\{ \left( p_{m}(j)-t_{c}p_{e}e\right) -wl-p_{e}e\right\}
+\max_{l,e}\left\{ \left( p_{m}(j)-t_{c}p_{e}e\right) -wl-p_{e}e\right\} 
 \end{equation*}%
 subject to:%
 \begin{equation*}
@@ -563,7 +563,7 @@ This result arises because all energy that is extracted is used in
 production (in manufacturing in the basic model or directly consumed, and
 therefore, in home production in the more general model) and all production
 is consumed. The difference in the three taxes when imposed globally is
-where in the chain of prodution they are imposed.
+where in the chain of prodution they are imposed. 
 
 Identical demand parameters are needed because the location of the tax
 revenue creates an income effect: without identical demand parameters, the
@@ -690,7 +690,7 @@ p_{e}Q_{e}^{W}=\left( 1+t_{e}\right) ^{-\beta /\left( 1-\beta \right)
 
 \subsubsection{Production tax in $H$}
 
-No change in location of extraction (other than because $p_{e}$ changes).
+No change in location of extraction (other than because $p_{e}$ changes). 
 
 Shift in j-bar:
 
@@ -762,17 +762,17 @@ to interpret because if we hold global emissions fixed, the both the
 numerator and the denominator change when we change the type of tax.If $%
 \Delta F$ changes, then $\Delta H$ must change too if emissions are held
 fixed. Often, leakage measures are compared holding the nominal tax rate
-fixed, which makes them very hard to compare.
+fixed, which makes them very hard to compare. 
 
 Propose an alternative measure of leakage, which we call modified leakage: $%
 -\Delta F/\left( \Delta H+\Delta F\right) $. With this definition, the
 denominator is the decline in global emissions, so if we compare two taxes
 set to be equally effective, we know that the denominator is the same. Can
-easily be converted into the conventional measure if desired.
+easily be converted into the conventional measure if desired. 
 
 Also leads to simplification because the denominator is determined by $p_{e}$%
 : all leakage measures will assume the same assumptions about price of
-energy.
+energy. 
 
 Leakage often said to include two effects: a fuel price effect and a
 location effect. Fuel price effect arises because carbon tax in $H$ lowers
@@ -782,7 +782,7 @@ scenarios. Depending on tax, consumers in $F$ see its effect differently, so
 behavior of those consumers is not held fixed. \ E.g., with production tax,
 consumers in $F$ see a tax on the goods that they purchase from $H$ while
 with a consumption tax they do not. But because price of energy is held
-constant in all scenarios, we do not try to isolate a fuel price effect.
+constant in all scenarios, we do not try to isolate a fuel price effect.  
 
 Emissions in our model come only from manufacturing. Convenient to have
 terms for emissions from manufacturing. Define the spending in $H$ on energy
@@ -801,7 +801,7 @@ D^{\ast }\left( p_{m}^{\ast }\right) Y^{\ast }
 \end{eqnarray}
 
 We then have $M_{H}+M_{F}=M_{W}$, and $M_{H}^{\ast }+M_{F}^{\ast }=M_{W}$,
-and $M_{W}+M_{F}^{\ast }=M_{W}=Q_{e}^{W}$.
+and $M_{W}+M_{F}^{\ast }=M_{W}=Q_{e}^{W}$. 
 
 Modified leakage for a given global reduction in emissions $G$ is:\ 
 
@@ -818,7 +818,7 @@ Leakage with a production or consumption tax is:
 \begin{equation*}
 \tilde{l}_{P}=\frac{1-\bar{j}}{1-G}\left( \frac{G}{\bar{j}\left( 1+\tilde{t}%
 _{p}^{\prime }\right) ^{-\theta \left( 1-\gamma \right) -1}+1-\bar{j}}%
--1\right)
+-1\right) 
 \end{equation*}
 
 Recalling that $\tilde{t}_{p}^{\prime }$ is the residual production tax if
@@ -826,8 +826,8 @@ there are partial border tax adjustments, we had previously that if $\tilde{t%
 }_{p}^{\prime }=0$, the tax is a pure consumption tax. We therefore get:
 
 \begin{corollary}
-With a pure consumption tax, leakage is equal to $-\left( 1-\bar{j}\right)
-<0 $.
+With a pure consumption tax, leakage is equal to $-\left( 1-\bar{j}\right) <0
+$.
 \end{corollary}
 
 Need to explain why we get negative leakage when nobody else does (other
