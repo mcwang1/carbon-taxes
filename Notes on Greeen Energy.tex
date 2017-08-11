@@ -1,0 +1,157 @@
+%2multibyte Version: 5.50.0.2960 CodePage: 65001
+%\input{tcilatex}
+%\input{tcilatex}
+%\input{tcilatex}
+
+
+\documentclass[notitlepage,12pt]{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsfonts}
+\usepackage{amsmath}
+
+\setcounter{MaxMatrixCols}{10}
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=5.00.0.2552}
+%TCIDATA{Codepage=65001}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{Created=Tuesday, November 13, 2012 12:43:14}
+%TCIDATA{LastRevised=Thursday, August 10, 2017 19:02:16}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Standard LaTeX Article">}
+%TCIDATA{Language=American English}
+%TCIDATA{CSTFile=40 LaTeX article.cst}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\input{tcilatex}
+
+\begin{document}
+
+\title{Incorporating Green Energy Supply}
+\author{Kortum and Weisbach \\
+%EndAName
+Yale and University of Chicago}
+\maketitle
+
+\begin{abstract}
+\end{abstract}
+
+\section{Energy Supply}
+
+Our starting point is a production function for extraction of a quantity $%
+Q_{e}$ of energy:%
+\begin{equation}
+Q_{e}=\left( L_{e}/\beta \right) ^{\beta }E^{1-\beta },  \label{e production}
+\end{equation}%
+where $L_{e}$ is labor input, $E$ is an energy endowment, and $\beta $ is
+labor's share. (We derive this production function from more primitive
+assumptions about extraction in the Appendix.) The energy supply curve is:%
+\begin{equation*}
+Q_{e}=\left( \frac{p_{e}}{w}\right) ^{\beta /(1-\beta )}E,
+\end{equation*}%
+with energy supply elasticity $\varepsilon _{S}=\beta /(1-\beta )$.
+
+The problem is the same in $\mathcal{F}$. We'll assume $\beta $ with $\beta
+^{\ast }$ for simplicity, $w=w^{\ast }=1$ due to costless trade in services
+and $p_{e}=p_{e}^{\ast }$ due to costless trade in energy. In that setting
+the global supply of energy is:%
+\begin{equation*}
+Q_{e}^{W}=Q_{e}+Q_{e}^{\ast }=p_{e}^{\beta /(1-\beta )}E^{W},
+\end{equation*}%
+where $E^{W}=E+E^{\ast }$. Consider changes over time, given endowments and
+no extraction taxes. Let $G=$ $\hat{Q}_{e}^{W}$ be the change in global
+emissions, i.e. emissions are proportional to energy use. With $\hat{p}_{e}$
+the change in the energy price, we have:%
+\begin{equation*}
+G=\hat{p}_{e}^{\beta /(1-\beta )}.
+\end{equation*}%
+Global emissions are reduced if and only if the pre-tax price of energy
+falls. Now consider how the picture changes if we introduce renewables, so
+that global emissions are no longer proportional to energy use.
+
+\subsection{Fossil Fuels and Renewables}
+
+We distinguish between renewable\ energy, that involves no carbon emissions,
+and fossil fuels. Let $Q_{f}$ be the quantity of fossil fuels and $Q_{r}$
+the quantity of renewables, so that $Q_{e}=Q_{f}+Q_{r}$. It is convenient to
+model these energy sources in a parallel manner:%
+\begin{equation*}
+Q_{f}=\left( L_{f}/\beta \right) ^{\beta }E_{f}^{1-\beta }
+\end{equation*}%
+and%
+\begin{equation*}
+Q_{r}=\left( L_{r}/\beta _{r}\right) ^{\beta _{r}}E_{r}^{1-\beta _{r}},
+\end{equation*}%
+where we cn start with the simple case $\beta _{r}=\beta $. Since these two
+forms of energy are perfect substitutes in production, their price may
+differ only due to their tax treatment.
+
+Suppose there is a carbon tax on production at rate $t_{p}$, raising the
+after-tax price of fossil fuels from $p_{f}$ to $(1+t_{p})p_{f}$. Since
+renewables do not generate carbon emissions, they would naturally be exempt
+from such a tax. In an equilibrium in which both fossil fuels and renewables
+are used, the price of renewables will be:%
+\begin{equation*}
+p_{r}=(1+t_{p})p_{f}.
+\end{equation*}%
+In this case, total energy supply in $\mathcal{H}$ is:%
+\begin{eqnarray*}
+Q_{e} &=&p_{f}^{\beta /(1-\beta )}E_{f}+p_{r}^{\beta /(1-\beta )}E_{r} \\
+&=&p_{e}^{\beta /(1-\beta )}\left( E_{f}+\left( 1+t_{p}\right) ^{\beta
+/(1-\beta )}E_{r}\right) .
+\end{eqnarray*}%
+Notice how the production tax raises the supply of energy, given the price
+of energy $p_{e}$. The mechanism is that the production tax makes marginal
+forms of renewable energy cost efficient.
+
+Suppose fossil fuels are traded at no cost, so that their world price is $%
+p_{f}=p_{e}$. It's more realistic to assume that renewables are not traded.
+Consider a border adjustment $t_{b}$ layered on top of the production tax $%
+t_{p}$. Thus producers in $\mathcal{F}$ face an effective fuel price of $%
+(1+t_{b})p_{f}$ if they use fossil fuels in producing for the export market.
+If they use renewables they are exempt from the border adjustment. If, in
+equilibrium, renewables are not sufficient to cover energy demand in
+producing for the export market, the price of renewables in foreign will be:%
+\begin{equation*}
+p_{r}^{\ast }=(1+t_{b})p_{f}.
+\end{equation*}%
+The border tax in $\mathcal{H}$ segments the energy market in $\mathcal{F}$,
+raising the price of renewables. While there will be fuel switching to serve
+the export market, the higher price will bring new sources of renewables
+into production. This requires that producers in $\mathcal{F}$ certify to $%
+\mathcal{H}$ that they are using renewables since otherwise the equilibrium
+price of renewables in $\mathcal{F}$ would remain at $p_{f}$ (and so
+production of renewables would not be stimulated).
+
+Although renewables add to world energy supply, they don't change the simple
+link between changes in global emissions and the change in price of energy:%
+\begin{equation*}
+G=\frac{Q_{f}^{W\prime }}{Q_{f}^{W}}=\frac{p_{e}^{\prime \beta /(1-\beta
+)}E_{f}^{W}}{p_{e}^{\beta /(1-\beta )}E_{f}^{W}}=\hat{p}_{e}^{\beta
+/(1-\beta )}.
+\end{equation*}%
+Thus, as before, a goal for reduction in global emissions nails down the
+necessary reduction in the price of energy. But, note that we no longer have 
+$G=\hat{Q}_{e}^{W}$.
+
+\end{document}
