@@ -10,11 +10,12 @@
 
 \setcounter{MaxMatrixCols}{10}
 %TCIDATA{OutputFilter=LATEX.DLL}
-%TCIDATA{Version=5.00.0.2552}
+%TCIDATA{Version=5.50.0.2960}
 %TCIDATA{Codepage=65001}
 %TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=Manual}
 %TCIDATA{Created=Tuesday, November 13, 2012 12:43:14}
-%TCIDATA{LastRevised=Friday, August 19, 2016 00:30:15}
+%TCIDATA{LastRevised=Friday, August 11, 2017 10:58:17}
 %TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
 %TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Standard LaTeX Article">}
 %TCIDATA{Language=American English}
@@ -42,6 +43,7 @@
 \newtheorem{solution}[theorem]{Solution}
 \newtheorem{summary}[theorem]{Summary}
 \newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\input{tcilatex}
 
 \begin{document}
 
@@ -68,16 +70,16 @@ country, given a goal for reducing global carbon emissions.
 
 \section{Simple Model}
 
-There are two countries, home (henceforth $\mathcal{H}$) and foreign
-(henceforth $\mathcal{F}$), endowed with fossil fuel deposits ($E$ and $%
-E^{\ast }$) and labor ($L$ and $L^{\ast }$, measured in efficiency units).
-Note that variables related to $\mathcal{F}$ are denoted with a $^{\ast }$.
-Fuel deposits are extracted using labor to produce energy (the $e$-good) and
-carbon emissions. Each country can also produce another good (the $l$-good)
-using only labor. Consumers have preferences over the $e$-good and the $l$%
--good. Both are costlessly traded. Nonetheless, after-tax prices of the $e$%
--good may differ across countries due to carbon taxes. The law of one price
-holds for the $l$-good.
+There are two countries, home ($\mathcal{H}$) and foreign ($\mathcal{F}$),
+endowed with fossil fuel deposits ($E$ and $E^{\ast }$) and labor ($L$ and $%
+L^{\ast }$, measured in efficiency units). Note that variables related to $%
+\mathcal{F}$ are denoted with a $^{\ast }$. Fuel deposits are extracted
+using labor to produce energy (the $e$-good) and carbon emissions. Each
+country can also produce another good (the $l$-good) using only labor.
+Consumers have preferences over the $e$-good and the $l$-good. Both are
+costlessly traded. Nonetheless, after-tax prices of the $e$-good may differ
+across countries due to carbon taxes. The law of one price holds for the $l$%
+-good.
 
 \subsection{Basic Setup}
 
@@ -1680,8 +1682,8 @@ p_{m}=\phi (1+t_{c})^{1-\gamma }p_{e}^{1-\gamma }\left( A^{\theta }+A^{\ast
 \theta }\right) ^{-1/\theta }.
 \end{equation*}
 
-Since the household in $\mathcal{H}$ faces prices $(1+t_{c})p_{e}$ and $p_{m}
-$, the after-tax price of the $c$-good is:%
+Since the household in $\mathcal{H}$ faces prices $(1+t_{c})p_{e}$ and $%
+p_{m} $, the after-tax price of the $c$-good is:%
 \begin{eqnarray}
 p_{c} &=&p_{m}^{\eta }\left( p_{e}(1+t_{c})\right) ^{1-\eta }  \notag \\
 &=&\phi ^{\eta }p_{e}^{1-\eta \gamma }(1+t_{c})^{1-\eta \gamma }\left(
@@ -2212,7 +2214,7 @@ D(p_{c})Y-\frac{t_{p}-\tilde{t}_{p}}{1+\tilde{t}_{p}}\left( 1-\gamma \right)
 \bar{j}\eta D^{\ast }(p_{c}^{\ast })Y^{\ast } \\
 &=&\frac{t_{b}}{1+t_{b}}\left[ \left( 1-\gamma \right) \left( 1-\bar{j}%
 \right) \eta D(p_{c})Y-\left( 1+t_{b}\right) \left( 1-\gamma \right) \bar{j}%
-\eta D^{\ast }(p_{c}^{\ast })Y^{\ast }\right] 
+\eta D^{\ast }(p_{c}^{\ast })Y^{\ast }\right]
 \end{eqnarray*}%
 Adding in tax revenue, income in $\mathcal{H}$ is given by:%
 \begin{eqnarray}
@@ -2243,7 +2245,7 @@ and the value of world demand for energy by firms is:%
 p_{e}M_{e}^{W} &=&p_{e}M_{e}^{HW}+p_{e}M_{e}^{FW}  \notag \\
 &=&\left( 1-\gamma \right) \eta \left[ \left( \frac{\bar{j}}{1+t_{p}}+\frac{%
 1-\bar{j}}{1+t_{b}}\right) D(p_{c})Y+\left( \frac{\bar{j}}{1+\tilde{t}_{p}}%
-+1-\bar{j}\right) D^{\ast }(p_{c}^{\ast })Y^{\ast }\right]   \notag \\
++1-\bar{j}\right) D^{\ast }(p_{c}^{\ast })Y^{\ast }\right]  \notag \\
 &=&\left( 1-\gamma \right) \eta \left( \frac{1+t_{b}}{1+t_{p}}\bar{j}+1-\bar{%
 j}\right) \left( \frac{1}{1+t_{b}}D(p_{c})Y+D^{\ast }(p_{c}^{\ast })Y^{\ast
 }\right) .  \label{world intermediate spending}
@@ -3029,7 +3031,7 @@ Consumption leakage is determined by the energy price decline and the extent
 to which that decline leads $\mathcal{F}$ to substitute away from the $l$%
 -good into manufactures. Consumption leakage is also proportional to $%
 \mathcal{F}$'s initial share $1-\omega _{c}$ of global spending on
-manufactures. 
+manufactures.
 
 Substituting in the energy price decline dictated by the global emission
 goal:%
@@ -3090,7 +3092,7 @@ Price changes are given by:%
 \begin{equation*}
 \hat{p}_{c}^{-\theta }=\hat{p}_{e}^{-\theta \left( 1-\gamma \right) }\left( 
 \bar{j}\left( 1+t_{p}^{\prime }\right) ^{-\theta \left( 1-\gamma \right)
-}+\left( 1-\bar{j}\right) \right) 
+}+\left( 1-\bar{j}\right) \right)
 \end{equation*}
 
 In this setting (unlike the setting of the pure consumption tax) production
@@ -3100,7 +3102,7 @@ leakage should be a useful measure. Modified production leakage is%
 \bar{j}\left( 1+t_{p}^{\prime }\right) ^{-\theta \left( 1-\gamma \right) }+1-%
 \bar{j}}\right) \left( \omega _{c}\frac{\hat{\pi}_{c}\hat{Y}}{\hat{p}_{e}}%
 +\left( 1-\omega _{c}\right) \frac{\hat{\pi}_{c}^{\ast }\hat{Y}^{\ast }}{%
-\hat{p}_{e}}\right) -1\right)  \\
+\hat{p}_{e}}\right) -1\right) \\
 &=&\left( \frac{1-\bar{j}}{1-G}\right) \left( \frac{G^{-\left( 1-\beta
 \right) /\beta }}{\bar{j}\left( 1+t_{p}^{\prime }\right) ^{-\theta \left(
 1-\gamma \right) }+1-\bar{j}}\hat{X}_{c}^{W}-1\right) .
