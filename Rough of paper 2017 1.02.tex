@@ -14,7 +14,7 @@
 %TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
 %TCIDATA{BibliographyScheme=Manual}
 %TCIDATA{Created=Tuesday, November 13, 2012 12:43:14}
-%TCIDATA{LastRevised=Friday, August 25, 2017 15:26:38}
+%TCIDATA{LastRevised=Monday, August 28, 2017 16:42:37}
 %TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
 %TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Standard LaTeX Article">}
 %TCIDATA{Language=American English}
@@ -70,7 +70,7 @@ concern because nations will inevitably have different carbon prices
 (whether explicit, such as through a tax, subsidies, or tradable permits, or
 implicit, such as through regulations). For example, under the Paris
 Agreement, nations have different emissions reductions goals, implying
-different shadow carbon prices, generating the possibility of leakage. 
+different shadow carbon prices, generating the possibility of leakage.
 
 Because of its centrality to climate change policy, there have been a large
 number of studies of leakage. Most studies use computable general
@@ -79,10 +79,10 @@ detailed representations of the economy, often including particularly
 detailed representations of the energy sector. Their disadvantage is that
 they are non-transparent. Moreover, validiation of CGE results is not
 straightforward, which means that the additional detail these models offer
-may not produce meaningful benefits. 
+may not produce meaningful benefits.
 
 There are also a smaller number of analytic approaches to studying leakage
-(described below). [What should we say about these?]  
+(described below). [What should we say about these?]
 
 We study unilateral carbon prices using a stylized general equilibrium model
 of international trade. The model allows nations to impose carbon taxes at
@@ -100,7 +100,7 @@ pricing, we find that leakage has little relationship to welfare. A policy
 minimizing leakage is rarely optimal (for a given objective of global carbon
 reduction). [We also show that full border adjustments are unlikely to be
 optimal, even leaving aside their considerable administrative costs (for a
-discussion of these costs, see Kortum and Weisbach 2017)) 
+discussion of these costs, see Kortum and Weisbach 2017))
 
 \subsection{Prior literature}
 
@@ -132,7 +132,7 @@ the reduction in emisisons in the taxing region). There are some outliers.
 \item The larger the taxing coalition, the lower the leakage.
 
 \item Border adjustments reduce leakage substantially, with leakage rates
-under border adjustments ranging from \_\_ to \_\_. 
+under border adjustments ranging from \_\_ to \_\_.
 
 \item The most important variable in determining effects of unilateral
 carbon price is the elasticity of energy supply.
@@ -218,7 +218,7 @@ production of services takes place.
 Consumers in each country earn income by working in one of the three sectors
 and by receiving rents from deposits. Consumers use their income to purchase
 manufactured goods and services to maximize utility, closing the model.
-Consumers can purchase goods produced in either country without trade costs. 
+Consumers can purchase goods produced in either country without trade costs.
 
 Our goal is to consider how taxes affect elements of the model, including
 where extraction, production, and consumption take place, how emissions
@@ -252,20 +252,28 @@ These goods enter utility via a CES utility function with an elasticity of
 substitution $\sigma $:
 
 \begin{equation}
-U\left( C_{m},C_{l}\right) =\left( \alpha ^{1/\sigma
-}\int_{0}^{1}C_{m}(j)^{\left( \sigma -1\right) /\sigma }dj+\left( 1-\alpha
-\right) ^{1/\sigma }C_{l}^{\left( \sigma -1\right) /\sigma }\right) ^{\sigma
-/\left( \sigma -1\right) }.  \label{Utility}
+U\left( C_{m},C_{l}\right) =\left( \alpha ^{1/\sigma }C_{m}{}^{\left( \sigma
+-1\right) /\sigma }+\left( 1-\alpha \right) ^{1/\sigma }C_{l}^{\left( \sigma
+-1\right) /\sigma }\right) ^{\sigma /\left( \sigma -1\right) }.
+\label{Utility}
 \end{equation}%
+The $m$-good is itself a Dixit-Stiglitz aggregate over a unit continuum of
+individual manufactured goods\footnote{%
+We could allow for an arbitrary elasticity of substitution within the Dixit
+Stiglitz aggregator but since its value plays no role in the model, we let
+it be $\sigma $ without loss of generality.}:%
+\begin{equation*}
+C_{m}=\left( \int_{0}^{1}C_{m}(j)^{\left( \sigma -1\right) /\sigma
+}dj\right) ^{\sigma /\left( \sigma -1\right) }.
+\end{equation*}
+
+[In our simulations, we will allow the two countries to have different
+parameters for their utility functions ($\alpha $, and $\sigma $) but for
+our analytic model, we constrain them to be the same.]
+
 [somewhere in the notes, we say that the parameters of the utility function
 can be different across countries. Are we allowing this? It doesn't seem
-like it in the analytic section but maybe in the simulations?] We use $%
-C_{m}=\left( \int_{0}^{1}C_{m}(j)^{\left( \sigma -1\right) /\sigma
-}dj\right) ^{\sigma /\left( \sigma -1\right) }$ to denote the composite $m$%
--good. $C_{l}$ is services or the $l$-good.\footnote{%
-We could allow the exponent in the Dixit Stiglitz aggregator to have an
-arbitrary value but this value plays no role in the model, so we let it be $%
-\sigma $ without loss of generality.]}
+like it in the analytic section but maybe in the simulations?] 
 
 Consumer optimization gives a demand function for the $m$-good of:
 
@@ -292,14 +300,14 @@ simulations, on the direct consumption of energy, such as for home heating).
 The energy content of a good is the total energy used in production of the
 good. For example, a consumption tax on an automobile includes a tax on the
 energy used to produce the steel in the automobile even if the consumer does
-not directly use that energy or produce the resulting emissions. 
+not directly use that energy or produce the resulting emissions.
 
 Firms that sell $m$-goods will have an incentive to shift their mix of
 inputs because the use of energy as an input is taxed while the use of labor
 is not. As a result, the price of a good that bears a consumption tax on its
 energy content must be determined based in equilibrium behavior of firms. To
 derive this expression we must first specify the production technology, so
-we defer this to Part \_. 
+we defer this to Part \_.
 
 \subsection{Production}
 
@@ -320,7 +328,7 @@ country supplies services, and services are freely traded. We set the $l$%
 
 \subsubsection{The $m$-good}
 
-As noted, production of the $m$-good takes place in two stages. 
+As noted, production of the $m$-good takes place in two stages.
 
 \paragraph{Extraction}
 
@@ -421,7 +429,7 @@ will produce the rest. This gives us an expression for the good produced in $%
 \right) }+A^{\ast \theta }\left( 1+t_{p}^{\ast }\right) ^{-\theta \left(
 1-\gamma \right) }}.  \label{jbar}
 \end{equation}%
-with goods $j\in \left( \bar{j},1\right] $ produced in $F$. 
+with goods $j\in \left( \bar{j},1\right] $ produced in $F$.
 
 \paragraph{Price index for manufactured goods}
 
@@ -475,8 +483,8 @@ p_{e}^{1-\gamma }}{A(j)}.
 Note that $p_{m}\left( j\right) $ may not equal $p_{m}^{\ast }\left(
 j\right) $ because the consumption tax rates in $H$ and $F$ may not be the
 same (for example, with a unilateral consumption tax in $H$, $t_{c}^{\ast }$
-would be $0$). A similar derivation gives the consumption tax for firms in $F
-$ for sales to consumers in $H$ and in $F$.
+would be $0$). A similar derivation gives the consumption tax for firms in $%
+F $ for sales to consumers in $H$ and in $F$.
 
 \subsection{Income}
 
@@ -498,6 +506,28 @@ particular, we need the global demand for energy $\left( 1-\gamma \right)
 [make sure this is okay with taxes] to equal global supply as given in
 expression (\ref{Global supply of energy}).
 
+It will be convenient in calibrating the model to express the equilibrium in
+terms of spending shares. To do this, we define the following shares. The
+share of (after-tax) spending on the $m$-good is%
+\begin{equation*}
+\pi _{m}=\frac{\left( 1+t_{c}\right) p_{m}C_{m}}{Y}=D\left( p_{m}\right) 
+\end{equation*}
+
+The share of spending on energy is:%
+\begin{equation*}
+\pi _{e}=\frac{p_{e}Q_{e}}{Y}
+\end{equation*}
+
+And the share of income attributable to labor is 
+
+\begin{equation*}
+\pi _{L}=\frac{L}{Y}
+\end{equation*}
+
+The equilibrium will determine 
+
+\bigskip 
+
 In many cases below and particularly in our simulations, we are interested
 in how the equilibrium changes when we change taxes. We use the following
 notation.
@@ -506,19 +536,19 @@ Initial position\ (which may include taxes) uses notation above.
 
 New taxes, always has a prime, so might start with a production tax $t_{p}$
 and change to a tax of $t_{p}^{^{\prime }}$. Note that this includes the
-case where we start with no taxes because we can let $t_{p}=0$. 
+case where we start with no taxes because we can let $t_{p}=0$.
 
-Change notation for any variable is $\hat{x}=x^{^{\prime }}/x$. 
+Change notation for any variable is $\hat{x}=x^{^{\prime }}/x$.
 
 \section{Effects of global taxes}
 
 Our goal is to understand the effects of taxes in $H$. Before turning to
 that analysis, we first consider global taxes. Deriviations of these
-propositions are in the Appendix. 
+propositions are in the Appendix.
 
 Start by considering as a base case, a globally harmonized carbon tax, which
 means that both countries impose the same tax at the same level of
-production. 
+production.
 
 \begin{proposition}
 If the parameters of the utility function, $\alpha $ and $\sigma $ are the
@@ -546,7 +576,7 @@ transfers made between countries determining the distributive effects.
 
 Note that with any of the global taxes, we have $\bar{j}^{`}=\bar{j}\,,$
 which can be see by examining the expression for $\bar{j}$ (expression \ref%
-{jbar}). This means that there is no change in the location of production.  
+{jbar}). This means that there is no change in the location of production.
 
 Define a global emissions reduction goal $G=\frac{Q_{e}^{w\prime }}{Q_{e}^{w}%
 }<1$, [where $Q_{e}^{w}$ $=Q_{e}+Q_{e}^{\ast }$ is global energy production
@@ -558,7 +588,7 @@ _{e}$? We use hats for all other changes].
 Energy use, and, therefore, emissions reductions, $G$, depends only on the
 price of energy, $p_{e}$. With a production or consumption tax, the change
 in energy price $\hat{p}_{e}=\frac{p_{e}^{\prime }}{p_{e}}$ to meet an
-global emissions goal must satisfy:
+global emissions goal must satisfy
 \end{proposition}
 
 \begin{equation*}
@@ -593,7 +623,7 @@ where in the chain of production they are imposed as well as the tax rate.
 if $H$ imposes an extraction tax and $F$ imposes a production tax, we don't
 get the same answer as when both impose one or the other.]
 
-\section{Effects of unlateral taxes }
+\section{Effects of unlateral taxes}
 
 \subsection{Choice of tax rate}
 
@@ -611,7 +641,7 @@ to comply with a treaty, $H$ will care about domestic emissions.
 
 With unilateral tax, extraction still depends on $p_{e}$, so the level of
 emissions still depends only on $p_{e}$ (taking into account that with
-extraction taxes, extractors only keep an after-tax amount). 
+extraction taxes, extractors only keep an after-tax amount).
 
 \subsection{Location of activities}
 
@@ -715,7 +745,7 @@ manufacturing ( $\bar{j}$) are unchanged.
 
 A key policy proposal to accompany uinilateral carbon taxes is border
 adjustments. In this section, we seek to understand the relationship between
-border adjustments and the three types of taxes considered so far. 
+border adjustments and the three types of taxes considered so far.
 
 Border adjustments are (1) a tax (at rate $t_{b}$) on the value of energy
 embodied in $H^{\prime }$s imports of the $m$-good and (2) a tax rebate
@@ -727,7 +757,7 @@ rebate on exports.]
 
 With no border adjustments ($t_{b}=0$), the tax is a pure production tax (at
 rate $t_{p}$). We refer to the case where $t_{b}=t_{p}$ as full border taxes
-and $t_{b}\in \left( 0,t_{p}\right) $ as partial border taxes. 
+and $t_{b}\in \left( 0,t_{p}\right) $ as partial border taxes.
 
 Define the following:%
 \begin{equation*}
@@ -767,7 +797,7 @@ at rate $t_{p}=t_{c}$ plus full border adjustments (i.e., $t_{b}=t_{p}$).
 \end{corollary}
 \end{proposition}
 
-This follows immediately from the proposition by setting $t_{b}=t_{p}$. 
+This follows immediately from the proposition by setting $t_{b}=t_{p}$.
 
 [I thought we had a similar result for extraction taxes but I\ don't see it
 in the current notes.]
@@ -775,7 +805,7 @@ in the current notes.]
 Put expressions for $R\left( j\right) $ and $\bar{j}$ here using this
 notation (expression 39 in notes): these just replace $t_{p}$ with $\tilde{t}%
 _{p}$ (and because the tax is unilateral, set $t_{p}^{\ast }=0$) but are
-otherwise identical. Just say that? 
+otherwise identical. Just say that?
 
 Something about BAs under an extraction tax? Can tax extraction and border
 adjust for imports and exports of energy to produce tax on energy used in $H$%
@@ -812,7 +842,7 @@ with a consumption tax they do not. But because price of energy is held
 constant in all scenarios, we do not try to isolate a fuel price effect.
 
 Emissions in our model come only from manufacturing. Convenient to have
-terms for emissions from manufacturing. 
+terms for emissions from manufacturing.
 
 We want an expression for the total use of energy in $H$ for goods consumed
 in $H$, which we denote $M_{H}$. We know from the demand function that firms
@@ -915,7 +945,7 @@ Reasoning:
 We only need the share notation (the $\pi $'s) here, because their use is
 for calibration, right? No need to introduce earlier. A few derivations use
 it but I think all can easily be restated without. But needed for
-calibration of the simulations, so introduce here. 
+calibration of the simulations, so introduce here.
 
 Possible simulations:
 
